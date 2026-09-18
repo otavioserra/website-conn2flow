@@ -25,10 +25,11 @@
                 "scope": "global"
             }
         ],
-        "version": "1.0",
+        "version": "1.1",
         "checksum": {
             "html": "36ab2dd801a10797fad68706b93e0059",
             "css": "23354b2736cd6a63d5727da3c5b3a34a",
+            "css_precompiled": "",
             "combined": "ccc724260acab20d8b432e7991a7bb6c"
         }
     }

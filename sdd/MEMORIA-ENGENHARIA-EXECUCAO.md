@@ -21,7 +21,7 @@
 - Marcadores do layout: `<!-- pagina#titulo -->`, `<!-- pagina#css -->`, `<!-- pagina#js -->`, `@[[pagina#corpo]]@` (slot), `@[[pagina#url-raiz]]@`.
 - Metadados são JSONs coletivos por tipo (`layouts.json`, `pages.json`, `components.json`), com `framework_css: "tailwindcss"`, `tailwind_dependencies`, `version` e `checksum` = `{ html: md5(html), css: md5(css), combined: md5(html+css+css_precompiled) }` (função `buildChecksum`).
 - Páginas Tailwind de sites públicos (ex.: projeto `digitalfluxus`) carregam `https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4` no layout como fallback ao `css_compiled`; `@theme` pode ser declarado em `<style type="text/tailwindcss">`.
-- **O compilador varre pastas fixas `pages/` e `components/`** (linha 258). A SPEC deste projeto usa `paginas/`/`componentes/` — pendência DEC aberta em `batch-001.md`.
+- **O compilador varre pastas fixas `pages/` e `components/`** (linha 258). Nomenclatura de `resources/<lang>/` é sempre em inglês (`layouts`, `pages`, `components`), mesmo em projetos pt-br. A SPEC/REQ-001 vieram com `paginas/componentes` e foram corrigidas por instrução humana em 2026-09-18.
 
 ---
 

@@ -14,18 +14,18 @@ Estrutura de recursos do Gestor criada em `gestor/resources/pt-br/` conforme SPE
 
 | Caminho | Tipo | Descrição |
 | --- | --- | --- |
-| `gestor/resources/resources.map.php` | mapa | Mapeamento de idioma/arquivos de metadados (`layouts.json`, `paginas.json`, `componentes.json`). |
+| `gestor/resources/resources.map.php` | mapa | Mapeamento de idioma/arquivos de metadados (`layouts.json`, `pages.json`, `components.json`). |
 | `gestor/resources/pt-br/layouts.json` | metadados | Layout `layout-principal` com `framework_css: tailwindcss`, `tailwind_dependencies` e checksums md5. |
-| `gestor/resources/pt-br/paginas.json` | metadados | Página `home` (`path: /`, `without_permission: true`) vinculada ao `layout-principal`. |
-| `gestor/resources/pt-br/componentes.json` | metadados | 4 componentes com checksums. |
+| `gestor/resources/pt-br/pages.json` | metadados | Página `home` (`path: /`, `without_permission: true`) vinculada ao `layout-principal`. |
+| `gestor/resources/pt-br/components.json` | metadados | 4 componentes com checksums. |
 | `gestor/resources/pt-br/layouts/layout-principal/layout-principal.html` | layout | `<head>` com Nunito + Tailwind v4, navbar fixa (logo + tag "Curso de IA", âncoras, CTAs GitHub/YouTube, hamburguer mobile), slot `@[[pagina#corpo]]@`, footer completo (marca, 3 colunas de links, redes sociais, status da série, copyright), barra de progresso, botão voltar ao topo, JS de menu/scroll/reveal. |
 | `gestor/resources/pt-br/layouts/layout-principal/layout-principal.css` | layout | Tokens de cor, `font-family: 'Nunito'`, grade tecnológica, header vidro ao rolar, navlinks com sublinhado luminoso, botão com varredura de brilho, footer, reveal, `prefers-reduced-motion`. |
-| `gestor/resources/pt-br/paginas/home/home.html` | página | 7 seções com `data-id`/`data-title`: hero, episodios, metodologia, materiais, stack, faq, cta. |
-| `gestor/resources/pt-br/paginas/home/home.css` | página | Utilitários de autoria: eyebrow, h2, gradiente animado, status, terminal, marquee, materiais, stack, FAQ. |
-| `gestor/resources/pt-br/componentes/card-episodio/card-episodio.html` | componente | Card de episódio com marcadores `#numero#`, `#titulo#`, etc. |
-| `gestor/resources/pt-br/componentes/badge-luminoso/badge-luminoso.html` | componente | Pill translúcido com ponto pulsante. |
-| `gestor/resources/pt-br/componentes/pilar-metodologico/pilar-metodologico.html` | componente | Card de pilar com ícone, metáfora e barra progressiva. |
-| `gestor/resources/pt-br/componentes/botao-cta/botao-cta.html` | componente | Par de botões primário (glow) + secundário. |
+| `gestor/resources/pt-br/pages/home/home.html` | página | 7 seções com `data-id`/`data-title`: hero, episodios, metodologia, materiais, stack, faq, cta. |
+| `gestor/resources/pt-br/pages/home/home.css` | página | Utilitários de autoria: eyebrow, h2, gradiente animado, status, terminal, marquee, materiais, stack, FAQ. |
+| `gestor/resources/pt-br/components/card-episodio/card-episodio.html` | componente | Card de episódio com marcadores `#numero#`, `#titulo#`, etc. |
+| `gestor/resources/pt-br/components/badge-luminoso/badge-luminoso.html` | componente | Pill translúcido com ponto pulsante. |
+| `gestor/resources/pt-br/components/pilar-metodologico/pilar-metodologico.html` | componente | Card de pilar com ícone, metáfora e barra progressiva. |
+| `gestor/resources/pt-br/components/botao-cta/botao-cta.html` | componente | Par de botões primário (glow) + secundário. |
 | `sdd/validation/evidence/batch-001/*` | evidência | Capturas Playwright + `report.json`. |
 
 ## Conteúdo implementado (mapa REQ → seção)
@@ -67,7 +67,7 @@ Bug encontrado e corrigido durante a validação: overflow de 63px em 390px caus
 
 ## Pendências / Findings para o Arquiteto
 
-1. **Nomenclatura de pastas × compilador do Core** — A SPEC e a REQ definem `paginas/` e `componentes/`; o compilador `atualizacao-dados-recursos.php` do Core varre `pages/` e `components/` (nomes fixos, linha 258). Este batch seguiu a SPEC. Antes do primeiro `c2f resources:sync` é preciso decidir: (a) renomear pastas/JSONs para o padrão do Core, ou (b) estender o compilador para ler `directories` do `resources.map.php`. Recomendação: opção (a), por ser trivial e alinhada às skills `c2f-resources-system`.
+1. **Nomenclatura de pastas** — RESOLVIDO em 2026-09-18 por instrução humana: `resources/<lang>/` usa sempre `layouts/`, `pages/`, `components/` (inglês). Pastas, JSONs, `resources.map.php`, SPEC.md e req-001.md foram corrigidos; checksums regerados no formato do compilador (`html`, `css`, `css_precompiled`, `combined`).
 2. **Componentes não são injetados automaticamente em páginas públicas** — o Core inclui componentes via `$_GESTOR['componentes']` (PHP). Os 4 componentes foram criados como fonte modular com marcadores `#var#`; a Home contém as instâncias renderizadas. Se o site evoluir para conteúdo dinâmico (episódios do banco), usar `modelo_var_troca` sobre os componentes.
 3. **Pipeline oficial não executado** — este repositório não possui `c2f` nem ambiente Docker; a validação foi por preview composto + Playwright. `c2f resources:sync` / `css:rebuild` devem rodar quando o projeto for registrado em `dev-environment/data/projects/`.
 4. **Links institucionais** — LinkedIn, X e `/contact/` do rodapé seguem o padrão do site público; confirmar URLs finais.

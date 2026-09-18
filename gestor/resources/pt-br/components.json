@@ -3,10 +3,11 @@
         "name": "Card de Episódio",
         "id": "card-episodio",
         "framework_css": "tailwindcss",
-        "version": "1.0",
+        "version": "1.1",
         "checksum": {
             "html": "87f1699bee211a67ba9280ebb4816c15",
             "css": "",
+            "css_precompiled": "",
             "combined": "87f1699bee211a67ba9280ebb4816c15"
         }
     },
@@ -14,10 +15,11 @@
         "name": "Badge Luminoso",
         "id": "badge-luminoso",
         "framework_css": "tailwindcss",
-        "version": "1.0",
+        "version": "1.1",
         "checksum": {
             "html": "09f0f2db7ee67dd39bcc62cfc22c223e",
             "css": "",
+            "css_precompiled": "",
             "combined": "09f0f2db7ee67dd39bcc62cfc22c223e"
         }
     },
@@ -25,10 +27,11 @@
         "name": "Pilar Metodológico",
         "id": "pilar-metodologico",
         "framework_css": "tailwindcss",
-        "version": "1.0",
+        "version": "1.1",
         "checksum": {
             "html": "9d0641db920e0b91e5f54bc06a085fc5",
             "css": "",
+            "css_precompiled": "",
             "combined": "9d0641db920e0b91e5f54bc06a085fc5"
         }
     },
@@ -36,10 +39,11 @@
         "name": "Botões CTA",
         "id": "botao-cta",
         "framework_css": "tailwindcss",
-        "version": "1.0",
+        "version": "1.1",
         "checksum": {
             "html": "4606cdf384b474dc5b654e05ebd8bc91",
             "css": "",
+            "css_precompiled": "",
             "combined": "4606cdf384b474dc5b654e05ebd8bc91"
         }
     }

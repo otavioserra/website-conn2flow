@@ -4,9 +4,9 @@
 
 ### Checklist de aceite
 
-- [x] Estrutura de diretórios criada sob `gestor/resources/pt-br/` (`layouts/`, `paginas/`, `componentes/` + JSONs de metadados e `resources.map.php`).
+- [x] Estrutura de diretórios criada sob `gestor/resources/pt-br/` (`layouts/`, `pages/`, `components/` + JSONs de metadados e `resources.map.php`).
 - [x] **Layout Principal** implementado com `<head>`, Google Fonts (`Nunito`), cabeçalho/menu, slot de conteúdo (`@[[pagina#corpo]]@`) e rodapé — `layouts/layout-principal/`.
-- [x] **Página Home** implementada e acoplada ao Layout Principal — `paginas.json` → `"layout": "layout-principal"`, `path: /`.
+- [x] **Página Home** implementada e acoplada ao Layout Principal — `pages.json` → `"layout": "layout-principal"`, `path: /`.
 - [x] Tipografia `Nunito` do Google Fonts configurada como padrão global — `layout-principal.css` (`html, body { font-family: 'Nunito' }`) + `@theme --font-sans`. Evidência: `report.json` → `fontFamily`/`h1Font` = Nunito nos 3 viewports.
 - [x] Identidade visual em **Verde Esmeralda** aplicada com contraste, legibilidade e efeitos luminosos modernos — fundos `#060e0a`/`#0a1510`, `emerald-400/500/600`, glows `blur-3xl`, bordas `emerald-500/20`. Evidência: `desktop-1440-fold.png`.
 - [x] Hero Section com badges, headline, subheadline e CTAs duplos — seção `hero` (+ mockup terminal/player e métricas).
@@ -21,6 +21,5 @@
 
 ### Pendências fora do aceite (ver `implementation/batch-001.md`)
 
-- [ ] Decisão do Arquiteto sobre nomenclatura `paginas/componentes` × `pages/components` do compilador do Core.
 - [ ] Execução do pipeline oficial (`c2f resources:sync` + `css:rebuild`) quando o projeto for registrado no ambiente Docker.
 - [ ] Revisão técnica (`/review-current-batch`).

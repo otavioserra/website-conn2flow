@@ -7,10 +7,11 @@
         "type": "page",
         "framework_css": "tailwindcss",
         "without_permission": true,
-        "version": "1.0",
+        "version": "1.1",
         "checksum": {
             "html": "73c957067209edb0e5bda3fac7794e35",
             "css": "12283d5e582784ba549d1a121fd7e06a",
+            "css_precompiled": "",
             "combined": "00ea5b9d2f152eb0230334fb969d4a50"
         }
     }

@@ -24,7 +24,7 @@ Apresentar a série continuada, disponibilizar os episódios completos, centrali
    - Ponto de injeção/slot de conteúdo da página.
    - Rodapé global com navegação, links sociais e infraestrutura básica.
 
-2. **Página Principal / Home (`gestor/resources/pt-br/paginas/home/` ou `pagina-home/`)**:
+2. **Página Principal / Home (`gestor/resources/pt-br/pages/home/`)**:
    - **Hero Section**: Headline persuasiva, badges luminosos, CTAs principais e vitrine visual.
    - **Grade de Episódios**: Exibição em cards dos episódios (Ep 01 a 04 disponíveis, Ep 05+ em breve).
    - **Metodologia Pedagógica (Os 4 Pilares)**: Prótese Cognitiva, SDD como Memória da IA, Agente Duplo/Triplo e Empresa de 1 Pessoa.
@@ -32,5 +32,5 @@ Apresentar a série continuada, disponibilizar os episódios completos, centrali
    - **Stack & Ferramentas**: Grid de tecnologias e agentes.
    - **CTA Comercial**: Conversão para Conn2Flow Pro e Playlist do YouTube.
 
-3. **Componentes Modulares (`gestor/resources/pt-br/componentes/`)**:
+3. **Componentes Modulares (`gestor/resources/pt-br/components/`)**:
    - Blocos desacoplados para cards de episódios, badges e pilares.
