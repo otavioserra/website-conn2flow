@@ -1,0 +1,91 @@
+{
+  "consoleErrors": [],
+  "pageErrors": [],
+  "checks": {
+    "mobile-390": {
+      "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "bodyBg": "rgb(6, 14, 10)",
+      "horizontalOverflow": false,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "desktopMenuVisible": false,
+      "burgerVisible": true,
+      "sections": [
+        "hero",
+        "episodios",
+        "metodologia",
+        "materiais",
+        "stack",
+        "faq",
+        "cta"
+      ],
+      "episodes": 5,
+      "pillars": 4,
+      "stack": 8,
+      "faq": 5,
+      "links": {
+        "youtube": 12,
+        "github": 11,
+        "pro": 2
+      },
+      "mobileMenuOpen": true
+    },
+    "tablet-820": {
+      "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "bodyBg": "rgb(6, 14, 10)",
+      "horizontalOverflow": false,
+      "scrollWidth": 820,
+      "innerWidth": 820,
+      "desktopMenuVisible": false,
+      "burgerVisible": true,
+      "sections": [
+        "hero",
+        "episodios",
+        "metodologia",
+        "materiais",
+        "stack",
+        "faq",
+        "cta"
+      ],
+      "episodes": 5,
+      "pillars": 4,
+      "stack": 8,
+      "faq": 5,
+      "links": {
+        "youtube": 12,
+        "github": 11,
+        "pro": 2
+      }
+    },
+    "desktop-1440": {
+      "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "bodyBg": "rgb(6, 14, 10)",
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "desktopMenuVisible": true,
+      "burgerVisible": false,
+      "sections": [
+        "hero",
+        "episodios",
+        "metodologia",
+        "materiais",
+        "stack",
+        "faq",
+        "cta"
+      ],
+      "episodes": 5,
+      "pillars": 4,
+      "stack": 8,
+      "faq": 5,
+      "links": {
+        "youtube": 12,
+        "github": 11,
+        "pro": 2
+      }
+    }
+  }
+}

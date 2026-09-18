@@ -1,0 +1,15 @@
+<!--
+    Componente: Botões CTA (par primário + secundário)
+    Marcadores: #url-primario#, #texto-primario#, #url-secundario#, #texto-secundario#
+    O primário usa c2f-btn-glow (varredura luminosa definida no CSS do Layout Principal).
+-->
+<div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+    <a href="#url-primario#" target="_blank" rel="noopener" class="c2f-btn-glow group inline-flex w-full items-center justify-center gap-3 rounded-full bg-emerald-500 px-8 py-4 text-base font-extrabold text-[#060e0a] shadow-[0_0_32px_-6px_rgba(52,211,153,0.7)] transition-all duration-300 hover:scale-[1.03] hover:bg-emerald-400 hover:shadow-[0_0_44px_-4px_rgba(52,211,153,0.9)] sm:w-auto">
+        <svg viewBox="0 0 24 24" class="h-5 w-5 transition-transform duration-300 group-hover:scale-125" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        #texto-primario#
+    </a>
+    <a href="#url-secundario#" target="_blank" rel="noopener" class="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-emerald-500/30 bg-white/5 px-8 py-4 text-base font-bold text-slate-100 backdrop-blur-sm transition-all duration-300 hover:border-emerald-400/60 hover:bg-emerald-500/10 hover:text-white sm:w-auto">
+        #texto-secundario#
+        <svg viewBox="0 0 24 24" class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+</div>

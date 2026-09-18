@@ -10,28 +10,34 @@
 
 ## Dependências & Ambiente Local
 
-*(Registre versões de runtime, SDKs, variáveis de ambiente, particularidades de SO, caminhos locais relevantes.)*
+- Este repositório (`website-conn2flow`) **não** contém o CLI `c2f` nem Docker. O Core vive em `C:\Users\otavi\OneDrive\Documentos\GIT\conn2flow` (skills em `.claude/skills/`, compilador em `gestor/controladores/agents/arquitetura/atualizacao-dados-recursos.php`).
+- Playwright + Chromium já instalados no Core: `require('C:/Users/otavi/OneDrive/Documentos/GIT/conn2flow/node_modules/playwright')` (Node v20.14.0). Browsers em `%LOCALAPPDATA%\ms-playwright`.
+- Windows/Git Bash: heredocs `<<'EOF'` com conteúdo grande/`\\` corrompem (erro "unexpected EOF" ou barras duplas colapsadas). Usar a ferramenta Write para arquivos e scripts.
 
 ---
 
 ## Aprendizados do Compilador / Build
 
-*(Registre flags necessárias, ordem de build, workarounds de compilação, tempo de build esperado, etc.)*
+- Marcadores do layout: `<!-- pagina#titulo -->`, `<!-- pagina#css -->`, `<!-- pagina#js -->`, `@[[pagina#corpo]]@` (slot), `@[[pagina#url-raiz]]@`.
+- Metadados são JSONs coletivos por tipo (`layouts.json`, `pages.json`, `components.json`), com `framework_css: "tailwindcss"`, `tailwind_dependencies`, `version` e `checksum` = `{ html: md5(html), css: md5(css), combined: md5(html+css+css_precompiled) }` (função `buildChecksum`).
+- Páginas Tailwind de sites públicos (ex.: projeto `digitalfluxus`) carregam `https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4` no layout como fallback ao `css_compiled`; `@theme` pode ser declarado em `<style type="text/tailwindcss">`.
+- **O compilador varre pastas fixas `pages/` e `components/`** (linha 258). A SPEC deste projeto usa `paginas/`/`componentes/` — pendência DEC aberta em `batch-001.md`.
 
 ---
 
 ## Hacks Locais & Workarounds
 
-*(Registre soluções temporárias aplicadas para contornar bugs de ferramentas, limitações de libs ou problemas de infra.)*
+- Validação visual sem Gestor: script `build-and-validate.js` (scratchpad da sessão) compõe layout + página substituindo marcadores e roda Playwright em 390/820/1440, gravando `report.json` + PNGs em `sdd/validation/evidence/batch-XXX/`. Reaproveitar o padrão em batches futuros.
 
 ---
 
 ## Bugs Resolvidos & Lições Aprendidas
 
-*(Registre bugs encontrados e corrigidos, incluindo a causa raiz e a solução aplicada, para evitar retrabalho.)*
+- **[BATCH-001] Overflow horizontal em 390px**: `grid` sem `grid-cols-1` cria coluna implícita `auto`, que cresce até a min-content de um texto monoespaçado longo (`otavioserra/conn2flow-ai-workspace`), mesmo com `truncate` no filho. Fix: `grid-cols-1` (`minmax(0,1fr)`) + `min-w-0` no item. Sempre declarar o breakpoint base dos grids.
 
 ---
 
 ## Notas Cross-Session
 
-*(Anotações gerais que devem ser lembradas em sessões futuras — contexto pendente, decisões parciais, TODOs.)*
+- BATCH-001 implementado e validado em 2026-09-18; aguarda revisão técnica e decisão sobre nomenclatura de pastas antes do primeiro `c2f resources:sync`.
+- Favicons (`favicon/*`) e imagens do projeto ainda não existem no repositório.

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <!-- pagina#titulo -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trabalhando em Par com IA — Do Zero ao Avançado: Planejar, Construir e Dominar Projetos Reais com Agentes de IA. Série gratuita no YouTube com materiais no GitHub.">
+    <meta name="theme-color" content="#060e0a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trabalhando em Par com IA — Curso de IA | Conn2Flow">
+    <meta property="og:description" content="Aprenda a transformar o seu computador em uma empresa de automação de 1 pessoa só com Agentes de IA, Antigravity 2.0 e Governança SDD.">
+    <link rel="apple-touch-icon" sizes="180x180" href="@[[pagina#url-raiz]]@favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="@[[pagina#url-raiz]]@favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="@[[pagina#url-raiz]]@favicon/favicon-16x16.png">
+    <link rel="manifest" href="@[[pagina#url-raiz]]@favicon/site.webmanifest">
+
+    <!-- Tipografia global: Nunito (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- pagina#css -->
+    <!-- pagina#js -->
+
+    <!--
+        Tailwind CSS v4 em runtime (fallback de autoria). O CSS derivado oficial e gerado pelo pipeline
+        (c2f resources:sync + c2f css:rebuild) e injetado no marcador pagina#css acima. O script abaixo garante
+        renderizacao fiel em pre-visualizacoes locais e em ambientes ainda sem css_compiled no banco.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+            --color-abyss: #060e0a;
+            --color-deep: #0a1510;
+            --color-forest: #0f1f17;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#060e0a] text-slate-200 antialiased selection:bg-emerald-500 selection:text-[#060e0a]">
+
+    <!-- Camada de fundo global: grade tecnológica + glows esmeralda -->
+    <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+        <div class="absolute inset-0 c2f-grid opacity-[0.35]"></div>
+        <div class="absolute -top-40 left-1/4 h-[28rem] w-[28rem] rounded-full bg-emerald-500/15 blur-3xl animate-pulse"></div>
+        <div class="absolute top-1/3 -right-40 h-[26rem] w-[26rem] rounded-full bg-emerald-400/10 blur-3xl c2f-float"></div>
+        <div class="absolute -bottom-40 left-[-10%] h-[30rem] w-[30rem] rounded-full bg-teal-500/10 blur-3xl animate-pulse [animation-delay:1.5s]"></div>
+    </div>
+
+    <!-- Barra de progresso de leitura -->
+    <div id="c2f-progress" aria-hidden="true" class="fixed left-0 top-0 z-[60] h-[3px] w-0 bg-gradient-to-r from-emerald-500 via-emerald-300 to-emerald-500 shadow-[0_0_12px_rgba(52,211,153,0.8)] transition-[width] duration-150"></div>
+
+    <!-- ===== Cabeçalho / Navbar ===== -->
+    <header id="c2f-header" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-300">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8" aria-label="Navegação principal">
+            <!-- Logo + tag do curso -->
+            <a href="@[[pagina#url-raiz]]@" class="group flex items-center gap-3">
+                <span class="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-[#060e0a] shadow-[0_0_24px_rgba(16,185,129,0.45)] transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 8-8"/><path d="M20 12a8 8 0 0 1-8 8"/><circle cx="12" cy="12" r="2.5"/><path d="M4 12h3M17 12h3"/></svg>
+                </span>
+                <span class="flex flex-col leading-none">
+                    <span class="text-lg font-extrabold tracking-tight text-white">Conn2Flow</span>
+                    <span class="mt-1 inline-flex w-fit items-center gap-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2 py-[2px] text-[10px] font-bold uppercase tracking-widest text-emerald-300">
+                        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>Curso de IA
+                    </span>
+                </span>
+            </a>
+
+            <!-- Menu desktop -->
+            <ul class="hidden items-center gap-1 lg:flex">
+                <li><a href="#episodios" class="c2f-navlink">Episódios</a></li>
+                <li><a href="#metodologia" class="c2f-navlink">Metodologia</a></li>
+                <li><a href="#materiais" class="c2f-navlink">Materiais</a></li>
+                <li><a href="#stack" class="c2f-navlink">Stack</a></li>
+                <li><a href="#faq" class="c2f-navlink">FAQ</a></li>
+            </ul>
+
+            <!-- CTAs desktop -->
+            <div class="hidden items-center gap-3 lg:flex">
+                <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-bold text-slate-200 transition-all duration-300 hover:border-emerald-500/40 hover:bg-white/10 hover:text-white">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 .5C5.7.5.7 5.5.7 11.8c0 5 3.2 9.2 7.7 10.7.6.1.8-.2.8-.5v-2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.6 0-1.2.4-2.3 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2a10.7 10.7 0 0 1 5.7 0c2.2-1.5 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.3-2.6 5.3-5.1 5.6.4.4.8 1.1.8 2.1v3.2c0 .3.2.7.8.5 4.5-1.5 7.7-5.7 7.7-10.7C23.3 5.5 18.3.5 12 .5z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="c2f-btn-glow inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-2 text-sm font-extrabold text-[#060e0a] transition-all duration-300 hover:bg-emerald-400 hover:shadow-[0_0_28px_rgba(52,211,153,0.6)]">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Assistir Grátis
+                </a>
+            </div>
+
+            <!-- Botão hamburguer (mobile) -->
+            <button type="button" id="c2f-menu-toggle" aria-controls="c2f-mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-200 transition-colors hover:border-emerald-500/40 hover:text-white lg:hidden">
+                <svg data-icon="open" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                <svg data-icon="close" viewBox="0 0 24 24" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div id="c2f-mobile-menu" class="hidden border-t border-emerald-500/10 bg-[#060e0a]/95 backdrop-blur-xl lg:hidden">
+            <div class="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
+                <a href="#episodios" class="c2f-navlink-mobile">Episódios</a>
+                <a href="#metodologia" class="c2f-navlink-mobile">Metodologia</a>
+                <a href="#materiais" class="c2f-navlink-mobile">Materiais</a>
+                <a href="#stack" class="c2f-navlink-mobile">Stack</a>
+                <a href="#faq" class="c2f-navlink-mobile">FAQ</a>
+                <div class="mt-3 grid grid-cols-2 gap-3">
+                    <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-bold text-slate-200">GitHub</a>
+                    <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-4 py-3 text-sm font-extrabold text-[#060e0a]">Assistir Grátis</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Slot de conteúdo da página ===== -->
+    <main id="conteudo" class="relative z-10">
+        @[[pagina#corpo]]@
+    </main>
+
+    <!-- ===== Rodapé ===== -->
+    <footer class="relative z-10 border-t border-emerald-500/10 bg-gradient-to-b from-[#0a1510] to-black">
+        <div class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px w-2/3 bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent"></div>
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12">
+                <!-- Marca -->
+                <div class="lg:col-span-4">
+                    <a href="@[[pagina#url-raiz]]@" class="flex items-center gap-3">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-[#060e0a] shadow-[0_0_20px_rgba(16,185,129,0.4)]">
+                            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 8-8"/><path d="M20 12a8 8 0 0 1-8 8"/><circle cx="12" cy="12" r="2.5"/><path d="M4 12h3M17 12h3"/></svg>
+                        </span>
+                        <span class="text-xl font-extrabold text-white">Conn2Flow</span>
+                    </a>
+                    <p class="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">
+                        <strong class="text-slate-200">Trabalhando em Par com IA</strong> — Do Zero ao Avançado: Planejar, Construir e Dominar Projetos Reais com Agentes de IA. Série continuada, gratuita e aberta.
+                    </p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" aria-label="YouTube" class="c2f-social"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+                        <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" aria-label="GitHub" class="c2f-social"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M12 .5C5.7.5.7 5.5.7 11.8c0 5 3.2 9.2 7.7 10.7.6.1.8-.2.8-.5v-2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.6 0-1.2.4-2.3 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2a10.7 10.7 0 0 1 5.7 0c2.2-1.5 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.3-2.6 5.3-5.1 5.6.4.4.8 1.1.8 2.1v3.2c0 .3.2.7.8.5 4.5-1.5 7.7-5.7 7.7-10.7C23.3 5.5 18.3.5 12 .5z"/></svg></a>
+                        <a href="https://www.linkedin.com/company/conn2flow" target="_blank" rel="noopener" aria-label="LinkedIn" class="c2f-social"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1a3.7 3.7 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+                        <a href="https://x.com/conn2flow" target="_blank" rel="noopener" aria-label="X" class="c2f-social"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M18.2 2h3.4l-7.4 8.5L23 22h-6.8l-5.3-7-6.1 7H1.4l7.9-9.1L1 2h7l4.8 6.4L18.2 2zm-1.2 18h1.9L7.1 3.9h-2L17 20z"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Colunas de links -->
+                <div class="lg:col-span-2">
+                    <h3 class="c2f-footer-title">Curso</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#episodios" class="c2f-footer-link">Episódios</a></li>
+                        <li><a href="#metodologia" class="c2f-footer-link">Metodologia</a></li>
+                        <li><a href="#materiais" class="c2f-footer-link">Materiais</a></li>
+                        <li><a href="#stack" class="c2f-footer-link">Stack</a></li>
+                        <li><a href="#faq" class="c2f-footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h3 class="c2f-footer-title">Recursos</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="c2f-footer-link">Playlist Oficial</a></li>
+                        <li><a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="c2f-footer-link">Repositório GitHub</a></li>
+                        <li><a href="https://github.com/otavioserra/conn2flow" target="_blank" rel="noopener" class="c2f-footer-link">Conn2Flow Open Source</a></li>
+                        <li><a href="https://conn2flow.com/changelog/" target="_blank" rel="noopener" class="c2f-footer-link">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h3 class="c2f-footer-title">Conn2Flow</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="https://conn2flow.com/" target="_blank" rel="noopener" class="c2f-footer-link">Site Oficial</a></li>
+                        <li><a href="https://conn2flow.com/pro/#planos" target="_blank" rel="noopener" class="c2f-footer-link">Conn2Flow Pro</a></li>
+                        <li><a href="https://conn2flow.com/pro/" target="_blank" rel="noopener" class="c2f-footer-link">Filosofia</a></li>
+                        <li><a href="https://conn2flow.com/contact/" target="_blank" rel="noopener" class="c2f-footer-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Status da série -->
+                <div class="lg:col-span-2">
+                    <h3 class="c2f-footer-title">Status</h3>
+                    <div class="mt-4 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4">
+                        <div class="flex items-center gap-2 text-sm font-bold text-emerald-300">
+                            <span class="relative flex h-2.5 w-2.5"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400"></span></span>
+                            Série em produção
+                        </div>
+                        <p class="mt-2 text-xs leading-relaxed text-slate-400">Novos episódios publicados continuamente. Ative o sino na playlist.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-xs text-slate-500 sm:flex-row">
+                <p>© 2026 Conn2Flow. Infraestrutura Open Source. Todos os direitos reservados.</p>
+                <p class="flex items-center gap-2">Powered by <a href="https://conn2flow.com/" target="_blank" rel="noopener" class="font-bold text-emerald-400 transition-colors hover:text-emerald-300">Conn2Flow Pro</a><span class="text-slate-600">·</span>Core Codeflow</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Voltar ao topo -->
+    <a href="#" id="c2f-backtop" aria-label="Voltar ao topo" class="fixed bottom-6 right-6 z-50 flex h-11 w-11 translate-y-20 items-center justify-center rounded-full border border-emerald-500/40 bg-[#0a1510]/90 text-emerald-300 opacity-0 shadow-[0_0_20px_rgba(16,185,129,0.35)] backdrop-blur transition-all duration-300 hover:bg-emerald-500 hover:text-[#060e0a]">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+
+    <div id="gestor-listener"></div>
+
+    <script>
+        (function () {
+            var header = document.getElementById('c2f-header');
+            var toggle = document.getElementById('c2f-menu-toggle');
+            var menu = document.getElementById('c2f-mobile-menu');
+            var progress = document.getElementById('c2f-progress');
+            var backtop = document.getElementById('c2f-backtop');
+
+            function onScroll() {
+                var y = window.scrollY || document.documentElement.scrollTop;
+                if (header) header.classList.toggle('c2f-header-scrolled', y > 24);
+                if (progress) {
+                    var max = document.documentElement.scrollHeight - window.innerHeight;
+                    progress.style.width = (max > 0 ? Math.min(100, (y / max) * 100) : 0) + '%';
+                }
+                if (backtop) {
+                    var show = y > 600;
+                    backtop.classList.toggle('opacity-0', !show);
+                    backtop.classList.toggle('translate-y-20', !show);
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            if (toggle && menu) {
+                toggle.addEventListener('click', function () {
+                    var open = menu.classList.toggle('hidden') === false;
+                    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+                    toggle.querySelector('[data-icon="open"]').classList.toggle('hidden', open);
+                    toggle.querySelector('[data-icon="close"]').classList.toggle('hidden', !open);
+                });
+                menu.querySelectorAll('a[href^="#"]').forEach(function (a) {
+                    a.addEventListener('click', function () { toggle.click(); });
+                });
+            }
+
+            // Revelação progressiva de elementos ao entrar na viewport
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) { e.target.classList.add('c2f-revealed'); io.unobserve(e.target); }
+                    });
+                }, { threshold: 0.12 });
+                document.querySelectorAll('.c2f-reveal').forEach(function (el) { io.observe(el); });
+            } else {
+                document.querySelectorAll('.c2f-reveal').forEach(function (el) { el.classList.add('c2f-revealed'); });
+            }
+        })();
+    </script>
+</body>
+
+</html>

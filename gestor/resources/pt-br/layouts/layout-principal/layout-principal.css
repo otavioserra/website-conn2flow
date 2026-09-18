@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Layout Principal — Curso de IA (Cyber Emerald / Dark Tech)
+   Tipografia global: Nunito. Tokens e utilitários de autoria do layout.
+   ========================================================================== */
+
+:root {
+    --c2f-abyss: #060e0a;
+    --c2f-deep: #0a1510;
+    --c2f-forest: #0f1f17;
+    --c2f-emerald: #10b981;
+    --c2f-emerald-light: #34d399;
+    --c2f-glow: rgba(52, 211, 153, 0.55);
+}
+
+html,
+body {
+    font-family: 'Nunito', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: var(--c2f-abyss);
+}
+
+/* Grade tecnológica de fundo */
+.c2f-grid {
+    background-image:
+        linear-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%);
+}
+
+/* Cabeçalho com vidro ao rolar */
+#c2f-header.c2f-header-scrolled {
+    background: rgba(6, 14, 10, 0.82);
+    border-bottom-color: rgba(16, 185, 129, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 40px -20px rgba(16, 185, 129, 0.35);
+}
+
+/* Links de navegação */
+.c2f-navlink {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.c2f-navlink::after {
+    content: '';
+    position: absolute;
+    left: 0.875rem;
+    right: 0.875rem;
+    bottom: 0.35rem;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--c2f-emerald), var(--c2f-emerald-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px var(--c2f-glow);
+}
+
+.c2f-navlink:hover {
+    color: #fff;
+}
+
+.c2f-navlink:hover::after {
+    transform: scaleX(1);
+}
+
+.c2f-navlink-mobile {
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.c2f-navlink-mobile:hover {
+    color: #fff;
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* Botão luminoso: brilho varrendo ao passar o mouse */
+.c2f-btn-glow {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.c2f-btn-glow::before {
+    content: '';
+    position: absolute;
+    inset: -100% auto -100% -60%;
+    width: 40%;
+    background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+    transform: skewX(-20deg) translateX(-120%);
+    transition: transform 0.6s ease;
+    z-index: -1;
+}
+
+.c2f-btn-glow:hover::before {
+    transform: skewX(-20deg) translateX(420%);
+}
+
+/* Rodapé */
+.c2f-footer-title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6ee7b7;
+}
+
+.c2f-footer-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #94a3b8;
+    transition: color 0.25s ease, transform 0.25s ease;
+    display: inline-block;
+}
+
+.c2f-footer-link:hover {
+    color: #a7f3d0;
+    transform: translateX(3px);
+}
+
+.c2f-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #94a3b8;
+    transition: all 0.3s ease;
+}
+
+.c2f-social:hover {
+    color: #060e0a;
+    background: var(--c2f-emerald-light);
+    border-color: var(--c2f-emerald-light);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 22px var(--c2f-glow);
+}
+
+/* Revelação progressiva */
+.c2f-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.c2f-reveal.c2f-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Flutuação suave dos glows */
+@keyframes c2f-float {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-30px, 40px, 0); }
+}
+
+.c2f-float {
+    animation: c2f-float 14s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .c2f-float,
+    .animate-pulse,
+    .animate-ping {
+        animation: none !important;
+    }
+
+    .c2f-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

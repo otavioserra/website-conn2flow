@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Layout Principal — Curso de IA",
+        "id": "layout-principal",
+        "framework_css": "tailwindcss",
+        "tailwind_dependencies": [
+            {
+                "type": "components",
+                "id": "card-episodio",
+                "scope": "global"
+            },
+            {
+                "type": "components",
+                "id": "badge-luminoso",
+                "scope": "global"
+            },
+            {
+                "type": "components",
+                "id": "pilar-metodologico",
+                "scope": "global"
+            },
+            {
+                "type": "components",
+                "id": "botao-cta",
+                "scope": "global"
+            }
+        ],
+        "version": "1.0",
+        "checksum": {
+            "html": "36ab2dd801a10797fad68706b93e0059",
+            "css": "23354b2736cd6a63d5727da3c5b3a34a",
+            "combined": "ccc724260acab20d8b432e7991a7bb6c"
+        }
+    }
+]

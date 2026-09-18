@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Trabalhando em Par com IA — Curso de IA",
+        "id": "home",
+        "layout": "layout-principal",
+        "path": "/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "version": "1.0",
+        "checksum": {
+            "html": "73c957067209edb0e5bda3fac7794e35",
+            "css": "12283d5e582784ba549d1a121fd7e06a",
+            "combined": "00ea5b9d2f152eb0230334fb969d4a50"
+        }
+    }
+]
