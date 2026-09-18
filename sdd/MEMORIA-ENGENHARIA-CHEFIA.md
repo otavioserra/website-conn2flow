@@ -12,14 +12,15 @@
 - **Site Semente**: Baseado no layout, componentes e estilo dark/tecnológico de `https://conn2flow.com/`.
 - **Paleta de Cores**: **Verde Esmeralda** (Emerald Green). Toda a identidade que antes era azul no site semente deve ser convertida para verde esmeralda com tonalidades harmoniosas (`emerald-400`, `emerald-500`, `emerald-600`, `emerald-950`), glows e bordas translúcidas.
 - **Tipografia**: **`Nunito`** (Google Fonts) como fonte principal de todo o website.
+- **Arquitetura de Layout**: Existência de um **Layout Principal** com cabeçalho (menu/navbar) e rodapé (footer) padrão do Gestor, envolvendo o conteúdo dinâmico das páginas.
+- **Liberdade Criativa**: O executor é encorajado a propor e incluir adições criativas, microinterações, cards complementares e refinamentos de UI.
 
 ---
 
-## Convenções de Código
+## Estrutura de Diretórios & Convenções
 
-- Padrão semântico e limpo em HTML5 / CSS3 / Tailwind CSS.
-- Código estruturado com comentários de seções claras.
-- Proibição de bibliotecas pesadas desnecessárias; foco em performance de carregamento rápido.
+- **Pasta do Gestor / Recursos**: `C:\Users\otavi\OneDrive\Documentos\GIT\website-conn2flow\gestor` (com `resources/pt-br/layouts/`, `resources/pt-br/paginas/`, `resources/pt-br/componentes/`).
+- Código estruturado com comentários de seções claras e Tailwind CSS.
 
 ---
 

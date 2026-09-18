@@ -7,6 +7,7 @@
 - **Assinatura de Marca**: Conn2Flow (Powered by Conn2Flow / Core Codeflow)
 - **Tipografia**: `Nunito` (Google Fonts)
 - **Paleta de Cores**: Verde Esmeralda (Cyber Emerald / Dark Tech)
+- **Caminho Base do Gestor**: `C:\Users\otavi\OneDrive\Documentos\GIT\website-conn2flow\gestor`
 
 ---
 
@@ -16,30 +17,20 @@ Apresentar a série continuada, disponibilizar os episódios completos, centrali
 
 ---
 
-## Módulos e Componentes do Website
+## Módulos e Componentes Arquiteturais (Gestor Conn2Flow)
 
-1. **Barra de Navegação (Navbar)**:
-   - Identidade visual Conn2Flow + tag "Curso de IA".
-   - Links âncora: Episódios, Metodologia, Materiais, Stack, Comunidade.
-   - Botões CTA: "Assistir Episódios" e "Conn2Flow Pro".
+1. **Layout Principal (`gestor/resources/pt-br/layouts/layout-principal/`)**:
+   - Cabeçalho global com logo Conn2Flow, badge do curso, navegação por âncoras e botões CTA.
+   - Ponto de injeção/slot de conteúdo da página.
+   - Rodapé global com navegação, links sociais e infraestrutura básica.
 
-2. **Seção Hero**:
-   - Badge dinâmico de status da série.
-   - Headline e subheadline persuasivas focadas em produtividade e autonomia com IA.
-   - Chamadas para ação (assistir no YouTube e acessar GitHub).
-   - Mockup/demonstração visual moderna em tema dark esmeralda.
+2. **Página Principal / Home (`gestor/resources/pt-br/paginas/home/` ou `pagina-home/`)**:
+   - **Hero Section**: Headline persuasiva, badges luminosos, CTAs principais e vitrine visual.
+   - **Grade de Episódios**: Exibição em cards dos episódios (Ep 01 a 04 disponíveis, Ep 05+ em breve).
+   - **Metodologia Pedagógica (Os 4 Pilares)**: Prótese Cognitiva, SDD como Memória da IA, Agente Duplo/Triplo e Empresa de 1 Pessoa.
+   - **Hub de Materiais & Downloads**: Repositório `conn2flow-ai-workspace`, roteiros e guias.
+   - **Stack & Ferramentas**: Grid de tecnologias e agentes.
+   - **CTA Comercial**: Conversão para Conn2Flow Pro e Playlist do YouTube.
 
-3. **Grade de Episódios**:
-   - Exibição em cards dos episódios (Ep 01 a Ep 05+), com status, temas, tags e botões de ação direta.
-
-4. **Metodologia Pedagógica (Os 4 Pilares)**:
-   - Cards explicativos: Prótese Cognitiva, SDD como Memória da IA, Agente Duplo/Triplo e Empresa de 1 Pessoa.
-
-5. **Hub de Materiais & Downloads**:
-   - Links diretos para guias, diagramas, roteiros e repositório `conn2flow-ai-workspace`.
-
-6. **Stack & Ferramentas**:
-   - Grid de tecnologias e ferramentas agênticas abordadas no curso.
-
-7. **CTA Comercial & Rodapé**:
-   - Conversão para Conn2Flow Pro, links de redes sociais e direitos autorais.
+3. **Componentes Modulares (`gestor/resources/pt-br/componentes/`)**:
+   - Blocos desacoplados para cards de episódios, badges e pilares.
