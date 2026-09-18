@@ -1,0 +1,350 @@
+{
+    "generated_at": "2026-09-18T17:15:59-03:00",
+    "tables": {
+        "alvos_ia": {
+            "nome": "alvos_ia",
+            "id": "id",
+            "id_numerico": "id_alvos_ia",
+            "data_file": "AlvosIaData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:tables_config.json"
+        },
+        "categorias": {
+            "nome": "categorias",
+            "id": "id",
+            "id_numerico": "id_categorias",
+            "data_file": "CategoriasData.json",
+            "strategy": "pk",
+            "natural_key_columns": [],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:admin-categorias"
+        },
+        "componentes": {
+            "nome": "componentes",
+            "id": "id",
+            "id_numerico": "id_componentes",
+            "data_file": "ComponentesData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "modulo",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "nome",
+                "modulo",
+                "framework_css",
+                "html",
+                "css",
+                "css_compiled"
+            ],
+            "insert_only": false,
+            "source": "core:admin-componentes"
+        },
+        "cron_tarefas": {
+            "nome": "cron_tarefas",
+            "id": "id",
+            "id_numerico": "id_cron_tarefas",
+            "data_file": "CronTarefasData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "ativo",
+                "expressao_cron",
+                "parametros"
+            ],
+            "insert_only": false,
+            "source": "core:tables_config.json"
+        },
+        "forms": {
+            "nome": "forms",
+            "id": "id",
+            "id_numerico": "id_forms",
+            "data_file": "FormsData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "module",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "name",
+                "fields_schema"
+            ],
+            "insert_only": false,
+            "source": "core:forms"
+        },
+        "forms_search": {
+            "nome": "forms_search",
+            "id": "id",
+            "id_numerico": "id_forms_search",
+            "data_file": "FormsSearchData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "module",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "name",
+                "fields_schema"
+            ],
+            "insert_only": false,
+            "source": "core:forms-search"
+        },
+        "layouts": {
+            "nome": "layouts",
+            "id": "id",
+            "id_numerico": "id_layouts",
+            "data_file": "LayoutsData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "modulo",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "nome",
+                "framework_css",
+                "html",
+                "css",
+                "css_compiled"
+            ],
+            "insert_only": false,
+            "source": "core:admin-layouts"
+        },
+        "modos_ia": {
+            "nome": "modos_ia",
+            "id": "id",
+            "id_numerico": "id_modos_ia",
+            "data_file": "ModosIaData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:admin-modos-ia"
+        },
+        "modulos": {
+            "nome": "modulos",
+            "id": "id",
+            "id_numerico": "id_modulos",
+            "data_file": "ModulosData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:modulos"
+        },
+        "modulos_grupos": {
+            "nome": "modulos_grupos",
+            "id": "id",
+            "id_numerico": "id_modulos_grupos",
+            "data_file": "ModulosGruposData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:modulos-grupos"
+        },
+        "modulos_operacoes": {
+            "nome": "modulos_operacoes",
+            "id": "id",
+            "id_numerico": "id_modulos_operacoes",
+            "data_file": "ModulosOperacoesData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:modulos-operacoes"
+        },
+        "pages_index": {
+            "nome": "pages_index",
+            "id": "id",
+            "id_numerico": "id_pages_index",
+            "data_file": "PagesIndexData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "name",
+                "fields_schema",
+                "css_compiled",
+                "html_extra_head",
+                "html",
+                "css"
+            ],
+            "insert_only": false,
+            "source": "core:pages-index"
+        },
+        "paginas": {
+            "nome": "paginas",
+            "id": "id",
+            "id_numerico": "id_paginas",
+            "data_file": "PaginasData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "modulo",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "nome",
+                "layout_id",
+                "caminho",
+                "framework_css",
+                "sem_permissao",
+                "html",
+                "css",
+                "css_compiled"
+            ],
+            "insert_only": false,
+            "source": "core:admin-paginas"
+        },
+        "prompts_ia": {
+            "nome": "prompts_ia",
+            "id": "id",
+            "id_numerico": "id_prompts_ia",
+            "data_file": "PromptsIaData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:admin-prompts-ia"
+        },
+        "templates": {
+            "nome": "templates",
+            "id": "id",
+            "id_numerico": "id_templates",
+            "data_file": "TemplatesData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "modulo",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "nome",
+                "target",
+                "framework_css",
+                "html",
+                "css",
+                "css_compiled"
+            ],
+            "insert_only": false,
+            "source": "core:admin-templates"
+        },
+        "usuarios": {
+            "nome": "usuarios",
+            "id": "id",
+            "id_numerico": "id_usuarios",
+            "data_file": "UsuariosData.json",
+            "strategy": "pk",
+            "natural_key_columns": [],
+            "preserve_on_user_modified": [],
+            "insert_only": true,
+            "source": "core:usuarios"
+        },
+        "usuarios_perfis": {
+            "nome": "usuarios_perfis",
+            "id": "id",
+            "id_numerico": "id_usuarios_perfis",
+            "data_file": "UsuariosPerfisData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:usuarios-perfis"
+        },
+        "usuarios_perfis_modulos": {
+            "nome": "usuarios_perfis_modulos",
+            "id": "id",
+            "id_numerico": "id_usuarios_perfis_modulos",
+            "data_file": "UsuariosPerfisModulosData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "perfil",
+                "modulo"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:tables_config.json"
+        },
+        "usuarios_perfis_modulos_operacoes": {
+            "nome": "usuarios_perfis_modulos_operacoes",
+            "id": "id",
+            "id_numerico": "id_usuarios_perfis_modulos_operacoes",
+            "data_file": "UsuariosPerfisModulosOperacoesData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "perfil",
+                "operacao"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:tables_config.json"
+        },
+        "variaveis": {
+            "nome": "variaveis",
+            "id": "id",
+            "id_numerico": "id_variaveis",
+            "data_file": "VariaveisData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "modulo",
+                "grupo",
+                "id"
+            ],
+            "preserve_on_user_modified": [
+                "valor"
+            ],
+            "insert_only": false,
+            "source": "core:tables_config.json"
+        },
+        "widgets": {
+            "nome": "widgets",
+            "id": "id",
+            "id_numerico": "id_widgets",
+            "data_file": "WidgetsData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "core:tables_config.json"
+        }
+    },
+    "deletar": [],
+    "forcar_atualizacao": []
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "nome": "Card de Episódio",
+        "id": "card-episodio",
+        "language": "pt-br",
+        "modulo": null,
+        "html": "<!--\n    Componente: Card de Episódio (Cyber Emerald)\n    Marcadores: #numero#, #titulo#, #descricao#, #url#, #duracao#, #status-classe#, #status-texto#\n    Estados suportados: disponível (emerald) e em breve (amber, com ícone de relógio e link desabilitado).\n-->\n<article class=\"c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white\/5 bg-[#0a1510]\/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500\/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]\">\n    <div class=\"pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500\/10 blur-3xl transition-opacity duration-500 opacity-0 group-hover:opacity-100\"><\/div>\n    <div class=\"flex items-start justify-between gap-4\">\n        <span class=\"font-mono text-4xl font-black leading-none text-emerald-500\/30 transition-colors duration-300 group-hover:text-emerald-400\/60\">#numero#<\/span>\n        <span class=\"#status-classe#\">#status-texto#<\/span>\n    <\/div>\n    <h3 class=\"mt-5 text-lg font-extrabold leading-snug text-white\">#titulo#<\/h3>\n    <p class=\"mt-3 flex-1 text-sm leading-relaxed text-slate-400\">#descricao#<\/p>\n    <div class=\"mt-6 flex items-center justify-between border-t border-white\/5 pt-4\">\n        <span class=\"inline-flex items-center gap-1.5 text-xs font-bold text-slate-500\">\n            <svg viewBox=\"0 0 24 24\" class=\"h-4 w-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"\/><path d=\"M12 7v5l3 2\"\/><\/svg>#duracao#\n        <\/span>\n        <a href=\"#url#\" target=\"_blank\" rel=\"noopener\" class=\"inline-flex items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5 hover:text-emerald-200\">\n            Assistir<svg viewBox=\"0 0 24 24\" class=\"h-4 w-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"\/><\/svg>\n        <\/a>\n    <\/div>\n<\/article>\n",
+        "css": null,
+        "css_precompiled": null,
+        "framework_css": "tailwindcss",
+        "status": "A",
+        "versao": 1,
+        "file_version": "1.2",
+        "checksum": "{\"html\":\"87f1699bee211a67ba9280ebb4816c15\",\"css\":\"\",\"css_precompiled\":\"\",\"combined\":\"87f1699bee211a67ba9280ebb4816c15\"}"
+    },
+    {
+        "nome": "Badge Luminoso",
+        "id": "badge-luminoso",
+        "language": "pt-br",
+        "modulo": null,
+        "html": "<!--\n    Componente: Badge Luminoso (pill translúcido com ponto pulsante)\n    Marcadores: #texto#\n    Variante padrão esmeralda. Para \"em breve\" troque emerald por amber nas classes de cor.\n-->\n<span class=\"inline-flex items-center gap-2 rounded-full border border-emerald-500\/30 bg-emerald-500\/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-300 shadow-[0_0_20px_-6px_rgba(52,211,153,0.6)] backdrop-blur-sm\">\n    <span class=\"relative flex h-2 w-2\">\n        <span class=\"absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75\"><\/span>\n        <span class=\"relative inline-flex h-2 w-2 rounded-full bg-emerald-400\"><\/span>\n    <\/span>\n    #texto#\n<\/span>\n",
+        "css": null,
+        "css_precompiled": null,
+        "framework_css": "tailwindcss",
+        "status": "A",
+        "versao": 1,
+        "file_version": "1.2",
+        "checksum": "{\"html\":\"09f0f2db7ee67dd39bcc62cfc22c223e\",\"css\":\"\",\"css_precompiled\":\"\",\"combined\":\"09f0f2db7ee67dd39bcc62cfc22c223e\"}"
+    },
+    {
+        "nome": "Pilar Metodológico",
+        "id": "pilar-metodologico",
+        "language": "pt-br",
+        "modulo": null,
+        "html": "<!--\n    Componente: Pilar Metodológico (card de filosofia pedagógica)\n    Marcadores: #indice#, #icone-svg#, #titulo#, #metafora#, #descricao#\n-->\n<div class=\"c2f-card group relative flex h-full flex-col rounded-2xl border border-white\/5 bg-white\/[0.03] p-8 backdrop-blur-sm transition-all duration-300 hover:border-emerald-500\/40 hover:bg-emerald-500\/[0.04]\">\n    <span class=\"absolute right-6 top-6 font-mono text-xs font-bold text-emerald-500\/40\">#indice#<\/span>\n    <div class=\"flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500\/20 to-emerald-500\/5 text-emerald-300 ring-1 ring-emerald-500\/30 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_28px_rgba(52,211,153,0.5)]\">\n        #icone-svg#\n    <\/div>\n    <h3 class=\"mt-6 text-xl font-extrabold text-white\">#titulo#<\/h3>\n    <p class=\"mt-1 text-sm font-bold italic text-emerald-400\/80\">#metafora#<\/p>\n    <p class=\"mt-4 flex-1 text-sm leading-relaxed text-slate-400\">#descricao#<\/p>\n    <div class=\"mt-6 h-1 w-12 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-300 transition-all duration-500 group-hover:w-full\"><\/div>\n<\/div>\n",
+        "css": null,
+        "css_precompiled": null,
+        "framework_css": "tailwindcss",
+        "status": "A",
+        "versao": 1,
+        "file_version": "1.2",
+        "checksum": "{\"html\":\"9d0641db920e0b91e5f54bc06a085fc5\",\"css\":\"\",\"css_precompiled\":\"\",\"combined\":\"9d0641db920e0b91e5f54bc06a085fc5\"}"
+    },
+    {
+        "nome": "Botões CTA",
+        "id": "botao-cta",
+        "language": "pt-br",
+        "modulo": null,
+        "html": "<!--\n    Componente: Botões CTA (par primário + secundário)\n    Marcadores: #url-primario#, #texto-primario#, #url-secundario#, #texto-secundario#\n    O primário usa c2f-btn-glow (varredura luminosa definida no CSS do Layout Principal).\n-->\n<div class=\"flex flex-col items-center gap-4 sm:flex-row sm:justify-center\">\n    <a href=\"#url-primario#\" target=\"_blank\" rel=\"noopener\" class=\"c2f-btn-glow group inline-flex w-full items-center justify-center gap-3 rounded-full bg-emerald-500 px-8 py-4 text-base font-extrabold text-[#060e0a] shadow-[0_0_32px_-6px_rgba(52,211,153,0.7)] transition-all duration-300 hover:scale-[1.03] hover:bg-emerald-400 hover:shadow-[0_0_44px_-4px_rgba(52,211,153,0.9)] sm:w-auto\">\n        <svg viewBox=\"0 0 24 24\" class=\"h-5 w-5 transition-transform duration-300 group-hover:scale-125\" fill=\"currentColor\"><path d=\"M8 5v14l11-7z\"\/><\/svg>\n        #texto-primario#\n    <\/a>\n    <a href=\"#url-secundario#\" target=\"_blank\" rel=\"noopener\" class=\"group inline-flex w-full items-center justify-center gap-3 rounded-full border border-emerald-500\/30 bg-white\/5 px-8 py-4 text-base font-bold text-slate-100 backdrop-blur-sm transition-all duration-300 hover:border-emerald-400\/60 hover:bg-emerald-500\/10 hover:text-white sm:w-auto\">\n        #texto-secundario#\n        <svg viewBox=\"0 0 24 24\" class=\"h-5 w-5 transition-transform duration-300 group-hover:translate-x-1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"\/><\/svg>\n    <\/a>\n<\/div>\n",
+        "css": null,
+        "css_precompiled": null,
+        "framework_css": "tailwindcss",
+        "status": "A",
+        "versao": 1,
+        "file_version": "1.2",
+        "checksum": "{\"html\":\"4606cdf384b474dc5b654e05ebd8bc91\",\"css\":\"\",\"css_precompiled\":\"\",\"combined\":\"4606cdf384b474dc5b654e05ebd8bc91\"}"
+    }
+]
