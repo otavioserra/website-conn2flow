@@ -1,35 +1,39 @@
-# Memória de Engenharia — Chefia
+﻿# Memória de Engenharia — Chefia
 
-> **Propósito**: Este diário de bordo é reservado ao **Engenheiro Chefe Humano**. Registre aqui suas preferências de design, convenções de código, restrições técnicas e regras de negócio que devem ser respeitadas em todas as sessões de trabalho.
+> **Propósito**: Este diário de bordo é reservado ao **Engenheiro Chefe Humano** (Otávio). Registre aqui suas preferências de design, convenções de código, restrições técnicas e regras de negócio que devem ser respeitadas em todas as sessões de trabalho.
 >
-> **Permissão**: Somente leitura para agentes executores IA. Apenas o Engenheiro Chefe Humano pode criar, editar ou remover anotações neste arquivo.
+> **Permissão**: Somente leitura para agentes executores IA. Apenas o Engenheiro Chefe Humano e o Macro-Arquiteto podem criar, editar ou atualizar anotações neste arquivo.
 
 ---
 
 ## Preferências de Design & Estilo
 
-*(Registre aqui suas preferências visuais, de arquitetura, nomenclatura e organização de código.)*
+- **Identidade do Website**: Site oficial da série/curso *"Trabalhando em Par com IA — Do Zero ao Avançado: Planejar, Construir e Dominar Projetos Reais com Agentes de IA"*.
+- **Site Semente**: Baseado no layout, componentes e estilo dark/tecnológico de `https://conn2flow.com/`.
+- **Paleta de Cores**: **Verde Esmeralda** (Emerald Green). Toda a identidade que antes era azul no site semente deve ser convertida para verde esmeralda com tonalidades harmoniosas (`emerald-400`, `emerald-500`, `emerald-600`, `emerald-950`), glows e bordas translúcidas.
+- **Tipografia**: **`Nunito`** (Google Fonts) como fonte principal de todo o website.
 
 ---
 
 ## Convenções de Código
 
-*(Registre padrões de código, linters, formatadores, regras de commit, estilo de branch, etc.)*
+- Padrão semântico e limpo em HTML5 / CSS3 / Tailwind CSS.
+- Código estruturado com comentários de seções claras.
+- Proibição de bibliotecas pesadas desnecessárias; foco em performance de carregamento rápido.
 
 ---
 
-## Restrições Técnicas
+## Restrições Técnicas & Governança
 
-*(Registre limitações de infraestrutura, versões fixas de dependências, compatibilidade, etc.)*
-
----
-
-## Regras de Negócio
-
-*(Registre regras de domínio que impactam decisões técnicas — fluxos obrigatórios, validações, integrações.)*
+- **Proibição de `git add -A` e `git add .`**: Commits devem SEMPRE listar arquivos específicos.
+- Código hospedado no repositório público: `https://github.com/otavioserra/website-conn2flow`.
 
 ---
 
-## Notas Gerais
+## Regras de Negócio & Pedagógicas
 
-*(Anotações livres que não se encaixam nas categorias acima, mas que devem ser respeitadas pelos executores.)*
+- **Série Continuada**: O curso é uma série em evolução contínua, não um produto estático.
+- **Playlist Oficial do YouTube**: Referenciar sempre `https://www.youtube.com/playlist?list=PLBjofG88X62Y`.
+- **Conversão Comercial**: Link oficial de planos Conn2Flow Pro: `https://conn2flow.com/pro/#planos`.
+- **Repositório de Materiais**: `https://github.com/otavioserra/conn2flow-ai-workspace`.
+- **Metáforas Chave**: Prótese Cognitiva (Óculos para Miopia), SDD como Memória da IA, Modelo Agente Duplo/Triplo, Empresa de Automação de 1 Pessoa.

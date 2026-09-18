@@ -1,4 +1,4 @@
-# Batch Index
+﻿# Batch Index
 
 ## Status
 
@@ -11,5 +11,5 @@
 
 | Batch | Status | Escopo | Alvo de validação | Observações |
 | --- | --- | --- | --- | --- |
-| BATCH-000 | complete | Bootstrap do SDD local | Estrutura `sdd/` criada | Boilerplate inicial instalado. |
-| BATCH-001 | ready-for-intake | Primeiro slice funcional | Definir após intake | Atualize este índice quando o primeiro batch real for classificado. |
+| BATCH-000 | complete | Bootstrap do SDD local | Estrutura `sdd/` criada | Boilerplate inicial instalado e commitado. |
+| BATCH-001 | in-progress | Construção do Website do Curso de IA (REQ-001) | Landing page com Tailwind, Nunito e Verde Esmeralda | Estrutura completa de seções, episódios e materiais. |
