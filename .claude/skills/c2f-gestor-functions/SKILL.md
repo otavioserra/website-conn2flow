@@ -49,3 +49,90 @@ Consulte e aplique as seguintes convenções ao utilizar as funções centrais d
 
 8. **Layouts de Página (`gestor_layout`)**:
    - Retornar layout HTML completo: `gestor_layout(['id' => 'layout-administrativo'])` ou com `'return_css' => true`.
+
+---
+
+## 9. Contrato de `nome_especifico` na Interface
+
+- Quando a tabela de um módulo **não possui a coluna `nome`** (ex: tabelas com `titulo`, `descricao` ou apenas campos técnicos), o array de interface (`interface.php`) **deve** declarar `'nome_especifico'` apontando para o campo equivalente:
+```php
+$_GESTOR_INTERFACE = [
+    'tabela' => 'minha_tabela',
+    'nome_especifico' => 'titulo',  // ← Obrigatório se a tabela não tem coluna 'nome'
+    // ...
+];
+```
+- **Consequência de Omissão**: Sem `nome_especifico`, o Gestor executa `SELECT nome FROM tabela` que falha com erro SQL ou retorna valores vazios, causando desvios silenciosos na listagem e nos breadcrumbs.
+
+---
+
+## 10. `gestor_redirecionar()` com Caminhos Relativos
+
+- A função `gestor_redirecionar()` **já prefixa automaticamente** o `url-raiz` do projeto e o idioma ativo. Portanto, **sempre passe caminhos relativos**:
+```php
+// ✅ CORRETO — caminho relativo (a função adiciona url-raiz + idioma)
+gestor_redirecionar('modulo/acao');
+gestor_redirecionar('dashboard', 'mensagem=ok');
+
+// ❌ ERRADO — caminho absoluto duplica o prefixo
+gestor_redirecionar('/pt-br/modulo/acao');
+gestor_redirecionar($_GESTOR['url-raiz'] . '/modulo/acao');
+```
+- **Exceção**: Para URLs externas, passe o terceiro parâmetro como `true`: `gestor_redirecionar('https://externo.com', '', true);`
+
+---
+
+## 11. Roteamento AJAX Público (`<modulo>.ajax.public.php`)
+
+- Para endpoints AJAX que devem funcionar **sem autenticação** (ex: formulários públicos, webhooks de gateway, APIs anônimas), use o arquivo `<modulo>.ajax.public.php` em vez de `<modulo>.ajax.php`.
+- **Razão**: O arquivo `.ajax.php` padrão passa por `interface_ajax_iniciar()`, que exige sessão autenticada. O `.ajax.public.php` é roteado pelo Gestor com o flag `without_permission`, ignorando a verificação de sessão.
+
+```
+modulos/
+  meu-modulo/
+    meu-modulo.ajax.php           ← AJAX autenticado (padrão)
+    meu-modulo.ajax.public.php    ← AJAX público (without_permission)
+```
+
+- **Segurança Mandatória**: Mesmo em endpoints públicos, **sempre valide e sanitize** os dados de entrada. O `without_permission` remove apenas a exigência de sessão, não a responsabilidade de validação:
+```php
+// meu-modulo.ajax.public.php
+$acao = isset($_REQUEST['acao']) ? banco_escape_field($_REQUEST['acao']) : '';
+switch ($acao) {
+    case 'webhook-gateway':
+        // Validar assinatura do webhook, processar dados
+        break;
+    default:
+        echo json_encode(['erro' => 'Ação inválida']);
+}
+```
+
+---
+
+## 12. Regra de Sessão em Páginas Públicas (`without_permission: true`)
+
+- Em páginas marcadas com `without_permission: true`, o `gestor.php` **não executa** `gestor_permissao()`, fazendo com que `gestor_usuario()` retorne vazio mesmo para compradores autenticados.
+- **Diretriz Normativa**: Para identificar o usuário logado em páginas públicas, chame `gestor_permissao_token()`, **mas estritamente sob a condição de que o cookie de autenticação exista**:
+
+```php
+// ✅ CORRETO — verificação condicional do cookie antes de gestor_permissao_token()
+function identificar_usuario_publico() {
+    global $_CONFIG;
+    if (isset($_COOKIE[$_CONFIG['cookie-authname']])) {
+        gestor_permissao_token();
+        return gestor_usuario();
+    }
+    return null; // Visitante anônimo — sem redirecionamento
+}
+```
+
+```php
+// ❌ ERRADO — chamada incondicional força redirecionamento de visitantes anônimos
+function identificar_usuario_publico() {
+    gestor_permissao_token(); // Dispara gestor_cookie_verificacao() → redireciona para _gestor-cookie-verify
+    return gestor_usuario();
+}
+```
+
+> [!CAUTION]
+> Sem a checagem `isset($_COOKIE[...])`, a função `gestor_cookie_verificacao()` pode disparar um **redirecionamento forçado** do visitante anônimo para `_gestor-cookie-verify`, quebrando a experiência de navegação pública (loja, landing pages, checkout).

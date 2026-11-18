@@ -1,0 +1,10 @@
+/* postcss-disable unknownAtRules */
+
+
+
+@theme static {
+    --font-sans: 'Nunito', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --color-abyss: #060e0a;
+    --color-deep: #0a1510;
+    --color-forest: #0f1f17;
+}

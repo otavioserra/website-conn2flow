@@ -1,0 +1,186 @@
+{
+  "url": "https://ia-parceria.local/",
+  "browser": "Chromium 148.0.7778.96",
+  "timestamp": "2026-11-18T19:52:36.990Z",
+  "passed": true,
+  "results": [
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Trabalhando em Par com IA: Da Ideia ao Projeto Real em Produção",
+      "contentMdd": true,
+      "width": {
+        "document": 390,
+        "viewport": 390
+      },
+      "background": "rgb(6, 14, 10)",
+      "emerald": "oklch(0.765 0.177 163.223)",
+      "emeraldReference": "oklch(0.765 0.177 163.223)",
+      "emeraldToken": "oklch(76.5% .177 163.223)",
+      "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "nunitoLoaded": true,
+      "gridDisplay": "grid",
+      "episodeColumns": 1,
+      "desktopMenu": "none",
+      "toggle": "flex",
+      "cdn": false,
+      "styleRoles": [
+        "layout-precompiled",
+        "page-precompiled"
+      ],
+      "inlineCss": {
+        "layout-precompiled": {
+          "chars": 52441,
+          "matchesBuild": true
+        },
+        "page-precompiled": {
+          "chars": 54666,
+          "matchesBuild": true
+        }
+      },
+      "mobileMenu": {
+        "initiallyClosed": true,
+        "opened": true,
+        "closedOnLink": true,
+        "inPageNavigation": true
+      },
+      "consoleErrors": [],
+      "runtimeErrors": [],
+      "requestFailures": [],
+      "httpErrors": [],
+      "checks": {
+        "http": true,
+        "home": true,
+        "compiled": true,
+        "colors": true,
+        "nunito": true,
+        "grid": true,
+        "menus": true,
+        "noOverflow": true,
+        "noErrors": true
+      },
+      "screenshot": "mobile-390-fold.png"
+    },
+    {
+      "viewport": {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180
+      },
+      "status": 200,
+      "heading": "Trabalhando em Par com IA: Da Ideia ao Projeto Real em Produção",
+      "contentMdd": true,
+      "width": {
+        "document": 820,
+        "viewport": 820
+      },
+      "background": "rgb(6, 14, 10)",
+      "emerald": "oklch(0.765 0.177 163.223)",
+      "emeraldReference": "oklch(0.765 0.177 163.223)",
+      "emeraldToken": "oklch(76.5% .177 163.223)",
+      "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "nunitoLoaded": true,
+      "gridDisplay": "grid",
+      "episodeColumns": 2,
+      "desktopMenu": "none",
+      "toggle": "flex",
+      "cdn": false,
+      "styleRoles": [
+        "layout-precompiled",
+        "page-precompiled"
+      ],
+      "inlineCss": {
+        "layout-precompiled": {
+          "chars": 52441,
+          "matchesBuild": true
+        },
+        "page-precompiled": {
+          "chars": 54666,
+          "matchesBuild": true
+        }
+      },
+      "mobileMenu": {
+        "initiallyClosed": true,
+        "opened": true,
+        "closedOnLink": true,
+        "inPageNavigation": true
+      },
+      "consoleErrors": [],
+      "runtimeErrors": [],
+      "requestFailures": [],
+      "httpErrors": [],
+      "checks": {
+        "http": true,
+        "home": true,
+        "compiled": true,
+        "colors": true,
+        "nunito": true,
+        "grid": true,
+        "menus": true,
+        "noOverflow": true,
+        "noErrors": true
+      },
+      "screenshot": "tablet-820-fold.png"
+    },
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Trabalhando em Par com IA: Da Ideia ao Projeto Real em Produção",
+      "contentMdd": true,
+      "width": {
+        "document": 1440,
+        "viewport": 1440
+      },
+      "background": "rgb(6, 14, 10)",
+      "emerald": "oklch(0.765 0.177 163.223)",
+      "emeraldReference": "oklch(0.765 0.177 163.223)",
+      "emeraldToken": "oklch(76.5% .177 163.223)",
+      "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "nunitoLoaded": true,
+      "gridDisplay": "grid",
+      "episodeColumns": 5,
+      "desktopMenu": "flex",
+      "toggle": "none",
+      "cdn": false,
+      "styleRoles": [
+        "layout-precompiled",
+        "page-precompiled"
+      ],
+      "inlineCss": {
+        "layout-precompiled": {
+          "chars": 52441,
+          "matchesBuild": true
+        },
+        "page-precompiled": {
+          "chars": 54666,
+          "matchesBuild": true
+        }
+      },
+      "mobileMenu": null,
+      "consoleErrors": [],
+      "runtimeErrors": [],
+      "requestFailures": [],
+      "httpErrors": [],
+      "checks": {
+        "http": true,
+        "home": true,
+        "compiled": true,
+        "colors": true,
+        "nunito": true,
+        "grid": true,
+        "menus": true,
+        "noOverflow": true,
+        "noErrors": true
+      },
+      "screenshot": "desktop-1440-fold.png"
+    }
+  ]
+}

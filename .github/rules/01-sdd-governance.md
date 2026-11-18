@@ -1,0 +1,30 @@
+# Governança SDD e Regras Invioláveis de Operação
+
+## 1. Fonte da Verdade Normativa
+- Os arquivos numerados em `sdd/` (`SPEC.md`, `0X-*.md`) e os registros de decisão em `sdd/decisions/` são a fonte única e soberana da verdade.
+- `sdd/human-requests/` é a área de intake. Antes de alterar qualquer arquivo, consulte `sdd/human-requests/CURRENT.md` para validar a requisição e lote autorizados.
+
+## 2. Proibição Absoluta de `git add -A` e `git add .`
+- Commits devem SEMPRE listar caminhos específicos explicitamente (`git add <caminho1> <caminho2>`).
+- Nunca inclua arquivos acidentais, caches, `.env` ou alterações de outras branches.
+
+## 3. Proibição Estrita de Cópia Manual para Ambientes de Teste
+- NUNCA copie arquivos manualmente (`cp`, `copy`, `Copy-Item`) para pastas de teste ou espelhos (`dev-environment/data/sites/`).
+- Use sempre o pipeline oficial: `./c2f manager:update-all` (sistema) ou `./c2f project:deploy <id>` (projetos).
+
+## 4. Execução Sequencial Exclusiva
+- Comandos de compilação em lote (`manager:update-all`, `project:update-all`, `css:rebuild`, `resources:sync`) devem executar um por vez em primeiro plano com logs desbufferizados, sem supressão de warnings PHP.
+
+## 5. Eliminação do Estado Híbrido Pós-Deploy
+- Mudanças de HTML/classes/CSS/fontes de compilação exigem CSS derivado correspondente. Backend sem essas mudanças não exige rebuild de Tailwind; documentação/skills/testes/memória usam apenas checks locais, sem deploy. Respeite o pipeline aplicável e as flags realmente suportadas.
+
+## 6. Gestão de Memórias de Engenharia
+- Respeite os tetos canônicos de memória: poda proibida abaixo de 50 KB / 200 linhas, alerta nesse patamar, teto mandatório em 75 KB / 300 linhas e alvo pós-poda de ~25 KB com 20 a 25 tarefas recentes.
+- Nunca modifique `03-memory-engineering-chief.md` sem autorização expressa do usuário humano.
+
+## REQ-077 — Pipeline, worktrees e preservação (DEC-136)
+
+- Projeto: `./c2f project:deploy <id>` é o padrão (95% dos casos). Core: `./c2f manager:update-all`. `./c2f project:update-all <id>` é proibido na rotina de projeto; permitido exclusivamente em lote que altera Core e projeto simultaneamente.
+- Antes de deploy, confira `git branch --show-current` e `git status --short` na origem; não publique trabalho alheio/inacabado. Confira o destino e sua autorização. Categoria B (skills/documentação/testes/memória): somente checks locais, sem deploy. Execução sequencial, foreground, logs e locks continuam obrigatórios.
+- Worktrees por conveniência são proibidas. Só criar com concorrência multi-agente comprovada no mesmo repositório; em dúvida, consultar o humano antes. Registre raiz original, caminho temporário e concorrência na requisição e lote. Ao concluir/homologar, audite trabalho único, integração na main e junctions, então `git worktree remove <caminho>` e `git worktree prune`. Nunca use força para destruir trabalho não integrado; preserve e reporte impedimentos.
+- DEC-136: manter por padrão; nada é removido (arquivo, `status='D'`, `DELETE`) sem confirmação explícita do operador humano. Retirada vira choque pendente; `--confirmar-retirada` só quando pedido pelo operador. Fonte incompleta não autoriza retirada.

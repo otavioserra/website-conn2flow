@@ -99,3 +99,38 @@ function meu_modulo_page_added_hook(string $id, array $dados = []): void {
 * **Sincronização Idempotente**: Execute `atualizacoes_hooks_sincronizar()` (ou via tarefas de deploy) para aplicar alterações de JSON no banco.
 * **Desativação Temporária**: Use `"habilitado": 0` no JSON para desativar um hook sem remover o registro.
 * **Wildcard `*`**: Use `*` no namespace para registrar ouvintes globais em qualquer módulo.
+
+---
+
+## 6. Sincronização de Hooks no Deploy e Comando Dedicado
+
+### 6.1 Sincronização Automática no Pipeline de Deploy
+
+- A tabela `hooks` do banco de dados é sincronizada automaticamente durante a etapa de banco de dados (`atualizacoes-banco-de-dados.php`) executada por:
+  - `./c2f project:deploy <projeto-id>` (pipeline completo de um projeto)
+  - `./c2f manager:update-all` (pipeline completo de todos os projetos)
+- A função `atualizacoes_hooks_sincronizar()` é chamada internamente, lendo todos os `hooks.json` de módulos e do projeto, e recriando a tabela `hooks` com os registros atualizados.
+- **Idempotência Garantida**: A sincronização é idempotente — executar múltiplas vezes produz o mesmo resultado. A tabela é reconstruída a partir dos JSONs, que são a fonte da verdade.
+
+### 6.2 Comando Dedicado `c2f project:sync-hooks <projeto-id>`
+
+- Para atualizar hooks **sem executar o pipeline completo** (sem migrações, sem CSS rebuild, sem resources:sync), use:
+```bash
+./c2f project:sync-hooks <projeto-id>
+```
+- Este comando foi implementado na REQ-174/BATCH-179 especificamente para permitir atualizações isoladas de hooks durante desenvolvimento.
+- **Caso de Uso Principal**: Após editar um `hooks.json` de módulo ou do projeto, rodar apenas `project:sync-hooks` para refletir as mudanças no banco sem o overhead do pipeline completo.
+- **Verificação Rápida**: Após a sincronização, confirme no banco:
+```sql
+SELECT * FROM hooks WHERE namespace = 'meu-modulo' ORDER BY prioridade;
+```
+
+> [!IMPORTANT]
+> Nunca insira ou atualize registros diretamente na tabela `hooks` via SQL. A tabela é **sobrescrita integralmente** a cada sincronização. Alterações manuais serão perdidas no próximo deploy.
+
+## REQ-077 — Pipeline, worktrees e preservação (DEC-136)
+
+- Projeto: `./c2f project:deploy <id>` é o padrão (95% dos casos). Core: `./c2f manager:update-all`. `./c2f project:update-all <id>` é proibido na rotina de projeto; permitido exclusivamente em lote que altera Core e projeto simultaneamente.
+- Antes de deploy, confira `git branch --show-current` e `git status --short` na origem; não publique trabalho alheio/inacabado. Confira o destino e sua autorização. Categoria B (skills/documentação/testes/memória): somente checks locais, sem deploy. Execução sequencial, foreground, logs e locks continuam obrigatórios.
+- Worktrees por conveniência são proibidas. Só criar com concorrência multi-agente comprovada no mesmo repositório; em dúvida, consultar o humano antes. Registre raiz original, caminho temporário e concorrência na requisição e lote. Ao concluir/homologar, audite trabalho único, integração na main e junctions, então `git worktree remove <caminho>` e `git worktree prune`. Nunca use força para destruir trabalho não integrado; preserve e reporte impedimentos.
+- DEC-136: manter por padrão; nada é removido (arquivo, `status='D'`, `DELETE`) sem confirmação explícita do operador humano. Retirada vira choque pendente; `--confirmar-retirada` só quando pedido pelo operador. Fonte incompleta não autoriza retirada.

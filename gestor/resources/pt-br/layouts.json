@@ -3,6 +3,7 @@
         "name": "Layout Principal — Curso de IA",
         "id": "layout-principal",
         "framework_css": "tailwindcss",
+        "tailwind_dependencies_reason": "Inclui os componentes globais do design system Cyber Emerald usados no layout e nas páginas que o utilizam.",
         "tailwind_dependencies": [
             {
                 "type": "components",
@@ -25,12 +26,12 @@
                 "scope": "global"
             }
         ],
-        "version": "1.1",
+        "version": "1.3",
         "checksum": {
-            "html": "36ab2dd801a10797fad68706b93e0059",
+            "html": "5f2697e802e3ce9b9b21f511fe56d880",
             "css": "23354b2736cd6a63d5727da3c5b3a34a",
             "css_precompiled": "",
-            "combined": "ccc724260acab20d8b432e7991a7bb6c"
+            "combined": "a8a65d234b6a2e6ad68aea6544442cd0"
         }
     }
 ]

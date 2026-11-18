@@ -1,0 +1,84 @@
+{
+    "version": 2,
+    "tailwind_version": "4.3.3",
+    "central_input": "contents/tailwindcss/input.css",
+    "central_hash": "9a5fa93387e391e33953a01a76e4f7800dfd21bfd824c4c1a48ea42167f25e5d",
+    "browser_contract": "contents/tailwindcss/browser-contract.css",
+    "browser_contract_hash": "dec5cb87f591c1abf8817054220ea9a301b42af3cea006008046b0f94cb23d6c",
+    "resources": {
+        "global||pt-br|components|badge-luminoso": {
+            "fingerprint": "2772f8da6314934cda6d3641d456330ef96e50dd5938fa7f59b4d8a19c7e04d6",
+            "output_hash": "59e6edd0f2a11e9522ce442dd7a2eb694058366da1f2bdfb1ecaceb3a80d71c1",
+            "output": "resources//pt-br/components/badge-luminoso/badge-luminoso.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/components/badge-luminoso/badge-luminoso.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-18T19:49:41+00:00"
+        },
+        "global||pt-br|components|botao-cta": {
+            "fingerprint": "eec0b20b78906a2c5eadda37226714ce4dedc0dba2cdfc5ff3bb58acb62b203d",
+            "output_hash": "f4749c50639b636ed0b6992f962f3dc37556af859acc1e6500d55aebfefc9b57",
+            "output": "resources//pt-br/components/botao-cta/botao-cta.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/components/botao-cta/botao-cta.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-18T19:49:42+00:00"
+        },
+        "global||pt-br|components|card-episodio": {
+            "fingerprint": "c3429211bd7d9da2eb6ffdd68123500f19e3104b27060ea5bb0a52d7cbeb8bb7",
+            "output_hash": "6d19a2d943ceeb304803eaec7913c3d0955b9423b4efb7e7272ee6bc8e6d8e1a",
+            "output": "resources//pt-br/components/card-episodio/card-episodio.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/components/card-episodio/card-episodio.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-18T19:49:42+00:00"
+        },
+        "global||pt-br|components|pilar-metodologico": {
+            "fingerprint": "74cda0f1a6d2122486bb93df2df6fc40ed217b9739c81a27a2614587573f706b",
+            "output_hash": "f32c5d8dc9397afca60f5fcd96c7b1e5d459782e491d7f652b0c9b21042e8991",
+            "output": "resources//pt-br/components/pilar-metodologico/pilar-metodologico.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/components/pilar-metodologico/pilar-metodologico.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-18T19:49:42+00:00"
+        },
+        "global||pt-br|layouts|layout-principal": {
+            "fingerprint": "4ce1f9cd62d4a509308519f327f9dedcd8e9423d12a3f1ef990663a6eeaf7d4c",
+            "output_hash": "f214070f5094428be52cc28e82a2c845c9483dce3c38cc5668819c65b9f98db0",
+            "output": "resources//pt-br/layouts/layout-principal/layout-principal.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/components/badge-luminoso/badge-luminoso.html",
+                "resources/pt-br/components/botao-cta/botao-cta.html",
+                "resources/pt-br/components/card-episodio/card-episodio.html",
+                "resources/pt-br/components/pilar-metodologico/pilar-metodologico.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-18T19:49:42+00:00"
+        },
+        "global||pt-br|pages|pagina-raiz-do-sistema": {
+            "fingerprint": "4cde26e691c6681676182056ee064d60bb9fc6aa9ea04759d090fe4a95fd7555",
+            "output_hash": "a22367917cbc1488d531491e9f829c30a64c96593c740844c95fb4479ca36598",
+            "output": "resources//pt-br/pages/pagina-raiz-do-sistema/pagina-raiz-do-sistema.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/pagina-raiz-do-sistema/pagina-raiz-do-sistema.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-18T19:49:43+00:00"
+        }
+    }
+}

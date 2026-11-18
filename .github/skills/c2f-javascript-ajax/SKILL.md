@@ -19,6 +19,21 @@ No núcleo do framework (`gestor.php`), o modo AJAX só é ativado quando a requ
 * **Com `ajax: 'sim'`**: O Gestor popula `$_GESTOR['ajax'] = 'sim'`, lê `$_GESTOR['ajax-opcao']` (a partir do campo `ajaxOpcao`) e **desativa a exigência de token CSRF síncrono de formulário HTML**.
 * **Sem `ajax: 'sim'`**: O Gestor assume que se trata de uma submissão de formulário HTML tradicional, exige `$_GESTOR['token']` e **rejeita a requisição imediatamente com 403 Forbidden (`{"status":"error","message":"Token CSRF inválido ou ausente."}`)**.
 
+### Cobertura automática de CSRF e 401 pelo `global.js`
+
+`gestor/assets/global/global.js` injeta `X-CSRF-Token` em requisições mutáveis (`POST`, `PUT`, `PATCH`, `DELETE`) de **mesma origem** em TODOS os canais — não escreva o cabeçalho à mão:
+
+| Canal | Mecanismo |
+| --- | --- |
+| `$.ajax` | `jQuery.ajaxPrefilter` |
+| `fetch` | envelope de `window.fetch` |
+| Formulários | listener de `submit` em captura + envelope de `HTMLFormElement.prototype.submit` + handler delegado do jQuery |
+| **`XMLHttpRequest` cru** (req-163) | envelope de `XMLHttpRequest.prototype.open` / `setRequestHeader` / `send` (guarda `__c2fCsrf`) |
+
+- **Uploads com barra de progresso**: `fetch` não expõe `upload.onprogress`; use `new XMLHttpRequest()` normalmente — o token entra sozinho. Antes da req-163 esse caminho voltava **403** com o usuário logado.
+- Token definido manualmente (`xhr.setRequestHeader('X-CSRF-Token', ...)`, em qualquer caixa) **não é duplicado nem sobrescrito**. `GET` e cross-origin nunca recebem o token.
+- Resposta **401** com `X-Gestor-Auth-Redirect` redireciona para o login em `$.ajax`, `fetch` e `XMLHttpRequest`. Ainda assim trate o 401 no seu handler para destravar dimmers/spinners.
+
 ---
 
 ## 🏆 2. Padrão Canônico Frontend em JavaScript Vanilla (Gold Standard)
@@ -233,9 +248,75 @@ $.ajax(ajax);
 
 ---
 
+## 5. Armadilha de Injeção de Scripts no `<head>` (`gestor_pagina_javascript_incluir`)
+
+A função PHP `gestor_pagina_javascript_incluir()` injeta os scripts dos módulos no elemento `<head>` da página HTML. Isso significa que o script é **executado antes do `<body>` ser parseado**.
+
+### 5.1 Proibição de Consultas Diretas ao DOM na Raiz do Script
+
+```javascript
+// ❌ ERRADO — DOM ainda não foi parseado, retorna null
+var form = document.getElementById('form-checkout');
+form.addEventListener('submit', handler); // TypeError: null
+
+// ✅ CORRETO — aguardar DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('form-checkout');
+    form.addEventListener('submit', handler);
+});
+```
+
+### 5.2 Preferência por Delegação de Eventos
+
+Para elementos que podem ser inseridos dinamicamente (widgets, componentes AJAX), use **delegação de eventos** no `document`:
+
+```javascript
+// ✅ CORRETO — delegação funciona mesmo para elementos futuros
+document.addEventListener('click', function(e) {
+    if (e.target.matches('.btn-adicionar-carrinho')) {
+        adicionarAoCarrinho(e.target.dataset.produtoId);
+    }
+});
+
+// ✅ CORRETO — submit com delegação
+document.addEventListener('submit', function(e) {
+    if (e.target.matches('#form-checkout')) {
+        e.preventDefault();
+        processarCheckout(e.target);
+    }
+});
+```
+
+> [!WARNING]
+> Sem `DOMContentLoaded` ou delegação, o formulário será submetido nativamente (POST síncrono) em vez de ser interceptado via AJAX, causando recarregamento completo da página e perda de estado.
+
+---
+
 ## ⛔ Regras Invioláveis de AJAX:
 1. **SEMPRE envie `ajax: 'sim'`**: Sem este campo, o backend dispara erro `403 Forbidden` por CSRF.
 2. **SEMPRE envie `opcao` e `ajaxOpcao`**: Identificam o contexto da página e a ação a ser roteada no `switch ($_GESTOR['ajax-opcao'])`.
 3. **Backend DEVE usar `interface_ajax_iniciar()` e `interface_ajax_finalizar()`**: Garante headers JSON corretos, limpeza de buffers e envelope padronizado.
 4. **Trate o erro 401 (Unauthorized)**: Redirecione imediatamente para `signin/` em caso de sessão expirada.
 5. **Version Bump Obrigatório**: Ao alterar qualquer script JavaScript em `resources/`, incremente a versão (`versao: "X.Y.Z"`) no `<id>.json` ou no manifest do módulo antes de executar `c2f resources:sync` para invalidar o cache do navegador.
+
+## Depuração de tráfego assíncrono com Chrome DevTools MCP
+
+Em uma sessão local isolada preparada conforme `c2f-agent-visual-inspection`, reproduza a ação real da interface antes de avaliar console e rede. Consulte o schema negociado pelo servidor instalado; não suponha que os parâmetros sejam idênticos entre versões.
+
+1. Colete `list_console_messages` antes/depois da ação. Use `get_console_message` pelo ID para detalhar erros e stack traces disponíveis; registre arquivo, linha e frames relevantes, incluindo source maps quando resolvidos. Um console sem erros não comprova que o AJAX funcionou.
+2. Use `list_network_requests` para localizar `fetch`/XHR da ação, incluindo `/_ajax/`, `/_api/` e rotas do módulo. Correlacione ID, método, URL e sequência; examine cada falha com `get_network_request`, verificando status HTTP, headers, payload e corpo da resposta.
+3. No Gestor, confira `ajax=sim`, `opcao` e `ajaxOpcao` onde o contrato da rota os exige. Em métodos mutáveis de mesma origem, verifique presença de `X-CSRF-Token` injetado pelo `global.js` e sessão válida. O campo `ajax=sim` não elimina a proteção CSRF; não desative a proteção para corrigir um 403. Não exponha valores de token, Authorization, Cookie ou Set-Cookie nos registros.
+4. Diferencie 401 (sessão/`X-Gestor-Auth-Redirect`), 403 (autorização/CSRF), 500 (backend) e HTTP 200 com HTML de login, warnings PHP ou JSON inválido. Confira Content-Type e envelope JSON esperado pela rota, além de liberar loading/dimmer após sucesso e falha.
+5. Para multipart, confira campos e boundary gerado pelo navegador; não fixe manualmente Content-Type em `FormData`. Registre latência observada e pedidos duplicados após cliques repetidos. Verifique resultado no DOM com novo snapshot/screenshot.
+
+Prefira observar a requisição original. Reenviar mutações como `fetch()` pode duplicar gravações/pagamentos e exige escopo de teste autorizado. Evidências devem conter IDs e dados sanitizados, nunca dumps integrais de headers sensíveis. Referência: [ferramentas oficiais](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md).
+
+## REP-002 — falhas HTTP observáveis
+
+Callbacks `.fail()` de chamadas AJAX críticas devem registrar explicitamente `xhr.status`, etapa e horário para correlacionar com o access log, sem tokens nem conteúdo sensível:
+```javascript
+.fail(function (xhr) {
+    console.error('HTTP', xhr.status);
+});
+```
+Preserve liberação de spinner e tratamento de sessão/CSRF. Mensagem “Falha” sozinha não sustenta diagnóstico de timeout ou memória.

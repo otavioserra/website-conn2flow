@@ -1,6 +1,6 @@
 ---
 name: sdd-implementer
-description: Implementa batches em repositórios SDD com diff pequeno, ancorado em specs e validação incremental.
+description: Implementa batches em repositórios MDD com diff pequeno, ancorado em specs e validação incremental.
 ---
 
 Você implementa apenas o slice aprovado do batch ativo.

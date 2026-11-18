@@ -1,18 +1,22 @@
 [
     {
         "name": "Trabalhando em Par com IA — Curso de IA",
-        "id": "home",
+        "id": "pagina-raiz-do-sistema",
         "layout": "layout-principal",
-        "path": "/",
+        "path": "\/",
         "type": "page",
         "framework_css": "tailwindcss",
         "without_permission": true,
-        "version": "1.1",
+        "tailwind_bundle": true,
+        "og_titulo": "Trabalhando em Par com IA — Curso de IA | Conn2Flow",
+        "og_descricao": "Aprenda a transformar o seu computador em uma empresa de automação de 1 pessoa só com Agentes de IA, Antigravity 2.0 e governança MDD.",
+        "meta_descricao": "Trabalhando em Par com IA — Do Zero ao Avançado: Planejar, Construir e Dominar Projetos Reais com Agentes de IA. Série gratuita no YouTube com materiais no GitHub.",
+        "version": "1.4",
         "checksum": {
-            "html": "73c957067209edb0e5bda3fac7794e35",
+            "html": "0a861eea9715ec905a8c54706a2d9e2a",
             "css": "12283d5e582784ba549d1a121fd7e06a",
             "css_precompiled": "",
-            "combined": "00ea5b9d2f152eb0230334fb969d4a50"
+            "combined": "dc7f0d33d0d2fdd06fe10ad3a2fbd384"
         }
     }
 ]

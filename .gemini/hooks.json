@@ -14,7 +14,7 @@
     "Stop": [
       {
         "type": "command",
-        "command": "powershell -NoProfile -Command \"Write-Host 'Verificando checklist SDD antes do encerramento...'\""
+        "command": "powershell -NoProfile -Command \"Write-Host 'Verificando checklist MDD antes do encerramento...'\""
       }
     ]
   }

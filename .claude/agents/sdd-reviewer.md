@@ -1,9 +1,9 @@
 ---
 name: sdd-reviewer
-description: Revisor de repositório SDD. Use proactively depois de mudanças de código ou artefatos para encontrar bugs, spec drift, batch drift e validação ausente.
+description: Revisor de repositório MDD. Use proactively depois de mudanças de código ou artefatos para encontrar bugs, spec drift, batch drift e validação ausente.
 tools: Read, Grep, Glob, Bash, Skill
 skills:
-  - sdd-workflow
+  - mdd-workflow
 model: inherit
 ---
 

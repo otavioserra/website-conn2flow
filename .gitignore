@@ -1,0 +1,8 @@
+node_modules/
+vendor/
+temp/
+gestor/temp/
+gestor/.tailwind-build/
+.mdd.sqlite
+.mdd.sqlite-wal
+.mdd.sqlite-shm

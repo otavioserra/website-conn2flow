@@ -35,7 +35,7 @@ graph LR
 ```bash
 ./c2f env:set development --project=<projectID>
 ```
-*Habilita leitura direta de recursos em disco (`resources/`) e relaxamento seguro de cookies em conexões HTTP locais.*
+*Ativa as flags de desenvolvimento e o relaxamento de cookies em conexões HTTP locais. HTML/CSS continuam vindo do SQL; `resources/` é a semente de autoria que deve ser sincronizada pelo pipeline.*
 
 #### Passo 3: Geração do Cookie Jar Server-Side
 ```bash
@@ -85,7 +85,97 @@ Este comando audita a página composta real (layout + componentes renderizados) 
 
 ---
 
+## 🌐 Roteiro de Validação E2E em Ambientes com Acesso Remoto Restrito (Read-Only)
+
+Em ambientes de homologação/Lab onde o agente possui credenciais de leitura de logs e HTTP, mas **não permissão de escrita via SSH/SCP**, siga este protocolo de 8 etapas para validação completa:
+
+1. **Injeção de Sessão Administrativa via Cookie Jar**:
+   - Extrair a sessão administrativa com `./c2f auth:cookie --project=<id>` para o jar Netscape em `temp/agent-cookies.txt`.
+   - Injetar no Playwright via `context.addCookies()` para navegar por rotas restritas do painel.
+
+2. **Isolamento de Contextos de Navegação**:
+   - Manter contextos separados no navegador: um contexto limpo (incógnito) para simular o visitante anônimo e um contexto com cookies autenticados para o comprador/administrador.
+
+3. **Preenchimento de Componentes Seguros em iFrames**:
+   - Para elementos de pagamento embutidos (ex: Stripe Payment Element):
+   ```javascript
+   const iframe = page.frameLocator('#checkout-payment-element iframe').first();
+   await iframe.locator('input[name="number"]').fill('4242424242424242');
+   ```
+   - Aguardar sempre o estado habilitado do formulário antes de submeter.
+
+4. **Interceptação de Diálogos Nativos**:
+   - Configurar `page.on('dialog', d => d.accept())` para lidar com `window.confirm` ou `alert` nativos sem travar a automação.
+
+5. **Auditoria de Banco por Interface Administrativa**:
+   - Na impossibilidade de executar queries SQL diretas no servidor remoto, auditar estados navegando até as telas de detalhe do registro (ex: detalhe do pedido no Gestor) e inspecionando os valores renderizados.
+
+6. **Teste de Webhooks via Injeção HTTP Direta**:
+   - Disparar requisições POST com payloads autênticos do gateway diretamente no endpoint público (`.ajax.public.php`).
+   - Reenviar o mesmo payload e verificar na interface do pedido se o evento foi deduplicado (idempotência).
+
+7. **Auditoria de Tráfego de Rede (SDKs Externos)**:
+   - Monitorar requisições com `page.on('request', req => ...)` para certificar que SDKs pesados de terceiros (ex: PayPal) não são baixados quando outro gateway está ativo.
+
+8. **Sanitização de Logs e Saída de Console**:
+   - Mascarar tokens, chaves secretas de gateway e cookies de autenticação antes de registrar evidências no terminal ou arquivos de log.
+
+---
+
 ## ⛔ Regras Invioláveis de Inspeção:
 1. **EXCLUSIVO PARA AMBIENTE LOCAL DE TESTES**: NUNCA execute inspeção, auth ou scraping automatizado em URLs de produção.
 2. **Registro no SDD**: As evidências de inspeção (JSON do `page:inspect` e screenshots) DEVEM ser registradas diretamente no `VALIDATION-CHECKLIST.md` do repositório em vez de marcar "pendente do operador".
 3. **Tear Down Obrigatório**: SEMPRE finalize restaurando o ambiente com `c2f env:set production --project=<projectID>`.
+
+## Inspeção ativa com Chrome DevTools MCP
+
+Use `chrome-devtools` quando a validação exigir interação em uma página viva. Preserve `c2f page:inspect` como alternativa automatizada quando o MCP não estiver disponível. O runtime serve HTML/CSS do SQL: sincronize pelo pipeline oficial antes de inspecionar; o modo development não dispensa a sincronização do banco.
+
+- Na matriz `conn2flow-ai-workspace`, execute `scripts/mcp/launch-devtools-chrome.ps1 -Headless` (padrão) ou `-Visible`. O perfil é `%TEMP%\conn2flow-chrome-sandbox`, separado do Chrome pessoal. Para usar essa instância, acrescente `--browser-url=http://127.0.0.1:9222` aos argumentos MCP; a configuração canônica sem esse argumento inicia outro navegador próprio. Use Node LTS compatível com o pacote instalado (1.10.1 exige Node 20.19+ ou 22.12+).
+- Selecione a página com `list_pages`/`select_page` e use `navigate_page` apenas na URL local de teste. A sessão criada por `c2f auth:cookie` não é transferida automaticamente ao MCP: autentique o sandbox pelo fluxo de teste ou injete o jar por CDP/Playwright no contexto isolado, preservando `HttpOnly`, domínio e path. Nunca copie cookies do navegador pessoal nem os imprima nas evidências.
+- Obtenha `take_snapshot` antes de `click`, `fill` ou `press_key`; ele representa a árvore de acessibilidade e fornece UIDs, não o DOM HTML completo. Refaça o snapshot após alterações dinâmicas e aguarde o estado esperado com `wait_for`.
+- Colete `take_screenshot` antes/depois da interação e em viewports desktop/mobile com `resize_page`. Verifique alinhamento, overflow, legibilidade e estado dos controles. Snapshot isolado não comprova o layout visual.
+- Para medir DOM real, use `evaluate_script` somente para leitura: `getBoundingClientRect()`, `getComputedStyle()` e `getAnimations()`, retornando valores serializáveis. Registre seletor, existência do nó, dimensões, display, opacity e overflow. Se a sessão usa `--no-javascript-evaluation`, essas medições ficam indisponíveis; registre a limitação e use screenshot/snapshot ou o CLI disponível.
+- Em modais, valide abertura, overlay, foco, scroll e fechamento por botão/Escape, incluindo reabertura sem duplicação. Em previews, confira carregamento e dimensões do iframe; respeite cross-origin e não tente contornar CSP. Em editores Quill, confira `.ql-container`, `.ql-toolbar` e sincronização do input oculto após edição no ambiente de teste.
+- Inspecione console/rede conforme `c2f-javascript-ajax`; registre URL, viewport, ação, resultado esperado/observado e caminhos das capturas no checklist. Masque tokens/cookies e encerre apenas o PID sandbox criado, sem fechar sessões pessoais.
+
+Consulte o schema das ferramentas exposto pela versão instalada, incluindo `pageId` quando exigido. Referência: [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md).
+
+---
+
+## 🧪 Ambiente de teste por SSH (sem Docker): o ciclo que funciona
+
+O ciclo de cinco etapas acima nasceu para o espelho Docker. Num projeto com `deploy_mode: ssh` (o destino é uma VM), use:
+
+1. `./c2f project:deploy <id>` a partir do core: é o que leva código e conteúdo ao ambiente.
+2. `./c2f auth:cookie --project=<id>` (e `--user=<n>` para outro usuário) gera o jar pelo SSH.
+3. Para a barra de edição aparecer no Playwright, acrescente também o cookie de perfil ao contexto; só o de sessão não basta.
+4. `ignoreHTTPSErrors: true` no contexto: o certificado do ambiente de teste é local.
+
+Não troque o modo do ambiente para desenvolvimento só para inspecionar: a página servida do banco é o que o visitante vê.
+
+### O que toda validação de página deve conferir
+
+- HTTP 200 e ausência de erro de console (`pageerror` e `console.error`).
+- Sem rolagem horizontal: `document.documentElement.scrollWidth - window.innerWidth <= 0`, a 1280 e a 390 px.
+- Sem marcador cru no texto (`[[`, `]]@`, crase de Markdown, `**`).
+- **Classe sem regra**: elemento com classe de fundo (`bg-...`) cujo `backgroundColor` computado ficou transparente. É como aparece o CSS desatualizado.
+- **Conteúdo novo de fato**: compare um trecho do corpo, não só o título.
+- Links internos: colete os `href` da página e confira que todos respondem 200.
+
+Exclua o cabeçalho e o rodapé do site das conferências de classe: a gaveta do menu fica transparente quando fechada e gera falso positivo.
+
+### Validar com o ambiente ocioso
+
+Deploy de outro agente em andamento produz 500/503 passageiros. Veja a Regra #10 de `c2f-project-pipeline-and-tasks` antes de registrar uma falha.
+
+### Guarde os scripts
+
+Script de validação escrito durante o lote vai para `sdd/validation/` do repositório, com o JSON do resultado. Script que fica só na pasta temporária da sessão não pode ser repetido por ninguém.
+
+## REQ-077 — Pipeline, worktrees e preservação (DEC-136)
+
+- Projeto: `./c2f project:deploy <id>` é o padrão (95% dos casos). Core: `./c2f manager:update-all`. `./c2f project:update-all <id>` é proibido na rotina de projeto; permitido exclusivamente em lote que altera Core e projeto simultaneamente.
+- Antes de deploy, confira `git branch --show-current` e `git status --short` na origem; não publique trabalho alheio/inacabado. Confira o destino e sua autorização. Categoria B (skills/documentação/testes/memória): somente checks locais, sem deploy. Execução sequencial, foreground, logs e locks continuam obrigatórios.
+- Worktrees por conveniência são proibidas. Só criar com concorrência multi-agente comprovada no mesmo repositório; em dúvida, consultar o humano antes. Registre raiz original, caminho temporário e concorrência na requisição e lote. Ao concluir/homologar, audite trabalho único, integração na main e junctions, então `git worktree remove <caminho>` e `git worktree prune`. Nunca use força para destruir trabalho não integrado; preserve e reporte impedimentos.
+- DEC-136: manter por padrão; nada é removido (arquivo, `status='D'`, `DELETE`) sem confirmação explícita do operador humano. Retirada vira choque pendente; `--confirmar-retirada` só quando pedido pelo operador. Fonte incompleta não autoriza retirada.
