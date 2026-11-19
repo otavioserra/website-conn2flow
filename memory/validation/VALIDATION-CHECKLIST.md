@@ -37,3 +37,18 @@
 - [x] Especificação, DEC-001, índice do lote e memória de execução atualizados.
 
 [Relatório do lote](../implementation/batch-002.md) · [Relatório Playwright](evidence/batch-002/report.json) · [Mobile](evidence/batch-002/mobile-390-fold.png) · [Tablet](evidence/batch-002/tablet-820-fold.png) · [Desktop](evidence/batch-002/desktop-1440-fold.png)
+
+## BATCH-003 (REQ-003)
+
+### Checklist de aceite
+
+- [ ] **Módulo `menus`**: 3 templates de cabeçalho (1 base Cyber Emerald + 2 criativos) e 1 template de rodapé criados em `gestor/resources/pt-br/templates/` (`target: menus`) e integrados ao `layout-principal`.
+- [ ] **Módulo `publisher`**: 2 definições de publicador (`episodios` e `materiais`) e 3 templates de detalhe (`target: publisher`, 1 base + 2 criativos) criados e sincronizados.
+- [ ] **Widgets Dinâmicos (`publisher-highlights` & `publisher-index`)**: 3 templates para `publisher-highlights` e 3 templates para `publisher-index` (1 base + 2 criativos cada) criados e sincronizados.
+- [ ] **Home Dinâmica (`/`)**: Blocos estáticos de Episódios e Materiais substituídos por widgets `publisher-highlights` renderizando dados reais do banco SQL.
+- [ ] **Páginas de Listagem**: Páginas `/episodios/` e `/materiais/` criadas com `tailwind_bundle: true` e widget `publisher-index`.
+- [ ] **Seeding Idempotente & Conteúdo Real**: Menus, definições, blocos de destaque/índice e posts iniciais (5 episódios + 4 materiais) populados no banco de `ia-parceria` sem duplicidade em re-execuções.
+- [ ] **Pipeline v3.0 & Deploy**: Compilador oficial executado sem `css_precompiled: null`; `./c2f project:deploy ia-parceria` executado com sucesso.
+- [ ] **Validação Visual Playwright (390 / 820 / 1440)**: `/`, `/episodios/`, `/materiais/`, 1 página individual de Episódio e 1 de Material validados com HTTP 200, fonte `Nunito`, identidade Cyber Emerald, zero erros JS e zero overflow horizontal.
+- [ ] **Troca de Templates**: Confirmado que todos os templates alternativos constam na tabela `templates` do banco e são intercambiáveis sem quebra.
+- [ ] **Governança MDD & Revisão**: `SPEC.md`, `batch-003.md`, `BATCH-INDEX.md`, `04-memory-engineering-execution.md` e `index.md` atualizados; lote pronto para auditoria do `c2f-reviewer-agent`.
