@@ -56,3 +56,7 @@
 Pendente: confirmação humana para retirar do servidor os dois arquivos do seeder descartado (choques `retirado`, DEC-136).
 
 [Relatório do lote](../implementation/batch-003.md) · [Playwright](evidence/batch-003/report-padrao.json) · [Banco](evidence/batch-003/banco-recursos-sincronizados.json) · [Home](evidence/batch-003/padrao-home-desktop.png)
+
+### Revisão técnica · 19/11/2026
+
+- [ ] **Parecer REV-003 — RECOMMEND-REVISION**. Validar o provisionamento nativo em duas execuções, formalizar a mudança na REQ-003, preservar edições e comprovar a troca de templates pelo painel. Consulte o [parecer técnico](../human-reviews/rev-003.md).

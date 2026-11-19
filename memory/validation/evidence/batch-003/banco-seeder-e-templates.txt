@@ -1,0 +1,244 @@
+== seeder (estado final, reexecucao)
+Resumo:
+  publisher              inalterados=2
+  paginas                inalterados=9
+  publisher_pages        inalterados=9
+  menus                  inalterados=2
+  publisher_highlights   inalterados=2
+  publisher_index        inalterados=2
+
+Concluído sem falhas.
+{
+    "templates": [
+        {
+            "target": "menus",
+            "id": "c2f-menu-cabecalho-command",
+            "nome": "Cabeçalho Command Bar / Portal Tech (Criativo B)",
+            "html": "5736",
+            "pre": "14537",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "menus",
+            "id": "c2f-menu-cabecalho-dock",
+            "nome": "Cabeçalho Floating Glass Dock (Criativo A)",
+            "html": "5332",
+            "pre": "13879",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "menus",
+            "id": "c2f-menu-cabecalho-navbar",
+            "nome": "Cabeçalho Cyber Emerald — Navbar (Base)",
+            "html": "5677",
+            "pre": "14356",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "menus",
+            "id": "c2f-menu-rodape-colunas",
+            "nome": "Rodapé Cyber Emerald em Colunas (Base)",
+            "html": "5967",
+            "pre": "10558",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher",
+            "id": "c2f-publicacao-cinema",
+            "nome": "Publicação Cinema / Spotlight Focus (Criativo A)",
+            "html": "7366",
+            "pre": "37845",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher",
+            "id": "c2f-publicacao-docs",
+            "nome": "Publicação Technical Guide / Docs (Criativo B)",
+            "html": "4114",
+            "pre": "33648",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher",
+            "id": "c2f-publicacao-editorial",
+            "nome": "Publicação Cyber Emerald Editorial (Base)",
+            "html": "5228",
+            "pre": "36443",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher-highlights",
+            "id": "c2f-destaques-bento",
+            "nome": "Destaques Bento / Spotlight Grid (Criativo A)",
+            "html": "2491",
+            "pre": "12291",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher-highlights",
+            "id": "c2f-destaques-cards",
+            "nome": "Destaques Cyber Emerald Cards (Base)",
+            "html": "2315",
+            "pre": "10060",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher-highlights",
+            "id": "c2f-destaques-timeline",
+            "nome": "Destaques Timeline / Editorial Compacto (Criativo B)",
+            "html": "1618",
+            "pre": "6770",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher-index",
+            "id": "c2f-indice-bento",
+            "nome": "Índice Bento / Spotlight Grid (Criativo A)",
+            "html": "4692",
+            "pre": "14223",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher-index",
+            "id": "c2f-indice-cards",
+            "nome": "Índice Cyber Emerald Cards (Base)",
+            "html": "4333",
+            "pre": "11267",
+            "status": "A",
+            "project": "ia-parceria"
+        },
+        {
+            "target": "publisher-index",
+            "id": "c2f-indice-timeline",
+            "nome": "Índice Timeline / Editorial Compacto (Criativo B)",
+            "html": "3815",
+            "pre": "8841",
+            "status": "A",
+            "project": "ia-parceria"
+        }
+    ],
+    "menus": [
+        {
+            "id": "menu-cabecalho-principal",
+            "template_id": "c2f-menu-cabecalho-navbar",
+            "html": "5677"
+        },
+        {
+            "id": "menu-rodape-principal",
+            "template_id": "c2f-menu-rodape-colunas",
+            "html": "5967"
+        }
+    ],
+    "publisher_highlights": [
+        {
+            "id": "destaques-episodios-home",
+            "template_id": "c2f-destaques-cards",
+            "html": "2299"
+        },
+        {
+            "id": "destaques-materiais-home",
+            "template_id": "c2f-destaques-timeline",
+            "html": "1602"
+        }
+    ],
+    "publisher_index": [
+        {
+            "id": "indice-episodios",
+            "template_id": "c2f-indice-cards",
+            "html": "4333"
+        },
+        {
+            "id": "indice-materiais",
+            "template_id": "c2f-indice-timeline",
+            "html": "3815"
+        }
+    ],
+    "publisher": [
+        {
+            "id": "episodios",
+            "template_id": "c2f-publicacao-editorial",
+            "path_prefix": "episodios"
+        },
+        {
+            "id": "materiais",
+            "template_id": "c2f-publicacao-docs",
+            "path_prefix": "materiais"
+        }
+    ],
+    "publicacoes": [
+        {
+            "id": "ep-01-conceitos-e-historia-da-ia",
+            "caminho": "episodios/ep-01-conceitos-e-historia-da-ia/",
+            "publisher_id": "episodios",
+            "pre": "36443",
+            "hash": "1"
+        },
+        {
+            "id": "ep-02-qual-chat-de-ia-usar",
+            "caminho": "episodios/ep-02-qual-chat-de-ia-usar/",
+            "publisher_id": "episodios",
+            "pre": "36443",
+            "hash": "1"
+        },
+        {
+            "id": "ep-03-como-controlar-a-memoria-da-ia",
+            "caminho": "episodios/ep-03-como-controlar-a-memoria-da-ia/",
+            "publisher_id": "episodios",
+            "pre": "36443",
+            "hash": "1"
+        },
+        {
+            "id": "ep-04-ia-editou-meu-video-no-blender",
+            "caminho": "episodios/ep-04-ia-editou-meu-video-no-blender/",
+            "publisher_id": "episodios",
+            "pre": "36443",
+            "hash": "1"
+        },
+        {
+            "id": "ep-05-construindo-websites-com-conn2flow-pro",
+            "caminho": "episodios/ep-05-construindo-websites-com-conn2flow-pro/",
+            "publisher_id": "episodios",
+            "pre": "36443",
+            "hash": "1"
+        },
+        {
+            "id": "guias-setup-agentes",
+            "caminho": "materiais/guias-setup-agentes/",
+            "publisher_id": "materiais",
+            "pre": "33648",
+            "hash": "1"
+        },
+        {
+            "id": "roteiros-dos-episodios",
+            "caminho": "materiais/roteiros-dos-episodios/",
+            "publisher_id": "materiais",
+            "pre": "33648",
+            "hash": "1"
+        },
+        {
+            "id": "diagramas-de-arquitetura",
+            "caminho": "materiais/diagramas-de-arquitetura/",
+            "publisher_id": "materiais",
+            "pre": "33648",
+            "hash": "1"
+        },
+        {
+            "id": "templates-mdd-e-skills",
+            "caminho": "materiais/templates-mdd-e-skills/",
+            "publisher_id": "materiais",
+            "pre": "33648",
+            "hash": "1"
+        }
+    ]
+}
