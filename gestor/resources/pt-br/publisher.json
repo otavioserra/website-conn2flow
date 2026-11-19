@@ -1,0 +1,418 @@
+[
+    {
+        "id_usuarios": 1,
+        "name": "Episódios",
+        "id": "episodios",
+        "path_prefix": "episodios",
+        "template_id": "c2f-publicacao-editorial",
+        "fields_schema": {
+            "fields": [
+                {
+                    "id": "titulo",
+                    "type": "text",
+                    "label": "Título do episódio",
+                    "description": "Título completo exibido no topo da página.",
+                    "mandatory": false
+                },
+                {
+                    "id": "selo",
+                    "type": "text",
+                    "label": "Número do episódio",
+                    "description": "Número com dois dígitos (ex.: 01).",
+                    "mandatory": false
+                },
+                {
+                    "id": "status",
+                    "type": "text",
+                    "label": "Status",
+                    "description": "Disponível ou Em breve.",
+                    "mandatory": false
+                },
+                {
+                    "id": "status_chave",
+                    "type": "text",
+                    "label": "Chave visual do status",
+                    "description": "on (disponível) ou soon (em breve).",
+                    "mandatory": false
+                },
+                {
+                    "id": "colecao",
+                    "type": "text",
+                    "label": "Coleção",
+                    "description": "Nome da listagem de retorno (Episódios).",
+                    "mandatory": false
+                },
+                {
+                    "id": "colecao_url",
+                    "type": "text",
+                    "label": "Caminho da coleção",
+                    "description": "Caminho relativo da listagem (episodios/).",
+                    "mandatory": false
+                },
+                {
+                    "id": "categoria",
+                    "type": "text",
+                    "label": "Trilha / tag",
+                    "description": "Trilha temática do episódio.",
+                    "mandatory": false
+                },
+                {
+                    "id": "relacionado",
+                    "type": "text",
+                    "label": "Estágio da série",
+                    "description": "Estágio curricular a que o episódio pertence.",
+                    "mandatory": false
+                },
+                {
+                    "id": "resumo",
+                    "type": "textarea",
+                    "label": "Resumo",
+                    "description": "Resumo curto usado nos cards e no cabeçalho.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_principal",
+                    "type": "text",
+                    "label": "URL do YouTube / Playlist",
+                    "description": "Sempre a playlist oficial da série.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_principal_rotulo",
+                    "type": "text",
+                    "label": "Rótulo do link do YouTube",
+                    "description": "Texto do botão principal.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_secundario",
+                    "type": "text",
+                    "label": "URL dos materiais no GitHub",
+                    "description": "Repositório oficial de materiais.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_secundario_rotulo",
+                    "type": "text",
+                    "label": "Rótulo do link de materiais",
+                    "description": "Texto do botão secundário.",
+                    "mandatory": false
+                },
+                {
+                    "id": "topicos",
+                    "type": "html",
+                    "label": "Tópicos principais",
+                    "description": "Itens <li> com os tópicos do episódio.",
+                    "mandatory": false
+                },
+                {
+                    "id": "conteudo",
+                    "type": "html",
+                    "label": "Conteúdo completo",
+                    "description": "Corpo editorial do episódio.",
+                    "mandatory": false
+                }
+            ],
+            "template_map": [
+                {
+                    "id": "titulo",
+                    "variable": "@[[publisher#text#titulo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "selo",
+                    "variable": "@[[publisher#text#selo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "status",
+                    "variable": "@[[publisher#text#status]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "status_chave",
+                    "variable": "@[[publisher#text#status_chave]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "colecao",
+                    "variable": "@[[publisher#text#colecao]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "colecao_url",
+                    "variable": "@[[publisher#text#colecao_url]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "categoria",
+                    "variable": "@[[publisher#text#categoria]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "relacionado",
+                    "variable": "@[[publisher#text#relacionado]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "resumo",
+                    "variable": "@[[publisher#textarea#resumo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_principal",
+                    "variable": "@[[publisher#text#link_principal]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_principal_rotulo",
+                    "variable": "@[[publisher#text#link_principal_rotulo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_secundario",
+                    "variable": "@[[publisher#text#link_secundario]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_secundario_rotulo",
+                    "variable": "@[[publisher#text#link_secundario_rotulo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "topicos",
+                    "variable": "@[[publisher#html#topicos]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "conteudo",
+                    "variable": "@[[publisher#html#conteudo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                }
+            ]
+        }
+    },
+    {
+        "id_usuarios": 1,
+        "name": "Materiais & Downloads",
+        "id": "materiais",
+        "path_prefix": "materiais",
+        "template_id": "c2f-publicacao-docs",
+        "fields_schema": {
+            "fields": [
+                {
+                    "id": "titulo",
+                    "type": "text",
+                    "label": "Título do material",
+                    "description": "Título completo exibido no topo da página.",
+                    "mandatory": false
+                },
+                {
+                    "id": "selo",
+                    "type": "text",
+                    "label": "Tipo de material",
+                    "description": "Guia, Roteiro, Diagrama ou Template.",
+                    "mandatory": false
+                },
+                {
+                    "id": "status",
+                    "type": "text",
+                    "label": "Status",
+                    "description": "Disponível ou Em breve.",
+                    "mandatory": false
+                },
+                {
+                    "id": "status_chave",
+                    "type": "text",
+                    "label": "Chave visual do status",
+                    "description": "on (disponível) ou soon (em breve).",
+                    "mandatory": false
+                },
+                {
+                    "id": "colecao",
+                    "type": "text",
+                    "label": "Coleção",
+                    "description": "Nome da listagem de retorno (Materiais).",
+                    "mandatory": false
+                },
+                {
+                    "id": "colecao_url",
+                    "type": "text",
+                    "label": "Caminho da coleção",
+                    "description": "Caminho relativo da listagem (materiais/).",
+                    "mandatory": false
+                },
+                {
+                    "id": "categoria",
+                    "type": "text",
+                    "label": "Tags",
+                    "description": "Tags do material separadas por ponto.",
+                    "mandatory": false
+                },
+                {
+                    "id": "relacionado",
+                    "type": "text",
+                    "label": "Episódio relacionado",
+                    "description": "Episódio em que o material aparece.",
+                    "mandatory": false
+                },
+                {
+                    "id": "resumo",
+                    "type": "textarea",
+                    "label": "Resumo",
+                    "description": "Resumo curto usado nos cards e no cabeçalho.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_principal",
+                    "type": "text",
+                    "label": "URL de download / GitHub",
+                    "description": "Onde o material é baixado.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_principal_rotulo",
+                    "type": "text",
+                    "label": "Rótulo do download",
+                    "description": "Texto do botão principal.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_secundario",
+                    "type": "text",
+                    "label": "URL complementar",
+                    "description": "Vídeo ou referência complementar.",
+                    "mandatory": false
+                },
+                {
+                    "id": "link_secundario_rotulo",
+                    "type": "text",
+                    "label": "Rótulo do link complementar",
+                    "description": "Texto do botão secundário.",
+                    "mandatory": false
+                },
+                {
+                    "id": "topicos",
+                    "type": "html",
+                    "label": "Conteúdo do pacote",
+                    "description": "Itens <li> com o que o material contém.",
+                    "mandatory": false
+                },
+                {
+                    "id": "conteudo",
+                    "type": "html",
+                    "label": "Conteúdo e instruções de uso",
+                    "description": "Corpo editorial com instruções.",
+                    "mandatory": false
+                }
+            ],
+            "template_map": [
+                {
+                    "id": "titulo",
+                    "variable": "@[[publisher#text#titulo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "selo",
+                    "variable": "@[[publisher#text#selo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "status",
+                    "variable": "@[[publisher#text#status]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "status_chave",
+                    "variable": "@[[publisher#text#status_chave]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "colecao",
+                    "variable": "@[[publisher#text#colecao]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "colecao_url",
+                    "variable": "@[[publisher#text#colecao_url]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "categoria",
+                    "variable": "@[[publisher#text#categoria]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "relacionado",
+                    "variable": "@[[publisher#text#relacionado]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "resumo",
+                    "variable": "@[[publisher#textarea#resumo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_principal",
+                    "variable": "@[[publisher#text#link_principal]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_principal_rotulo",
+                    "variable": "@[[publisher#text#link_principal_rotulo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_secundario",
+                    "variable": "@[[publisher#text#link_secundario]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "link_secundario_rotulo",
+                    "variable": "@[[publisher#text#link_secundario_rotulo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "topicos",
+                    "variable": "@[[publisher#html#topicos]]@",
+                    "found_template": true,
+                    "linked_template": true
+                },
+                {
+                    "id": "conteudo",
+                    "variable": "@[[publisher#html#conteudo]]@",
+                    "found_template": true,
+                    "linked_template": true
+                }
+            ]
+        }
+    }
+]

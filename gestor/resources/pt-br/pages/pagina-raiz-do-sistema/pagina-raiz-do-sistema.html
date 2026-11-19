@@ -133,77 +133,85 @@
             <span class="h-2.5 w-2.5 rounded-full border-2 border-amber-400/70 bg-transparent"></span>
         </div>
 
-        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
-            <!-- Ep 01 -->
-            <article class="c2f-reveal c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]">
+        <!-- widgets#publisher-highlights->render({"grupo_slug": "destaques-episodios-home"}) < -->
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-5" data-c2f-destaques="cards">
+                <article class="c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]" data-c2f-status="on">
                 <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                 <div class="flex items-start justify-between gap-4">
-                    <span class="font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">01</span>
+                    <span class="c2f-num font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">01</span>
                     <span class="c2f-status-on">Disponível</span>
                 </div>
-                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white">Conceitos &amp; História da IA</h3>
-                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Os 7 Elos Históricos e a Prótese Cognitiva: por que a IA é a lente que corrige a miopia do trabalho intelectual.</p>
-                <div class="mt-6 flex items-center justify-between border-t border-white/5 pt-4">
-                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Fundamentos</span>
-                    <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5 hover:text-emerald-200">Assistir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white"><a href="@[[pagina#url-raiz]]@episodios/ep-01-conceitos-e-historia-da-ia/" class="after:absolute after:inset-0 focus:outline-none">Conceitos &amp; História da IA: Os 7 Elos Históricos e a Prótese Cognitiva</a></h3>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Os 7 Elos Históricos e a Prótese Cognitiva: por que a IA é a lente que corrige a miopia do trabalho intelectual, e não uma força mágica ou ameaçadora.</p>
+                <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/5 pt-4">
+                    <span class="inline-flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="truncate">Fundamentos</span></span>
+                    <span class="c2f-accent inline-flex shrink-0 items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5">Abrir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
                 </div>
             </article>
-            <!-- Ep 02 -->
-            <article class="c2f-reveal c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)] [transition-delay:60ms]">
+
+            <article class="c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]" data-c2f-status="on">
                 <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                 <div class="flex items-start justify-between gap-4">
-                    <span class="font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">02</span>
+                    <span class="c2f-num font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">02</span>
                     <span class="c2f-status-on">Disponível</span>
                 </div>
-                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white">Qual Chat de IA Usar?!</h3>
-                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Desmistificando os modelos no navegador: forças, limites e como escolher o assistente certo para cada tarefa.</p>
-                <div class="mt-6 flex items-center justify-between border-t border-white/5 pt-4">
-                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Modelos</span>
-                    <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5 hover:text-emerald-200">Assistir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white"><a href="@[[pagina#url-raiz]]@episodios/ep-02-qual-chat-de-ia-usar/" class="after:absolute after:inset-0 focus:outline-none">Qual Chat de IA Usar?! Desmistificando os Modelos no Navegador</a></h3>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">O mapa dos chats de IA: forças, limites e como escolher o assistente certo para cada tarefa, até descobrir onde o chat sozinho bate no teto.</p>
+                <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/5 pt-4">
+                    <span class="inline-flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="truncate">Modelos</span></span>
+                    <span class="c2f-accent inline-flex shrink-0 items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5">Abrir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
                 </div>
             </article>
-            <!-- Ep 03 -->
-            <article class="c2f-reveal c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)] [transition-delay:120ms]">
+
+            <article class="c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]" data-c2f-status="on">
                 <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                 <div class="flex items-start justify-between gap-4">
-                    <span class="font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">03</span>
+                    <span class="c2f-num font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">03</span>
                     <span class="c2f-status-on">Disponível</span>
                 </div>
-                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white">Como Controlar a Memória da IA</h3>
-                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Setup de Agentes no Antigravity e Governança SDD: dê memória persistente e regras claras aos seus agentes.</p>
-                <div class="mt-6 flex items-center justify-between border-t border-white/5 pt-4">
-                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Agentes · SDD</span>
-                    <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5 hover:text-emerald-200">Assistir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white"><a href="@[[pagina#url-raiz]]@episodios/ep-03-como-controlar-a-memoria-da-ia/" class="after:absolute after:inset-0 focus:outline-none">Como Controlar a Memória da IA: Setup de Agentes no Antigravity e Governança SDD</a></h3>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Setup de agentes no Antigravity 2.0 e governança SDD: dê memória persistente e regras claras aos seus agentes com o repositório base gratuito.</p>
+                <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/5 pt-4">
+                    <span class="inline-flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="truncate">Agentes · SDD</span></span>
+                    <span class="c2f-accent inline-flex shrink-0 items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5">Abrir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
                 </div>
             </article>
-            <!-- Ep 04 -->
-            <article class="c2f-reveal c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)] [transition-delay:180ms]">
+
+            <article class="c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]" data-c2f-status="on">
                 <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                 <div class="flex items-start justify-between gap-4">
-                    <span class="font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">04</span>
+                    <span class="c2f-num font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">04</span>
                     <span class="c2f-status-on">Disponível</span>
                 </div>
-                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white">IA Editou Meu Vídeo no Blender!</h3>
-                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Antigravity, SDD e MCP na prática: um agente operando um software real de ponta a ponta via Model Context Protocol.</p>
-                <div class="mt-6 flex items-center justify-between border-t border-white/5 pt-4">
-                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>MCP · Prática</span>
-                    <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5 hover:text-emerald-200">Assistir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white"><a href="@[[pagina#url-raiz]]@episodios/ep-04-ia-editou-meu-video-no-blender/" class="after:absolute after:inset-0 focus:outline-none">IA Editou Meu Vídeo no Blender! Antigravity, SDD e MCP na Prática</a></h3>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Antigravity, SDD e MCP na prática: um agente operando um software real de ponta a ponta, cortando silêncios e organizando a edição no Blender.</p>
+                <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/5 pt-4">
+                    <span class="inline-flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="truncate">MCP · Prática</span></span>
+                    <span class="c2f-accent inline-flex shrink-0 items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5">Abrir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
                 </div>
             </article>
-            <!-- Ep 05+ (em breve) -->
-            <article class="c2f-reveal group relative flex h-full flex-col overflow-hidden rounded-2xl border border-dashed border-amber-400/30 bg-[#0a1510]/50 p-6 transition-all duration-300 hover:border-amber-400/60 sm:col-span-2 lg:col-span-1 [transition-delay:240ms]">
-                <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(251,191,36,0.08),transparent_60%)]"></div>
+
+            <article class="c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-[#0a1510]/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]" data-c2f-status="soon">
+                <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                 <div class="flex items-start justify-between gap-4">
-                    <span class="font-mono text-4xl font-black leading-none text-amber-400/30">05<span class="text-2xl">+</span></span>
-                    <span class="c2f-status-soon"><svg viewBox="0 0 24 24" class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Em breve</span>
+                    <span class="c2f-num font-mono text-4xl font-black leading-none text-emerald-500/30 transition-colors duration-300 group-hover:text-emerald-400/60">05</span>
+                    <span class="c2f-status-soon">Em breve</span>
                 </div>
-                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white">Construindo Websites e Aplicações com Conn2Flow Pro</h3>
+                <h3 class="mt-5 text-lg font-extrabold leading-snug text-white"><a href="@[[pagina#url-raiz]]@episodios/ep-05-construindo-websites-com-conn2flow-pro/" class="after:absolute after:inset-0 focus:outline-none">Construindo Websites e Aplicações com Conn2Flow Pro</a></h3>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-400">Da landing page ao SaaS: agentes construindo produtos digitais reais sobre a infraestrutura open source do Conn2Flow.</p>
-                <div class="mt-6 flex items-center justify-between border-t border-white/5 pt-4">
-                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Produção</span>
-                    <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-extrabold text-amber-300 transition-colors hover:text-amber-200">Ativar sino<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></a>
+                <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/5 pt-4">
+                    <span class="inline-flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="truncate">Produção</span></span>
+                    <span class="c2f-accent inline-flex shrink-0 items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5">Abrir<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
                 </div>
             </article>
+
+
+        </div>
+        <!-- widgets#publisher-highlights->render({"grupo_slug": "destaques-episodios-home"}) > -->
+
+        <div class="c2f-reveal mt-12 flex flex-wrap items-center justify-center gap-4">
+            <a href="@[[pagina#url-raiz]]@episodios/" class="c2f-btn-glow inline-flex items-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-sm font-extrabold text-[#060e0a] transition-all duration-300 hover:bg-emerald-400 hover:shadow-[0_0_28px_rgba(52,211,153,0.6)]">Ver todos os episódios<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-bold text-slate-200 transition-all duration-300 hover:border-emerald-500/40 hover:text-white">Playlist oficial<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
     </div>
 </section>
@@ -310,36 +318,66 @@
                     <h2 class="c2f-h2 mt-4">Tudo o que aparece nos vídeos, <span class="c2f-gradient-text">pronto para baixar</span></h2>
                     <p class="mt-5 text-lg leading-relaxed text-slate-400">Cada episódio gera artefatos reais. Eles ficam versionados no repositório e evoluem junto com a série.</p>
                 </div>
-                <ul class="mt-10 space-y-4">
-                    <li class="c2f-reveal">
-                        <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="c2f-material group">
-                            <span class="c2f-material-icon"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
-                            <span class="min-w-0 flex-1"><span class="block font-extrabold text-white">Guias de Setup dos Agentes</span><span class="block text-sm text-slate-400">Antigravity 2.0, Claude Code, Codex e Cursor configurados com governança MDD.</span></span>
-                            <span class="c2f-material-arrow">↓</span>
+                <!-- widgets#publisher-highlights->render({"grupo_slug": "destaques-materiais-home"}) < -->
+                <ol class="relative mt-10 space-y-4 border-l border-emerald-500/20 pl-6 sm:pl-8" data-c2f-destaques="timeline">
+                        <li class="relative" data-c2f-status="on">
+                        <span aria-hidden="true" class="absolute -left-[31px] top-6 h-3.5 w-3.5 rounded-full border-2 border-emerald-400 bg-[#060e0a] shadow-[0_0_12px_rgba(52,211,153,0.8)] sm:-left-[39px]"></span>
+                        <a href="@[[pagina#url-raiz]]@materiais/guias-setup-agentes/" class="c2f-material group">
+                            <span class="c2f-num flex h-11 min-w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 px-2.5 font-mono text-xs font-black text-emerald-300 transition-all duration-300 group-hover:bg-emerald-400 group-hover:text-[#060e0a] group-hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]">Guia</span>
+                            <span class="min-w-0 flex-1">
+                                <span class="flex flex-wrap items-center gap-2"><span class="block font-extrabold text-white">Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)</span><span class="c2f-status-on">Disponível</span></span>
+                                <span class="mt-1 block text-sm text-slate-400">Antigravity 2.0, Claude Code, Codex e Cursor configurados com governança de memória, prontos para trabalhar no seu repositório.</span>
+                                <span class="mt-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-400/70">Antigravity 2.0 · Claude Code · Codex · Cursor</span>
+                            </span>
+                            <span class="c2f-material-arrow">&darr;</span>
                         </a>
                     </li>
-                    <li class="c2f-reveal [transition-delay:60ms]">
-                        <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="c2f-material group">
-                            <span class="c2f-material-icon"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M4 9h16M8 5v4"/></svg></span>
-                            <span class="min-w-0 flex-1"><span class="block font-extrabold text-white">Roteiros dos Episódios</span><span class="block text-sm text-slate-400">O texto-base de cada vídeo, com referências e links comentados.</span></span>
-                            <span class="c2f-material-arrow">↓</span>
+
+                    <li class="relative" data-c2f-status="on">
+                        <span aria-hidden="true" class="absolute -left-[31px] top-6 h-3.5 w-3.5 rounded-full border-2 border-emerald-400 bg-[#060e0a] shadow-[0_0_12px_rgba(52,211,153,0.8)] sm:-left-[39px]"></span>
+                        <a href="@[[pagina#url-raiz]]@materiais/roteiros-dos-episodios/" class="c2f-material group">
+                            <span class="c2f-num flex h-11 min-w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 px-2.5 font-mono text-xs font-black text-emerald-300 transition-all duration-300 group-hover:bg-emerald-400 group-hover:text-[#060e0a] group-hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]">Roteiro</span>
+                            <span class="min-w-0 flex-1">
+                                <span class="flex flex-wrap items-center gap-2"><span class="block font-extrabold text-white">Roteiros dos Episódios — Série Trabalhando em Par com IA</span><span class="c2f-status-on">Disponível</span></span>
+                                <span class="mt-1 block text-sm text-slate-400">O texto-base de cada vídeo, com falas, blocos com timestamps, referências e links comentados.</span>
+                                <span class="mt-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-400/70">Roteiros · Timestamps · Referências</span>
+                            </span>
+                            <span class="c2f-material-arrow">&darr;</span>
                         </a>
                     </li>
-                    <li class="c2f-reveal [transition-delay:120ms]">
-                        <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="c2f-material group">
-                            <span class="c2f-material-icon"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="8.5" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v2a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2"/></svg></span>
-                            <span class="min-w-0 flex-1"><span class="block font-extrabold text-white">Diagramas de Arquitetura</span><span class="block text-sm text-slate-400">Fluxos do Agente Duplo/Triplo, ciclo MDD e integração MCP em Mermaid e PNG.</span></span>
-                            <span class="c2f-material-arrow">↓</span>
+
+                    <li class="relative" data-c2f-status="on">
+                        <span aria-hidden="true" class="absolute -left-[31px] top-6 h-3.5 w-3.5 rounded-full border-2 border-emerald-400 bg-[#060e0a] shadow-[0_0_12px_rgba(52,211,153,0.8)] sm:-left-[39px]"></span>
+                        <a href="@[[pagina#url-raiz]]@materiais/diagramas-de-arquitetura/" class="c2f-material group">
+                            <span class="c2f-num flex h-11 min-w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 px-2.5 font-mono text-xs font-black text-emerald-300 transition-all duration-300 group-hover:bg-emerald-400 group-hover:text-[#060e0a] group-hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]">Diagrama</span>
+                            <span class="min-w-0 flex-1">
+                                <span class="flex flex-wrap items-center gap-2"><span class="block font-extrabold text-white">Diagramas de Arquitetura (Agente Duplo/Triplo, Ciclo MDD e MCP)</span><span class="c2f-status-on">Disponível</span></span>
+                                <span class="mt-1 block text-sm text-slate-400">Fluxos do Agente Duplo/Triplo, ciclo de memória e integração MCP em imagens prontas para estudo e apresentação.</span>
+                                <span class="mt-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-400/70">Agente Duplo/Triplo · MDD · MCP</span>
+                            </span>
+                            <span class="c2f-material-arrow">&darr;</span>
                         </a>
                     </li>
-                    <li class="c2f-reveal [transition-delay:180ms]">
-                        <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="c2f-material group">
-                            <span class="c2f-material-icon"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-                            <span class="min-w-0 flex-1"><span class="block font-extrabold text-white">Templates MDD &amp; Skills</span><span class="block text-sm text-slate-400">Estrutura de memória em <code>memory/</code>, skills reutilizáveis e kits multi-agente prontos para clonar.</span></span>
-                            <span class="c2f-material-arrow">↓</span>
+
+                    <li class="relative" data-c2f-status="on">
+                        <span aria-hidden="true" class="absolute -left-[31px] top-6 h-3.5 w-3.5 rounded-full border-2 border-emerald-400 bg-[#060e0a] shadow-[0_0_12px_rgba(52,211,153,0.8)] sm:-left-[39px]"></span>
+                        <a href="@[[pagina#url-raiz]]@materiais/templates-mdd-e-skills/" class="c2f-material group">
+                            <span class="c2f-num flex h-11 min-w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 px-2.5 font-mono text-xs font-black text-emerald-300 transition-all duration-300 group-hover:bg-emerald-400 group-hover:text-[#060e0a] group-hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]">Template</span>
+                            <span class="min-w-0 flex-1">
+                                <span class="flex flex-wrap items-center gap-2"><span class="block font-extrabold text-white">Templates MDD &amp; Skills Multi-Agente (conn2flow-ai-workspace)</span><span class="c2f-status-on">Disponível</span></span>
+                                <span class="mt-1 block text-sm text-slate-400">Estrutura de memória em memory/, skills reutilizáveis e kits multi-agente prontos para clonar e adaptar ao seu projeto.</span>
+                                <span class="mt-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-400/70">Skills · Agent Kits · memory/</span>
+                            </span>
+                            <span class="c2f-material-arrow">&darr;</span>
                         </a>
                     </li>
-                </ul>
+
+
+                </ol>
+                <!-- widgets#publisher-highlights->render({"grupo_slug": "destaques-materiais-home"}) > -->
+                <div class="c2f-reveal mt-8 flex flex-wrap items-center gap-4">
+                    <a href="@[[pagina#url-raiz]]@materiais/" class="c2f-btn-glow inline-flex items-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-sm font-extrabold text-[#060e0a] transition-all duration-300 hover:bg-emerald-400 hover:shadow-[0_0_28px_rgba(52,211,153,0.6)]">Ver todos os materiais<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
             </div>
         </div>
     </div>

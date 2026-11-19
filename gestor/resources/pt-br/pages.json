@@ -11,12 +11,562 @@
         "og_titulo": "Trabalhando em Par com IA — Curso de IA | Conn2Flow",
         "og_descricao": "Aprenda a transformar o seu computador em uma empresa de automação de 1 pessoa só com Agentes de IA, Antigravity 2.0 e governança MDD.",
         "meta_descricao": "Trabalhando em Par com IA — Do Zero ao Avançado: Planejar, Construir e Dominar Projetos Reais com Agentes de IA. Série gratuita no YouTube com materiais no GitHub.",
-        "version": "1.4",
+        "version": "1.6",
         "checksum": {
-            "html": "0a861eea9715ec905a8c54706a2d9e2a",
-            "css": "12283d5e582784ba549d1a121fd7e06a",
+            "html": "c8409ad0619002e4c010a98bb3dd0982",
+            "css": "915172abb425e05925c59f0d83a4393e",
             "css_precompiled": "",
-            "combined": "dc7f0d33d0d2fdd06fe10ad3a2fbd384"
+            "combined": "053a16b3631aefbb48f0cbd9f1bcece7"
+        },
+        "tailwind_dependencies_reason": "Os cabeçalhos e os destaques são templates escolhidos em runtime no painel (menus e publisher-highlights).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-destaques-cards",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-destaques-bento",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-destaques-timeline",
+                "scope": "global"
+            }
+        ]
+    },
+    {
+        "name": "Episódios — Trabalhando em Par com IA",
+        "id": "episodios",
+        "layout": "layout-principal",
+        "path": "episodios\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "og_titulo": "Episódios — Trabalhando em Par com IA | Conn2Flow",
+        "og_descricao": "Todos os episódios da série Trabalhando em Par com IA, em ordem, com tópicos e materiais de cada um.",
+        "meta_descricao": "Todos os episódios da série Trabalhando em Par com IA, em ordem, com tópicos e materiais de cada um.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e os índices são templates escolhidos em runtime no painel (menus e publisher-index).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-cards",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-bento",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-timeline",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "e82535cbc88ebab399053ca7609f00d7",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "e82535cbc88ebab399053ca7609f00d7"
+        }
+    },
+    {
+        "name": "Materiais & Downloads — Trabalhando em Par com IA",
+        "id": "materiais",
+        "layout": "layout-principal",
+        "path": "materiais\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "og_titulo": "Materiais & Downloads — Trabalhando em Par com IA | Conn2Flow",
+        "og_descricao": "Guias, roteiros, diagramas e templates da série Trabalhando em Par com IA, versionados no GitHub.",
+        "meta_descricao": "Guias, roteiros, diagramas e templates da série Trabalhando em Par com IA, versionados no GitHub.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e os índices são templates escolhidos em runtime no painel (menus e publisher-index).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-cards",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-bento",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-timeline",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "91f46ca66b7329d9d2aa7f8062f03ade",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "91f46ca66b7329d9d2aa7f8062f03ade"
+        }
+    },
+    {
+        "name": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "id": "ep-01-conceitos-e-historia-da-ia",
+        "layout": "layout-principal",
+        "path": "episodios\/ep-01-conceitos-e-historia-da-ia\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "episodios",
+        "og_titulo": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva | Conn2Flow",
+        "og_descricao": "Episódio 01 da série Trabalhando em Par com IA: a IA como Prótese Cognitiva e os 7 elos históricos que levaram aos LLMs.",
+        "meta_descricao": "Episódio 01 da série Trabalhando em Par com IA: a IA como Prótese Cognitiva e os 7 elos históricos que levaram aos LLMs.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "266d6416316376644c8970da4694cfbd",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "266d6416316376644c8970da4694cfbd"
+        }
+    },
+    {
+        "name": "Qual Chat de IA Usar?! Desmistificando os Modelos no Navegador",
+        "id": "ep-02-qual-chat-de-ia-usar",
+        "layout": "layout-principal",
+        "path": "episodios\/ep-02-qual-chat-de-ia-usar\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "episodios",
+        "og_titulo": "Qual Chat de IA Usar?! Desmistificando os Modelos no Navegador | Conn2Flow",
+        "og_descricao": "Episódio 02: o mapa dos chats de IA no navegador, onde cada um brilha e os 4 limites do modo freestyle.",
+        "meta_descricao": "Episódio 02: o mapa dos chats de IA no navegador, onde cada um brilha e os 4 limites do modo freestyle.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "2c920e19887e29a8add87e7978e3d7ff",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "2c920e19887e29a8add87e7978e3d7ff"
+        }
+    },
+    {
+        "name": "Como Controlar a Memória da IA: Setup de Agentes no Antigravity e Governança SDD",
+        "id": "ep-03-como-controlar-a-memoria-da-ia",
+        "layout": "layout-principal",
+        "path": "episodios\/ep-03-como-controlar-a-memoria-da-ia\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "episodios",
+        "og_titulo": "Como Controlar a Memória da IA: Setup de Agentes no Antigravity e Governança SDD | Conn2Flow",
+        "og_descricao": "Episódio 03: setup de agentes no Antigravity, custos reais de assinatura e a governança SDD como memória externa da IA.",
+        "meta_descricao": "Episódio 03: setup de agentes no Antigravity, custos reais de assinatura e a governança SDD como memória externa da IA.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "8c9d42f4860e1732c499eb2b6fa9f2cd",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "8c9d42f4860e1732c499eb2b6fa9f2cd"
+        }
+    },
+    {
+        "name": "IA Editou Meu Vídeo no Blender! Antigravity, SDD e MCP na Prática",
+        "id": "ep-04-ia-editou-meu-video-no-blender",
+        "layout": "layout-principal",
+        "path": "episodios\/ep-04-ia-editou-meu-video-no-blender\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "episodios",
+        "og_titulo": "IA Editou Meu Vídeo no Blender! Antigravity, SDD e MCP na Prática | Conn2Flow",
+        "og_descricao": "Episódio 04: um agente de IA operando o Blender via MCP para cortar silêncios e organizar a edição de vídeo.",
+        "meta_descricao": "Episódio 04: um agente de IA operando o Blender via MCP para cortar silêncios e organizar a edição de vídeo.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "677d9c7680cbedd3334390b3f2e6178e",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "677d9c7680cbedd3334390b3f2e6178e"
+        }
+    },
+    {
+        "name": "Construindo Websites e Aplicações com Conn2Flow Pro",
+        "id": "ep-05-construindo-websites-com-conn2flow-pro",
+        "layout": "layout-principal",
+        "path": "episodios\/ep-05-construindo-websites-com-conn2flow-pro\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "episodios",
+        "og_titulo": "Construindo Websites e Aplicações com Conn2Flow Pro | Conn2Flow",
+        "og_descricao": "Episódio 05 (em breve): agentes construindo websites e aplicações reais sobre a infraestrutura Conn2Flow Pro.",
+        "meta_descricao": "Episódio 05 (em breve): agentes construindo websites e aplicações reais sobre a infraestrutura Conn2Flow Pro.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "3cb98e8b61861fb24feb19a84f98c853",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "3cb98e8b61861fb24feb19a84f98c853"
+        }
+    },
+    {
+        "name": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "id": "guias-setup-agentes",
+        "layout": "layout-principal",
+        "path": "materiais\/guias-setup-agentes\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "materiais",
+        "og_titulo": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor) | Conn2Flow",
+        "og_descricao": "Guias de setup dos agentes Antigravity 2.0, Claude Code, Codex e Cursor configurados com governança de memória.",
+        "meta_descricao": "Guias de setup dos agentes Antigravity 2.0, Claude Code, Codex e Cursor configurados com governança de memória.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "268852d40bbca0898eaff537663ec0cf",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "268852d40bbca0898eaff537663ec0cf"
+        }
+    },
+    {
+        "name": "Roteiros dos Episódios — Série Trabalhando em Par com IA",
+        "id": "roteiros-dos-episodios",
+        "layout": "layout-principal",
+        "path": "materiais\/roteiros-dos-episodios\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "materiais",
+        "og_titulo": "Roteiros dos Episódios — Série Trabalhando em Par com IA | Conn2Flow",
+        "og_descricao": "Roteiros dos episódios da série Trabalhando em Par com IA, com falas, timestamps e referências.",
+        "meta_descricao": "Roteiros dos episódios da série Trabalhando em Par com IA, com falas, timestamps e referências.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "b9706d0531a5c7929f23a6acb07b5065",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "b9706d0531a5c7929f23a6acb07b5065"
+        }
+    },
+    {
+        "name": "Diagramas de Arquitetura (Agente Duplo\/Triplo, Ciclo MDD e MCP)",
+        "id": "diagramas-de-arquitetura",
+        "layout": "layout-principal",
+        "path": "materiais\/diagramas-de-arquitetura\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "materiais",
+        "og_titulo": "Diagramas de Arquitetura (Agente Duplo\/Triplo, Ciclo MDD e MCP) | Conn2Flow",
+        "og_descricao": "Diagramas de arquitetura do Agente Duplo\/Triplo, do ciclo de memória e da integração MCP.",
+        "meta_descricao": "Diagramas de arquitetura do Agente Duplo\/Triplo, do ciclo de memória e da integração MCP.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "251a0ca8b6cc922f59e6e51c25ef53c5",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "251a0ca8b6cc922f59e6e51c25ef53c5"
+        }
+    },
+    {
+        "name": "Templates MDD & Skills Multi-Agente (conn2flow-ai-workspace)",
+        "id": "templates-mdd-e-skills",
+        "layout": "layout-principal",
+        "path": "materiais\/templates-mdd-e-skills\/",
+        "type": "page",
+        "framework_css": "tailwindcss",
+        "without_permission": true,
+        "tailwind_bundle": true,
+        "publisher_id": "materiais",
+        "og_titulo": "Templates MDD & Skills Multi-Agente (conn2flow-ai-workspace) | Conn2Flow",
+        "og_descricao": "Templates de memória MDD e skills multi-agente do repositório conn2flow-ai-workspace.",
+        "meta_descricao": "Templates de memória MDD e skills multi-agente do repositório conn2flow-ai-workspace.",
+        "tailwind_dependencies_reason": "Os cabeçalhos e o rodapé são templates escolhidos em runtime no painel (menus).",
+        "tailwind_dependencies": [
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "version": "1.1",
+        "checksum": {
+            "html": "3f75b6c41ed08a842dccc936e11c8a1a",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "3f75b6c41ed08a842dccc936e11c8a1a"
         }
     }
 ]

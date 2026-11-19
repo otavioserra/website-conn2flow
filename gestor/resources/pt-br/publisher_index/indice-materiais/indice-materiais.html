@@ -1,0 +1,52 @@
+<div class="conn2flow-publisher-index" data-grupo-slug="@[[grupo_slug]]@" data-publisher-id="@[[publisher_id]]@" data-items-per-page="@[[items_per_page]]@" data-ordenacao="@[[ordenacao]]@" data-page="1">
+    <div class="flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-3 sm:flex-row sm:items-center">
+        <!-- search-input < -->
+        <label class="relative min-w-0 flex-1">
+            <span class="sr-only">Buscar</span>
+            <svg viewBox="0 0 24 24" class="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input type="search" class="publisher-index-search c2f-field" style="padding-left:2.75rem" placeholder="Buscar por título ou tema...">
+        </label>
+        <!-- search-input > -->
+        <!-- sort-select < -->
+        <label class="sm:w-56">
+            <span class="sr-only">Ordenar</span>
+            <select class="publisher-index-sort c2f-field">
+                <option value="date_asc">Ordem da série</option>
+                <option value="date_desc">Mais recentes primeiro</option>
+                <option value="title_asc">Título (A-Z)</option>
+                <option value="title_desc">Título (Z-A)</option>
+            </select>
+        </label>
+        <!-- sort-select > -->
+    </div>
+
+    <!-- metrics < -->
+    <p class="publisher-index-metrics mt-5 text-sm font-bold text-slate-500">Exibindo <span data-page-count class="text-emerald-300">@[[page_count]]@</span> de <span data-page-total class="text-white">@[[page_total]]@</span> publicações</p>
+    <!-- metrics > -->
+
+    <ol class="publisher-index-items relative mt-8 space-y-4 border-l border-emerald-500/20 pl-6 sm:pl-8">
+    <!-- item < -->
+    <li class="relative" data-c2f-status="@[[item#status_chave]]@">
+        <span aria-hidden="true" class="absolute -left-[31px] top-6 h-3.5 w-3.5 rounded-full border-2 border-emerald-400 bg-[#060e0a] shadow-[0_0_12px_rgba(52,211,153,0.8)] sm:-left-[39px]"></span>
+        <a href="@[[item#url]]@" class="c2f-material group">
+            <span class="c2f-num flex h-11 min-w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 px-2.5 font-mono text-xs font-black text-emerald-300 transition-all duration-300 group-hover:bg-emerald-400 group-hover:text-[#060e0a] group-hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]">@[[item#selo]]@</span>
+            <span class="min-w-0 flex-1">
+                <span class="flex flex-wrap items-center gap-2"><span class="block font-extrabold text-white">@[[item#titulo]]@</span><span class="c2f-status-@[[item#status_chave]]@">@[[item#status]]@</span></span>
+                <span class="mt-1 block text-sm text-slate-400">@[[item#resumo]]@</span>
+                <span class="mt-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-400/70">@[[item#categoria]]@</span>
+            </span>
+            <span class="c2f-material-arrow">&darr;</span>
+        </a>
+    </li>
+    <!-- item > -->
+        <!-- no-item < -->
+        <li class="publisher-index-empty rounded-2xl border border-dashed border-white/10 p-8 text-center text-sm font-bold text-slate-500">Nenhuma publicação encontrada para esta busca.</li>
+        <!-- no-item > -->
+    </ol>
+
+    <div class="mt-10 text-center">
+        <!-- load-more < -->
+        <button type="button" class="publisher-index-load-more c2f-btn-glow inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-7 py-3 text-sm font-extrabold text-emerald-200 transition-all duration-300 hover:bg-emerald-500 hover:text-[#060e0a]">Carregar mais</button>
+        <!-- load-more > -->
+    </div>
+</div>

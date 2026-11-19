@@ -1,0 +1,61 @@
+<section class="relative overflow-hidden px-4 pb-16 pt-32 sm:px-6 sm:pt-36 lg:px-8 lg:pb-20 lg:pt-40" data-id="1" data-title="cabecalho-publicacao">
+    <div class="pointer-events-none absolute -top-32 left-1/2 h-[26rem] w-[40rem] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-3xl"></div>
+    <div class="relative mx-auto max-w-4xl">
+        <!-- Breadcrumb de retorno -->
+        <nav aria-label="Trilha de navegação" class="flex flex-wrap items-center gap-2 text-sm font-bold text-slate-500">
+            <a href="@[[pagina#url-raiz]]@" class="transition-colors hover:text-emerald-300">Início</a>
+            <span aria-hidden="true" class="text-slate-700">/</span>
+            <a href="@[[pagina#url-raiz]]@episodios/" class="inline-flex items-center gap-1.5 text-emerald-300 transition-colors hover:text-emerald-200">
+                <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                Episódios
+            </a>
+        </nav>
+
+        <!-- Eyebrow + badges -->
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+            <span class="inline-flex items-center rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 font-mono text-sm font-black text-emerald-300">04</span>
+            <span class="c2f-status-on">Disponível</span>
+            <span class="c2f-tag">MCP · Prática</span>
+        </div>
+
+        <h1 class="mt-6 text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">IA Editou Meu Vídeo no Blender! Antigravity, SDD e MCP na Prática</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-300 sm:text-xl">Antigravity, SDD e MCP na prática: um agente operando um software real de ponta a ponta, cortando silêncios e organizando a edição no Blender.</p>
+
+        <!-- Bloco de mídia / CTA -->
+        <div class="mt-10 grid gap-4 sm:grid-cols-2">
+            <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="group relative overflow-hidden rounded-2xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/20 via-[#0a1510] to-[#0a1510] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-[0_24px_60px_-24px_rgba(16,185,129,0.6)]">
+                <span class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-[#060e0a] shadow-[0_0_24px_rgba(52,211,153,0.6)] transition-transform duration-300 group-hover:scale-110">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                <span class="mt-4 block text-lg font-extrabold text-white">Assistir na playlist oficial</span>
+                <span class="mt-1 block text-sm text-slate-400">Abre em uma nova aba</span>
+            </a>
+            <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/40 hover:bg-emerald-500/[0.05]">
+                <span class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#060e0a]">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                </span>
+                <span class="mt-4 block text-lg font-extrabold text-white">Materiais no GitHub</span>
+                <span class="mt-1 block text-sm text-slate-400">Estágio 4 · Automação</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="relative px-4 pb-24 sm:px-6 lg:px-8" data-id="2" data-title="corpo-publicacao">
+    <div class="mx-auto max-w-4xl">
+        <!-- Tópicos principais -->
+        <div class="rounded-3xl border border-emerald-500/15 bg-[#0a1510]/80 p-6 sm:p-8">
+            <span class="c2f-eyebrow">Neste conteúdo</span>
+            <ul class="c2f-topicos mt-5"><li>A IA além do texto: agentes operando softwares externos</li><li>Model Context Protocol (MCP): a ponte entre o agente e o Blender</li><li>Importar mídias, detectar silêncios e aplicar cortes no editor de vídeo</li><li>Vídeo e áudio agrupados depois dos cortes</li><li>SDD guiando cada passo da automação</li></ul>
+        </div>
+
+        <!-- Corpo editorial -->
+        <article class="c2f-prose mt-14"><p>A maioria das pessoas acha que IA só serve para gerar texto e código na tela. Neste episódio, o mesmo ambiente agêntico do Episódio 03 passa a operar um software de verdade: o <strong>Blender</strong>.</p><h2>Como funciona</h2><p>Um add-on dentro do Blender e um servidor <strong>MCP</strong> (Model Context Protocol) expõem ferramentas de edição ao agente. O agente pede para importar as mídias, analisar os trechos de silêncio, aplicar os cortes e fechar os buracos da linha do tempo, sempre mantendo cada vídeo agrupado ao seu áudio.</p><h2>O fluxo na prática</h2><ol><li>Você descreve o que quer em linguagem natural.</li><li>O agente consulta a especificação do projeto e planeja a edição.</li><li>As ferramentas MCP executam os comandos dentro do Blender.</li><li>Uma simulação mostra o que vai mudar antes do corte definitivo.</li></ol><h2>Por que isso importa</h2><p>A governança SDD continua valendo: os pedidos, as decisões e os testes ficam registrados. A automação deixa de ser um truque isolado e vira uma ferramenta repetível da sua rotina.</p></article>
+
+        <!-- Rodapé da publicação -->
+        <div class="mt-16 flex flex-col items-start justify-between gap-4 rounded-2xl border border-white/5 bg-white/[0.02] p-6 sm:flex-row sm:items-center">
+            <p class="text-sm font-bold text-slate-400">Série <span class="text-white">Trabalhando em Par com IA</span> · materiais abertos no GitHub</p>
+            <a href="@[[pagina#url-raiz]]@episodios/" class="inline-flex items-center gap-2 text-sm font-extrabold text-emerald-300 transition-all duration-300 hover:gap-3 hover:text-emerald-200">Ver todos em Episódios<svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+    </div>
+</section>

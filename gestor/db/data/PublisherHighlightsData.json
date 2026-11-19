@@ -1,0 +1,30 @@
+[
+    {
+        "id_usuarios": 1,
+        "name": "Destaques de Episódios — Home",
+        "id": "destaques-episodios-home",
+        "publisher_id": "episodios",
+        "fields_schema": "{\n    \"rule\": \"manual\",\n    \"count\": 5,\n    \"order_by\": \"date_asc\",\n    \"selected_items\": [\n        \"ep-01-conceitos-e-historia-da-ia\",\n        \"ep-02-qual-chat-de-ia-usar\",\n        \"ep-03-como-controlar-a-memoria-da-ia\",\n        \"ep-04-ia-editou-meu-video-no-blender\",\n        \"ep-05-construindo-websites-com-conn2flow-pro\"\n    ],\n    \"variable_mapping\": [],\n    \"template_id\": \"c2f-destaques-cards\"\n}",
+        "html": "<div class=\"mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-5\" data-c2f-destaques=\"cards\">\n    <!-- item < -->\n    <article class=\"c2f-card group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white\/5 bg-[#0a1510]\/80 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500\/40 hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.45)]\" data-c2f-status=\"[[item#status_chave]]\">\n        <div class=\"pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500\/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100\"><\/div>\n        <div class=\"flex items-start justify-between gap-4\">\n            <span class=\"c2f-num font-mono text-4xl font-black leading-none text-emerald-500\/30 transition-colors duration-300 group-hover:text-emerald-400\/60\">[[item#selo]]<\/span>\n            <span class=\"c2f-status-[[item#status_chave]]\">[[item#status]]<\/span>\n        <\/div>\n        <h3 class=\"mt-5 text-lg font-extrabold leading-snug text-white\"><a href=\"[[item#url]]\" class=\"after:absolute after:inset-0 focus:outline-none\">[[item#titulo]]<\/a><\/h3>\n        <p class=\"mt-3 flex-1 text-sm leading-relaxed text-slate-400\">[[item#resumo]]<\/p>\n        <div class=\"mt-6 flex items-center justify-between gap-3 border-t border-white\/5 pt-4\">\n            <span class=\"inline-flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500\"><svg viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M4 6h16M4 12h16M4 18h10\"\/><\/svg><span class=\"truncate\">[[item#categoria]]<\/span><\/span>\n            <span class=\"c2f-accent inline-flex shrink-0 items-center gap-1.5 text-sm font-extrabold text-emerald-300 transition-all duration-300 group-hover:gap-2.5\">Abrir<svg viewBox=\"0 0 24 24\" class=\"h-4 w-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"\/><\/svg><\/span>\n        <\/div>\n    <\/article>\n    <!-- item > -->\n    <!-- no-item < -->\n    <div class=\"col-span-full rounded-2xl border border-dashed border-white\/10 p-10 text-center text-sm font-bold text-slate-500\">Nenhuma publicação disponível no momento.<\/div>\n    <!-- no-item > -->\n<\/div>\n",
+        "css": null,
+        "language": "pt-br",
+        "status": "A",
+        "versao": 1,
+        "checksum": "019bc97a29fffb9eed51683e2b42ae5e",
+        "user_modified": 0
+    },
+    {
+        "id_usuarios": 1,
+        "name": "Destaques de Materiais — Home",
+        "id": "destaques-materiais-home",
+        "publisher_id": "materiais",
+        "fields_schema": "{\n    \"rule\": \"manual\",\n    \"count\": 4,\n    \"order_by\": \"date_asc\",\n    \"selected_items\": [\n        \"guias-setup-agentes\",\n        \"roteiros-dos-episodios\",\n        \"diagramas-de-arquitetura\",\n        \"templates-mdd-e-skills\"\n    ],\n    \"variable_mapping\": [],\n    \"template_id\": \"c2f-destaques-timeline\"\n}",
+        "html": "<ol class=\"relative mt-10 space-y-4 border-l border-emerald-500\/20 pl-6 sm:pl-8\" data-c2f-destaques=\"timeline\">\n    <!-- item < -->\n    <li class=\"relative\" data-c2f-status=\"[[item#status_chave]]\">\n        <span aria-hidden=\"true\" class=\"absolute -left-[31px] top-6 h-3.5 w-3.5 rounded-full border-2 border-emerald-400 bg-[#060e0a] shadow-[0_0_12px_rgba(52,211,153,0.8)] sm:-left-[39px]\"><\/span>\n        <a href=\"[[item#url]]\" class=\"c2f-material group\">\n            <span class=\"c2f-num flex h-11 min-w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500\/10 px-2.5 font-mono text-xs font-black text-emerald-300 transition-all duration-300 group-hover:bg-emerald-400 group-hover:text-[#060e0a] group-hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]\">[[item#selo]]<\/span>\n            <span class=\"min-w-0 flex-1\">\n                <span class=\"flex flex-wrap items-center gap-2\"><span class=\"block font-extrabold text-white\">[[item#titulo]]<\/span><span class=\"c2f-status-[[item#status_chave]]\">[[item#status]]<\/span><\/span>\n                <span class=\"mt-1 block text-sm text-slate-400\">[[item#resumo]]<\/span>\n                <span class=\"mt-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-400\/70\">[[item#categoria]]<\/span>\n            <\/span>\n            <span class=\"c2f-material-arrow\">&darr;<\/span>\n        <\/a>\n    <\/li>\n    <!-- item > -->\n    <!-- no-item < -->\n    <li class=\"rounded-2xl border border-dashed border-white\/10 p-8 text-center text-sm font-bold text-slate-500\">Nenhuma publicação disponível no momento.<\/li>\n    <!-- no-item > -->\n<\/ol>\n",
+        "css": null,
+        "language": "pt-br",
+        "status": "A",
+        "versao": 1,
+        "checksum": "907f1f95b22e93e22e758e3685795bb7",
+        "user_modified": 0
+    }
+]

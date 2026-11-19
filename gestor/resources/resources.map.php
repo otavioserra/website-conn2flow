@@ -14,6 +14,7 @@ $resources = [
                 'layouts' => 'layouts.json',
                 'pages' => 'pages.json',
                 'components' => 'components.json',
+                'templates' => 'templates.json',
             ],
             'version' => '1',
         ],

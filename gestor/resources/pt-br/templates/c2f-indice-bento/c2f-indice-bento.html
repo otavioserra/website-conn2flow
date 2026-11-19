@@ -1,0 +1,55 @@
+<div class="conn2flow-publisher-index" data-grupo-slug="@[[grupo_slug]]@" data-publisher-id="@[[publisher_id]]@" data-items-per-page="@[[items_per_page]]@" data-ordenacao="@[[ordenacao]]@" data-page="1">
+    <div class="flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-3 sm:flex-row sm:items-center">
+        <!-- search-input < -->
+        <label class="relative min-w-0 flex-1">
+            <span class="sr-only">Buscar</span>
+            <svg viewBox="0 0 24 24" class="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input type="search" class="publisher-index-search c2f-field" style="padding-left:2.75rem" placeholder="Buscar por título ou tema...">
+        </label>
+        <!-- search-input > -->
+        <!-- sort-select < -->
+        <label class="sm:w-56">
+            <span class="sr-only">Ordenar</span>
+            <select class="publisher-index-sort c2f-field">
+                <option value="date_asc">Ordem da série</option>
+                <option value="date_desc">Mais recentes primeiro</option>
+                <option value="title_asc">Título (A-Z)</option>
+                <option value="title_desc">Título (Z-A)</option>
+            </select>
+        </label>
+        <!-- sort-select > -->
+    </div>
+
+    <!-- metrics < -->
+    <p class="publisher-index-metrics mt-5 text-sm font-bold text-slate-500">Exibindo <span data-page-count class="text-emerald-300">@[[page_count]]@</span> de <span data-page-total class="text-white">@[[page_total]]@</span> publicações</p>
+    <!-- metrics > -->
+
+    <div class="publisher-index-items c2f-bento mt-6 grid auto-rows-fr gap-5 md:grid-cols-2 lg:grid-cols-4">
+    <!-- item < -->
+    <article class="group relative flex flex-col overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-[#0f1f17] via-[#0a1510] to-[#060e0a] p-6 transition-all duration-500 hover:border-emerald-400/50 hover:shadow-[0_30px_80px_-30px_rgba(16,185,129,0.6)] md:first:col-span-2 lg:first:row-span-2 lg:first:p-9" data-c2f-status="@[[item#status_chave]]@">
+        <div class="pointer-events-none absolute -bottom-24 -right-24 h-56 w-56 rounded-full bg-emerald-500/15 blur-3xl transition-transform duration-700 group-hover:scale-150"></div>
+        <div class="pointer-events-none absolute inset-0 c2f-grid opacity-0 transition-opacity duration-500 group-hover:opacity-40"></div>
+        <div class="relative flex items-center justify-between gap-3">
+            <span class="c2f-num rounded-xl border border-emerald-500/25 bg-emerald-500/10 px-3 py-1 font-mono text-sm font-black text-emerald-300">@[[item#selo]]@</span>
+            <span class="c2f-status-@[[item#status_chave]]@">@[[item#status]]@</span>
+        </div>
+        <h3 class="c2f-bento-title relative mt-6 text-lg font-black leading-snug text-white"><a href="@[[item#url]]@" class="after:absolute after:inset-0 focus:outline-none">@[[item#titulo]]@</a></h3>
+        <p class="relative mt-3 flex-1 text-sm leading-relaxed text-slate-400">@[[item#resumo]]@</p>
+        <p class="c2f-bento-extra relative mt-5 text-xs font-bold uppercase tracking-widest text-emerald-300/80">Em destaque · @[[item#relacionado]]@</p>
+        <div class="relative mt-6 flex items-center justify-between gap-3">
+            <span class="c2f-tag">@[[item#categoria]]@</span>
+            <span class="c2f-accent flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-emerald-500/30 text-emerald-300 transition-all duration-300 group-hover:rotate-[-45deg] group-hover:bg-emerald-500 group-hover:text-[#060e0a]"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+    </article>
+    <!-- item > -->
+        <!-- no-item < -->
+        <div class="publisher-index-empty col-span-full rounded-3xl border border-dashed border-white/10 p-10 text-center text-sm font-bold text-slate-500">Nenhuma publicação encontrada para esta busca.</div>
+        <!-- no-item > -->
+    </div>
+
+    <div class="mt-10 text-center">
+        <!-- load-more < -->
+        <button type="button" class="publisher-index-load-more c2f-btn-glow inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-7 py-3 text-sm font-extrabold text-emerald-200 transition-all duration-300 hover:bg-emerald-500 hover:text-[#060e0a]">Carregar mais</button>
+        <!-- load-more > -->
+    </div>
+</div>

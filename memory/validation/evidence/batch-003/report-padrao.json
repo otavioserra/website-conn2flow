@@ -1,0 +1,780 @@
+{
+  "base": "https://ia-parceria.local",
+  "label": "padrao",
+  "browser": "Chromium 148.0.7778.96",
+  "timestamp": "2026-11-19T18:55:36.947Z",
+  "passed": true,
+  "results": [
+    {
+      "route": "/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Trabalhando em Par com IA — Curso de IA",
+        "h1": "Trabalhando em Par com IA:\nDa Ideia ao Projeto Real em Produção",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 390,
+        "viewport": 390,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Início"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 9,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": {
+        "display": "block",
+        "height": 400,
+        "expanded": "true"
+      },
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Trabalhando em Par com IA — Curso de IA",
+        "h1": "Trabalhando em Par com IA:\nDa Ideia ao Projeto Real em Produção",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 820,
+        "viewport": 820,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Início"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 9,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Trabalhando em Par com IA — Curso de IA",
+        "h1": "Trabalhando em Par com IA:\nDa Ideia ao Projeto Real em Produção",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 1440,
+        "viewport": 1440,
+        "header": "navbar",
+        "toggleDisplay": "none",
+        "panelDisplay": "flex",
+        "menuItems": 5,
+        "activeLinks": [
+          "Início"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 9,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/episodios/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Episódios — Trabalhando em Par com IA",
+        "h1": "Todos os episódios da série em ordem",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 390,
+        "viewport": 390,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Episódios",
+          "Episódios"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 5,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": {
+        "display": "block",
+        "height": 400,
+        "expanded": "true"
+      },
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/episodios/",
+      "viewport": {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Episódios — Trabalhando em Par com IA",
+        "h1": "Todos os episódios da série em ordem",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 820,
+        "viewport": 820,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Episódios",
+          "Episódios"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 5,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/episodios/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Episódios — Trabalhando em Par com IA",
+        "h1": "Todos os episódios da série em ordem",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 1440,
+        "viewport": 1440,
+        "header": "navbar",
+        "toggleDisplay": "none",
+        "panelDisplay": "flex",
+        "menuItems": 5,
+        "activeLinks": [
+          "Episódios",
+          "Episódios"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 5,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": {
+        "items": 1,
+        "first": "IA Editou Meu Vídeo no Blender! Antigravity, SDD e MCP na Prática",
+        "metrics": "Exibindo 1 de 1 publicações"
+      },
+      "errors": []
+    },
+    {
+      "route": "/materiais/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Materiais & Downloads — Trabalhando em Par com IA",
+        "h1": "Tudo o que aparece nos vídeos, pronto para baixar",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 390,
+        "viewport": 390,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Materiais",
+          "Materiais"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 4,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": {
+        "display": "block",
+        "height": 400,
+        "expanded": "true"
+      },
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/materiais/",
+      "viewport": {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Materiais & Downloads — Trabalhando em Par com IA",
+        "h1": "Tudo o que aparece nos vídeos, pronto para baixar",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 820,
+        "viewport": 820,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Materiais",
+          "Materiais"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 4,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/materiais/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Materiais & Downloads — Trabalhando em Par com IA",
+        "h1": "Tudo o que aparece nos vídeos, pronto para baixar",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 1440,
+        "viewport": 1440,
+        "header": "navbar",
+        "toggleDisplay": "none",
+        "panelDisplay": "flex",
+        "menuItems": 5,
+        "activeLinks": [
+          "Materiais",
+          "Materiais"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 4,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/episodios/ep-01-conceitos-e-historia-da-ia/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "h1": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 390,
+        "viewport": 390,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Episódios",
+          "Episódios"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": {
+        "display": "block",
+        "height": 400,
+        "expanded": "true"
+      },
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/episodios/ep-01-conceitos-e-historia-da-ia/",
+      "viewport": {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "h1": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 820,
+        "viewport": 820,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Episódios",
+          "Episódios"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/episodios/ep-01-conceitos-e-historia-da-ia/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "h1": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 1440,
+        "viewport": 1440,
+        "header": "navbar",
+        "toggleDisplay": "none",
+        "panelDisplay": "flex",
+        "menuItems": 5,
+        "activeLinks": [
+          "Episódios",
+          "Episódios"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/materiais/guias-setup-agentes/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "h1": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 390,
+        "viewport": 390,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Materiais",
+          "Materiais"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": {
+        "display": "block",
+        "height": 400,
+        "expanded": "true"
+      },
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/materiais/guias-setup-agentes/",
+      "viewport": {
+        "name": "tablet",
+        "width": 820,
+        "height": 1180
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "h1": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 820,
+        "viewport": 820,
+        "header": "navbar",
+        "toggleDisplay": "flex",
+        "panelDisplay": "none",
+        "menuItems": 5,
+        "activeLinks": [
+          "Materiais",
+          "Materiais"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    },
+    {
+      "route": "/materiais/guias-setup-agentes/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "passed": true,
+      "checks": {
+        "http200": true,
+        "nunito": true,
+        "cyberEmeraldBg": true,
+        "noOverflow": true,
+        "noErrors": true,
+        "noLeftovers": true,
+        "menuResponsive": true,
+        "menuMobileOpens": true,
+        "footerMenu": true,
+        "searchAjax": true
+      },
+      "metrics": {
+        "title": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "h1": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)",
+        "fontLoaded": true,
+        "fontFamily": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "h1Font": "Nunito, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "background": "rgb(6, 14, 10)",
+        "emerald": "oklch(0.845 0.143 164.978)",
+        "docWidth": 1440,
+        "viewport": 1440,
+        "header": "navbar",
+        "toggleDisplay": "none",
+        "panelDisplay": "flex",
+        "menuItems": 5,
+        "activeLinks": [
+          "Materiais",
+          "Materiais"
+        ],
+        "footerCols": 4,
+        "footerLinks": 13,
+        "highlightCards": 0,
+        "indexItems": 0,
+        "leftovers": [],
+        "widgetMarkers": 0
+      },
+      "menuOpen": null,
+      "search": null,
+      "errors": []
+    }
+  ]
+}

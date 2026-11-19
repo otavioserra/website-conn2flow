@@ -1,0 +1,43 @@
+{
+    "menus": {
+        "n": "2",
+        "d": "2"
+    },
+    "publisher": {
+        "n": "2",
+        "d": "2"
+    },
+    "publisher_highlights": {
+        "n": "2",
+        "d": "2"
+    },
+    "publisher_index": {
+        "n": "2",
+        "d": "2"
+    },
+    "publisher_pages": {
+        "n": "9",
+        "d": "9"
+    },
+    "publicacoes": {
+        "n": "9",
+        "d": "9",
+        "proj": "9"
+    },
+    "templates": {
+        "menus": 4,
+        "publisher": 3,
+        "publisher-highlights": 3,
+        "publisher-index": 3
+    },
+    "template_ativo": {
+        "menu-cabecalho-principal": "c2f-menu-cabecalho-navbar",
+        "menu-rodape-principal": "c2f-menu-rodape-colunas",
+        "destaques-episodios-home": "c2f-destaques-cards",
+        "destaques-materiais-home": "c2f-destaques-timeline",
+        "indice-episodios": "c2f-indice-cards",
+        "indice-materiais": "c2f-indice-timeline",
+        "episodios": "c2f-publicacao-editorial",
+        "materiais": "c2f-publicacao-docs"
+    }
+}

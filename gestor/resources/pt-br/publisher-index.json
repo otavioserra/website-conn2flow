@@ -1,0 +1,51 @@
+[
+    {
+        "id_usuarios": 1,
+        "name": "Índice de Episódios",
+        "id": "indice-episodios",
+        "publisher_id": "episodios",
+        "fields_schema": {
+            "rule": "manual",
+            "items_per_page": 6,
+            "order_by": "date_asc",
+            "show_search_input": true,
+            "show_sorting_select": false,
+            "show_load_more_btn": true,
+            "show_metrics": true,
+            "selected_items": [
+                "ep-01-conceitos-e-historia-da-ia",
+                "ep-02-qual-chat-de-ia-usar",
+                "ep-03-como-controlar-a-memoria-da-ia",
+                "ep-04-ia-editou-meu-video-no-blender",
+                "ep-05-construindo-websites-com-conn2flow-pro"
+            ],
+            "variable_mapping": {},
+            "template_id": "c2f-indice-cards",
+            "count": 5
+        }
+    },
+    {
+        "id_usuarios": 1,
+        "name": "Índice de Materiais",
+        "id": "indice-materiais",
+        "publisher_id": "materiais",
+        "fields_schema": {
+            "rule": "manual",
+            "items_per_page": 6,
+            "order_by": "date_asc",
+            "show_search_input": true,
+            "show_sorting_select": false,
+            "show_load_more_btn": true,
+            "show_metrics": true,
+            "selected_items": [
+                "guias-setup-agentes",
+                "roteiros-dos-episodios",
+                "diagramas-de-arquitetura",
+                "templates-mdd-e-skills"
+            ],
+            "variable_mapping": {},
+            "template_id": "c2f-indice-timeline",
+            "count": 4
+        }
+    }
+]

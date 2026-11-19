@@ -1,0 +1,84 @@
+{
+    "tabelas": {
+        "menus": {
+            "nome": "menus",
+            "id": "id",
+            "id_numerico": "id_menus",
+            "data_file": "MenusData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "project:project_tables_config.json",
+            "partitioned": false,
+            "total_parts": 1
+        },
+        "publisher": {
+            "nome": "publisher",
+            "id": "id",
+            "id_numerico": "id_publisher",
+            "data_file": "PublisherData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "project:project_tables_config.json",
+            "partitioned": false,
+            "total_parts": 1
+        },
+        "publisher_highlights": {
+            "nome": "publisher_highlights",
+            "id": "id",
+            "id_numerico": "id_publisher_highlights",
+            "data_file": "PublisherHighlightsData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "project:project_tables_config.json",
+            "partitioned": false,
+            "total_parts": 1
+        },
+        "publisher_index": {
+            "nome": "publisher_index",
+            "id": "id",
+            "id_numerico": "id_publisher_index",
+            "data_file": "PublisherIndexData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "project:project_tables_config.json",
+            "partitioned": false,
+            "total_parts": 1
+        },
+        "publisher_pages": {
+            "nome": "publisher_pages",
+            "id": "page_id",
+            "id_numerico": "id_publisher_pages",
+            "data_file": "PublisherPagesData.json",
+            "strategy": "natural_key",
+            "natural_key_columns": [
+                "language",
+                "page_id"
+            ],
+            "preserve_on_user_modified": [],
+            "insert_only": false,
+            "source": "project:project_tables_config.json",
+            "partitioned": false,
+            "total_parts": 1
+        }
+    }
+}

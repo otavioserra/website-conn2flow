@@ -1,0 +1,66 @@
+<!-- menu-visible < -->
+<header id="c2f-header" data-c2f-header="command" data-c2f-menu class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-300">
+    <!-- Faixa de status da série -->
+    <div class="border-b border-emerald-500/10 bg-gradient-to-r from-emerald-500/10 via-[#060e0a]/60 to-emerald-500/10">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-1.5 text-[11px] font-bold sm:px-6 lg:px-8">
+            <p class="flex min-w-0 items-center gap-2 text-emerald-200">
+                <span class="relative flex h-2 w-2 shrink-0"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span></span>
+                <span class="truncate uppercase tracking-widest">Série em produção · novos episódios na playlist</span>
+            </p>
+            <a href="https://conn2flow.com/pro/#planos" target="_blank" rel="noopener" class="shrink-0 rounded-full border border-emerald-500/30 px-2.5 py-0.5 uppercase tracking-widest text-emerald-300 transition-colors hover:bg-emerald-500 hover:text-[#060e0a]">Conn2Flow Pro</a>
+        </div>
+    </div>
+
+    <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:flex-nowrap lg:px-8" aria-label="Navegação principal">
+        <!-- Marca estilo terminal -->
+        <a href="@[[pagina#url-raiz]]@" class="group flex shrink-0 items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-emerald-500/40 bg-[#0a1510] font-mono text-sm font-black text-emerald-300 shadow-[inset_0_0_18px_rgba(16,185,129,0.25)] transition-colors group-hover:bg-emerald-500 group-hover:text-[#060e0a]">&gt;_</span>
+            <span class="flex flex-col leading-tight">
+                <span class="font-mono text-sm font-bold text-emerald-300">~/conn2flow/<span class="text-white">curso-ia</span></span>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-slate-500">Trabalhando em Par com IA</span>
+            </span>
+        </a>
+
+        <!-- Botão do drawer (mobile) -->
+        <button type="button" data-c2f-menu-toggle aria-expanded="false" aria-label="Abrir menu" class="c2f-menu-toggle h-10 items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 font-mono text-xs font-bold text-slate-200 transition-colors hover:border-emerald-500/40">
+            <svg data-icon="open" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+            <svg data-icon="close" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            menu
+        </button>
+
+        <!-- Navegação estruturada -->
+        <div data-c2f-menu-panel class="c2f-menu-panel w-full rounded-xl border border-white/5 bg-[#060e0a]/95 p-3 backdrop-blur-xl lg:w-auto lg:flex-1 lg:justify-end lg:gap-4 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
+            <p class="c2f-only-mobile mb-2 px-1 font-mono text-[11px] font-bold uppercase tracking-widest text-slate-500">Navegação</p>
+            <ul class="c2f-menu-list gap-2 lg:gap-1">
+                <!-- item < -->
+                <li><a href="@[[item#url]]@" target="@[[item#target]]@" data-slug="@[[item#slug]]@" class="c2f-cmd-link @[[item#css_classes]]@">@[[item#label]]@</a></li>
+                <!-- item > -->
+                <!-- item-parent < -->
+                <li class="c2f-has-sub relative">
+                    <a href="@[[item#url]]@" target="@[[item#target]]@" data-slug="@[[item#slug]]@" class="c2f-cmd-link @[[item#css_classes]]@">@[[item#label]]@</a>
+                    <ul class="c2f-submenu z-20 min-w-[14rem] rounded-xl border border-emerald-500/20 bg-[#0a1510]/95 p-2 lg:absolute lg:right-0 lg:top-full lg:mt-1">
+                        @[[item#children]]@
+                    </ul>
+                </li>
+                <!-- item-parent > -->
+                <!-- item-separator < -->
+                <li aria-hidden="true" class="px-1 pt-2 font-mono text-[11px] font-bold uppercase tracking-widest text-slate-600">@[[item#label]]@</li>
+                <!-- item-separator > -->
+                <!-- no-item < -->
+                <li class="px-3 text-sm italic text-slate-500">Nenhum item no menu</li>
+                <!-- no-item > -->
+            </ul>
+
+            <div class="c2f-menu-ctas mt-3 shrink-0 lg:mt-0 lg:gap-2">
+                <a href="https://github.com/otavioserra/conn2flow-ai-workspace" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3.5 py-2.5 font-mono text-xs font-bold text-slate-200 transition-colors hover:border-emerald-500/40 hover:text-white lg:py-2">
+                    git clone <span class="c2f-kbd">&#8629;</span>
+                </a>
+                <a href="https://www.youtube.com/playlist?list=PLBjofG88X62Y" target="_blank" rel="noopener" class="c2f-btn-glow inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-4 py-2.5 text-sm font-extrabold text-[#060e0a] transition-all duration-300 hover:bg-emerald-400 hover:shadow-[0_0_24px_rgba(52,211,153,0.6)] lg:py-2">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Playlist
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- menu-visible > -->

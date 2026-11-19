@@ -1,0 +1,22 @@
+<div class="c2f-bento mt-8 grid auto-rows-fr gap-5 md:grid-cols-2 lg:grid-cols-4" data-c2f-destaques="bento">
+    <!-- item < -->
+    <article class="group relative flex flex-col overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-[#0f1f17] via-[#0a1510] to-[#060e0a] p-6 transition-all duration-500 hover:border-emerald-400/50 hover:shadow-[0_30px_80px_-30px_rgba(16,185,129,0.6)] md:first:col-span-2 lg:first:row-span-2 lg:first:p-9" data-c2f-status="@[[item#status_chave]]@">
+        <div class="pointer-events-none absolute -bottom-24 -right-24 h-56 w-56 rounded-full bg-emerald-500/15 blur-3xl transition-transform duration-700 group-hover:scale-150"></div>
+        <div class="pointer-events-none absolute inset-0 c2f-grid opacity-0 transition-opacity duration-500 group-hover:opacity-40"></div>
+        <div class="relative flex items-center justify-between gap-3">
+            <span class="c2f-num rounded-xl border border-emerald-500/25 bg-emerald-500/10 px-3 py-1 font-mono text-sm font-black text-emerald-300">@[[item#selo]]@</span>
+            <span class="c2f-status-@[[item#status_chave]]@">@[[item#status]]@</span>
+        </div>
+        <h3 class="c2f-bento-title relative mt-6 text-lg font-black leading-snug text-white"><a href="@[[item#url]]@" class="after:absolute after:inset-0 focus:outline-none">@[[item#titulo]]@</a></h3>
+        <p class="relative mt-3 flex-1 text-sm leading-relaxed text-slate-400">@[[item#resumo]]@</p>
+        <p class="c2f-bento-extra relative mt-5 text-xs font-bold uppercase tracking-widest text-emerald-300/80">Em destaque · @[[item#relacionado]]@</p>
+        <div class="relative mt-6 flex items-center justify-between gap-3">
+            <span class="c2f-tag">@[[item#categoria]]@</span>
+            <span class="c2f-accent flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-emerald-500/30 text-emerald-300 transition-all duration-300 group-hover:rotate-[-45deg] group-hover:bg-emerald-500 group-hover:text-[#060e0a]"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+    </article>
+    <!-- item > -->
+    <!-- no-item < -->
+    <div class="col-span-full rounded-3xl border border-dashed border-white/10 p-10 text-center text-sm font-bold text-slate-500">Nenhuma publicação disponível no momento.</div>
+    <!-- no-item > -->
+</div>

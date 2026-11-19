@@ -1,0 +1,41 @@
+[
+    {
+        "id_usuarios": 1,
+        "name": "Destaques de Episódios — Home",
+        "id": "destaques-episodios-home",
+        "publisher_id": "episodios",
+        "fields_schema": {
+            "rule": "manual",
+            "count": 5,
+            "order_by": "date_asc",
+            "selected_items": [
+                "ep-01-conceitos-e-historia-da-ia",
+                "ep-02-qual-chat-de-ia-usar",
+                "ep-03-como-controlar-a-memoria-da-ia",
+                "ep-04-ia-editou-meu-video-no-blender",
+                "ep-05-construindo-websites-com-conn2flow-pro"
+            ],
+            "variable_mapping": {},
+            "template_id": "c2f-destaques-cards"
+        }
+    },
+    {
+        "id_usuarios": 1,
+        "name": "Destaques de Materiais — Home",
+        "id": "destaques-materiais-home",
+        "publisher_id": "materiais",
+        "fields_schema": {
+            "rule": "manual",
+            "count": 4,
+            "order_by": "date_asc",
+            "selected_items": [
+                "guias-setup-agentes",
+                "roteiros-dos-episodios",
+                "diagramas-de-arquitetura",
+                "templates-mdd-e-skills"
+            ],
+            "variable_mapping": {},
+            "template_id": "c2f-destaques-timeline"
+        }
+    }
+]

@@ -1,0 +1,596 @@
+[
+    {
+        "page_id": "ep-01-conceitos-e-historia-da-ia",
+        "publisher_id": "episodios",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Conceitos & História da IA: Os 7 Elos Históricos e a Prótese Cognitiva"
+            },
+            {
+                "id": "selo",
+                "value": "01"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Episódios"
+            },
+            {
+                "id": "colecao_url",
+                "value": "episodios/"
+            },
+            {
+                "id": "categoria",
+                "value": "Fundamentos"
+            },
+            {
+                "id": "relacionado",
+                "value": "Estágio 1 · Conceitos e História"
+            },
+            {
+                "id": "resumo",
+                "value": "Os 7 Elos Históricos e a Prótese Cognitiva: por que a IA é a lente que corrige a miopia do trabalho intelectual, e não uma força mágica ou ameaçadora."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Assistir na playlist oficial"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Materiais no GitHub"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>A IA como Prótese Cognitiva: sua inteligência e julgamento somados à capacidade de processamento da máquina</li><li>Os 7 elos da evolução, da Álgebra Linear aos LLMs</li><li>Por que o chat é um calculador semântico de probabilidade</li><li>Como dar instruções claras em vez de esperar que a IA adivinhe</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>Se você é médico, advogado, gestor, publicitário ou programador e sente que o mundo da IA está correndo rápido demais, o recado deste episódio é simples: <strong>respire fundo, você não está atrasado</strong>.</p><h2>A Prótese Cognitiva</h2><p>Pense na IA como um par de óculos para quem tem miopia: ela não enxerga por você, ela permite que você enxergue mais longe. A IA não veio substituir a sua profissão; veio eliminar o trabalho braçal e repetitivo da sua rotina.</p><blockquote>Prótese Cognitiva = sua inteligência e julgamento + a capacidade de processamento da IA.</blockquote><h2>Os 7 elos da evolução</h2><ol><li><strong>Álgebra Linear e Matrizes</strong>: ideias viram números, e cada conceito ganha um endereço no espaço.</li><li><strong>Estatística e Probabilidade</strong>: a máquina mede quais palavras costumam aparecer juntas.</li><li><strong>Aprendizado de Máquina</strong>: em vez de milhares de regras escritas à mão, a máquina aprende as regras a partir dos dados.</li><li><strong>Perceptron e Backpropagation</strong>: o computador aprende errando e ajusta seus parâmetros de trás para frente.</li><li><strong>Embeddings vetoriais</strong>: palavras com sentidos parecidos ficam próximas na memória do computador.</li><li><strong>Transformers e Autoatenção</strong>: desde 2017 a IA lê frases inteiras de uma vez sem perder o contexto.</li><li><strong>LLMs</strong>: ChatGPT, Claude e Gemini, motores de linguagem prontos para trabalhar como a sua Prótese Cognitiva.</li></ol><h2>O que muda na sua rotina hoje</h2><p>Quando você entende que o chat calcula probabilidades, você para de esperar que ele adivinhe e passa a orientar como um bom gestor. Em vez de pedir \"escreva um e-mail sobre a reunião\", você informa o papel, o objetivo, o horário e os três pontos que precisam aparecer.</p>"
+            }
+        ]
+    },
+    {
+        "page_id": "ep-02-qual-chat-de-ia-usar",
+        "publisher_id": "episodios",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Qual Chat de IA Usar?! Desmistificando os Modelos no Navegador"
+            },
+            {
+                "id": "selo",
+                "value": "02"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Episódios"
+            },
+            {
+                "id": "colecao_url",
+                "value": "episodios/"
+            },
+            {
+                "id": "categoria",
+                "value": "Modelos"
+            },
+            {
+                "id": "relacionado",
+                "value": "Estágio 2 · Chats no Navegador"
+            },
+            {
+                "id": "resumo",
+                "value": "O mapa dos chats de IA: forças, limites e como escolher o assistente certo para cada tarefa, até descobrir onde o chat sozinho bate no teto."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Assistir na playlist oficial"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Materiais no GitHub"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>O chat como porta de entrada mais democrática da IA</li><li>Tour por ChatGPT, Claude, Gemini, Copilot, DeepSeek e modelos locais via Ollama</li><li>As superpotências do chat no dia a dia</li><li>Os 4 limites do modo freestyle</li><li>O gancho para a engenharia agêntica</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>O chat no navegador é a porta de entrada mais democrática da IA. Errar, reformular e tentar de novo é exatamente como você forma as suas \"sinapses virtuais\": cada correção funciona como a propagação do erro que vimos no Episódio 01.</p><h2>O mapa dos grandes chats</h2><ul><li><strong>ChatGPT</strong> (OpenAI): versatilidade geral.</li><li><strong>Claude</strong> (Anthropic): excelente para texto longo e código.</li><li><strong>Gemini</strong> (Google): integração com o ecossistema Google.</li><li><strong>Copilot</strong> (Microsoft): presente no Windows e no Office.</li><li><strong>DeepSeek e modelos open source</strong>: opções gratuitas, inclusive rodando localmente com Ollama.</li></ul><h2>Onde o chat brilha</h2><p>Brainstorming, resumos de documentos e reuniões, rascunhos de e-mails e posts, scripts curtos e fórmulas de planilha.</p><h2>Onde o chat bate no teto</h2><ol><li><strong>A ilusão do copy-paste</strong>: copiar e colar o dia todo é trabalho manual disfarçado.</li><li><strong>A amnésia de contexto</strong>: em conversas longas a IA esquece decisões e se contradiz.</li><li><strong>A falta de conexão com o seu computador</strong>: o chat não enxerga suas pastas nem roda testes.</li><li><strong>A perda de governança</strong>: fechou a aba, perdeu o histórico de decisões.</li></ol><p>É por isso que, para projetos reais, usamos agentes conectados ao repositório e governados por especificações versionadas. Esse é o assunto do Episódio 03.</p>"
+            }
+        ]
+    },
+    {
+        "page_id": "ep-03-como-controlar-a-memoria-da-ia",
+        "publisher_id": "episodios",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Como Controlar a Memória da IA: Setup de Agentes no Antigravity e Governança SDD"
+            },
+            {
+                "id": "selo",
+                "value": "03"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Episódios"
+            },
+            {
+                "id": "colecao_url",
+                "value": "episodios/"
+            },
+            {
+                "id": "categoria",
+                "value": "Agentes · SDD"
+            },
+            {
+                "id": "relacionado",
+                "value": "Estágio 3 · Setup Agêntico"
+            },
+            {
+                "id": "resumo",
+                "value": "Setup de agentes no Antigravity 2.0 e governança SDD: dê memória persistente e regras claras aos seus agentes com o repositório base gratuito."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Assistir na playlist oficial"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Clonar o repositório base"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>O que instalar: Antigravity 2.0, VS Code ou Cursor, Git e Node.js</li><li>O panorama real de assinaturas, em torno de R$ 100 por mês</li><li>SDD: o controle da memória externa da IA</li><li>Como adaptar o conn2flow-ai-workspace em 2 minutos</li><li>Os bastidores do modelo de Agente Duplo/Triplo</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>Nos episódios anteriores vimos a teoria e os chats batendo no teto. Agora entramos no setup agêntico profissional.</p><h2>O que instalar</h2><ul><li><strong>Google Antigravity 2.0</strong>: o ambiente onde você conversa com agentes conectados às pastas do seu computador.</li><li><strong>VS Code ou Cursor</strong>: editor leve para código e documentos.</li><li><strong>Git e Node.js</strong>: controle de versão e execução de comandos locais.</li></ul><h2>Quanto custa de verdade</h2><p>As ferramentas de ponta ficam na mesma faixa, cerca de R$ 90 a R$ 110 por mês. Escolha pelo menos uma assinatura profissional: o valor se paga em horas de trabalho mecânico economizadas.</p><h2>SDD: a memória externa da IA</h2><p>A IA não guarda estado entre sessões e comprime a memória em conversas longas. O Spec-Driven Development resolve isso com arquivos simples em Markdown: a especificação (<code>SPEC.md</code>), as decisões (<code>DECISION-LOG.md</code>), os lotes de entrega (<code>BATCH-INDEX.md</code>) e as instruções de trabalho (<code>req-XXX.md</code>). A IA lê esses arquivos antes de trabalhar e não esquece o que foi combinado.</p><h2>O repositório base em 2 minutos</h2><ol><li>Baixe ou clone o <code>conn2flow-ai-workspace</code>.</li><li>Abra a pasta no Antigravity ou no VS Code.</li><li>Peça ao agente para adaptar a pasta de memória ao seu projeto, mantendo a governança.</li></ol><blockquote>Um agente planeja, outro executa e um terceiro tira dúvidas sem poluir o contexto da arquitetura.</blockquote>"
+            }
+        ]
+    },
+    {
+        "page_id": "ep-04-ia-editou-meu-video-no-blender",
+        "publisher_id": "episodios",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "IA Editou Meu Vídeo no Blender! Antigravity, SDD e MCP na Prática"
+            },
+            {
+                "id": "selo",
+                "value": "04"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Episódios"
+            },
+            {
+                "id": "colecao_url",
+                "value": "episodios/"
+            },
+            {
+                "id": "categoria",
+                "value": "MCP · Prática"
+            },
+            {
+                "id": "relacionado",
+                "value": "Estágio 4 · Automação"
+            },
+            {
+                "id": "resumo",
+                "value": "Antigravity, SDD e MCP na prática: um agente operando um software real de ponta a ponta, cortando silêncios e organizando a edição no Blender."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Assistir na playlist oficial"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Materiais no GitHub"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>A IA além do texto: agentes operando softwares externos</li><li>Model Context Protocol (MCP): a ponte entre o agente e o Blender</li><li>Importar mídias, detectar silêncios e aplicar cortes no editor de vídeo</li><li>Vídeo e áudio agrupados depois dos cortes</li><li>SDD guiando cada passo da automação</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>A maioria das pessoas acha que IA só serve para gerar texto e código na tela. Neste episódio, o mesmo ambiente agêntico do Episódio 03 passa a operar um software de verdade: o <strong>Blender</strong>.</p><h2>Como funciona</h2><p>Um add-on dentro do Blender e um servidor <strong>MCP</strong> (Model Context Protocol) expõem ferramentas de edição ao agente. O agente pede para importar as mídias, analisar os trechos de silêncio, aplicar os cortes e fechar os buracos da linha do tempo, sempre mantendo cada vídeo agrupado ao seu áudio.</p><h2>O fluxo na prática</h2><ol><li>Você descreve o que quer em linguagem natural.</li><li>O agente consulta a especificação do projeto e planeja a edição.</li><li>As ferramentas MCP executam os comandos dentro do Blender.</li><li>Uma simulação mostra o que vai mudar antes do corte definitivo.</li></ol><h2>Por que isso importa</h2><p>A governança SDD continua valendo: os pedidos, as decisões e os testes ficam registrados. A automação deixa de ser um truque isolado e vira uma ferramenta repetível da sua rotina.</p>"
+            }
+        ]
+    },
+    {
+        "page_id": "ep-05-construindo-websites-com-conn2flow-pro",
+        "publisher_id": "episodios",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Construindo Websites e Aplicações com Conn2Flow Pro"
+            },
+            {
+                "id": "selo",
+                "value": "05"
+            },
+            {
+                "id": "status",
+                "value": "Em breve"
+            },
+            {
+                "id": "status_chave",
+                "value": "soon"
+            },
+            {
+                "id": "colecao",
+                "value": "Episódios"
+            },
+            {
+                "id": "colecao_url",
+                "value": "episodios/"
+            },
+            {
+                "id": "categoria",
+                "value": "Produção"
+            },
+            {
+                "id": "relacionado",
+                "value": "Estágio 5 · Conn2Flow Pro"
+            },
+            {
+                "id": "resumo",
+                "value": "Da landing page ao SaaS: agentes construindo produtos digitais reais sobre a infraestrutura open source do Conn2Flow."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Ativar o sino na playlist"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://conn2flow.com/pro/#planos"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Conhecer o Conn2Flow Pro"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>Websites institucionais do início ao fim</li><li>Aplicações web completas sobre o Conn2Flow</li><li>Recursos, templates e widgets gerenciados pelo painel</li><li>Publicação com infraestrutura profissional</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>O próximo estágio da série leva tudo o que foi construído até aqui para a produção: <strong>websites institucionais e aplicações web completas</strong> criados por agentes sobre a infraestrutura Conn2Flow Pro e o core Codeflow.</p><h2>O que esperar</h2><ul><li>Um projeto real planejado e executado com governança de memória.</li><li>Páginas, menus e publicações gerenciados pelo painel, como este portal.</li><li>Do ambiente de teste à publicação.</li></ul><p>Ative o sino na playlist oficial para ser avisado quando o episódio for publicado.</p>"
+            }
+        ]
+    },
+    {
+        "page_id": "guias-setup-agentes",
+        "publisher_id": "materiais",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Guias de Setup dos Agentes (Antigravity 2.0, Claude Code, Codex e Cursor)"
+            },
+            {
+                "id": "selo",
+                "value": "Guia"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Materiais"
+            },
+            {
+                "id": "colecao_url",
+                "value": "materiais/"
+            },
+            {
+                "id": "categoria",
+                "value": "Antigravity 2.0 · Claude Code · Codex · Cursor"
+            },
+            {
+                "id": "relacionado",
+                "value": "Episódio 03"
+            },
+            {
+                "id": "resumo",
+                "value": "Antigravity 2.0, Claude Code, Codex e Cursor configurados com governança de memória, prontos para trabalhar no seu repositório."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Baixar no GitHub"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Assistir ao Episódio 03"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>Instruções de cada agente no repositório</li><li>Skills compartilhadas entre os kits</li><li>Regras de governança de memória</li><li>Checklist de primeira execução</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>Cada agente lê instruções próprias na raiz do repositório. Os guias mostram como deixar <strong>Antigravity 2.0, Claude Code, Codex e Cursor</strong> seguindo as mesmas regras de memória e as mesmas skills.</p><h2>Como usar</h2><ol><li>Clone o repositório <code>conn2flow-ai-workspace</code>.</li><li>Abra a pasta no agente de sua preferência.</li><li>Peça ao agente para ler a pasta de memória antes de qualquer tarefa.</li></ol><p>O resultado é o mesmo comportamento em qualquer ferramenta: o agente consulta a especificação, registra decisões e entrega em lotes pequenos.</p>"
+            }
+        ]
+    },
+    {
+        "page_id": "roteiros-dos-episodios",
+        "publisher_id": "materiais",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Roteiros dos Episódios — Série Trabalhando em Par com IA"
+            },
+            {
+                "id": "selo",
+                "value": "Roteiro"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Materiais"
+            },
+            {
+                "id": "colecao_url",
+                "value": "materiais/"
+            },
+            {
+                "id": "categoria",
+                "value": "Roteiros · Timestamps · Referências"
+            },
+            {
+                "id": "relacionado",
+                "value": "Episódios 01 a 04"
+            },
+            {
+                "id": "resumo",
+                "value": "O texto-base de cada vídeo, com falas, blocos com timestamps, referências e links comentados."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Baixar no GitHub"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Assistir na playlist"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>Objetivos de cada episódio</li><li>Roteiro passo a passo com timestamps</li><li>Falas do instrutor e ações em tela</li><li>Checklist de gravação</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>Os roteiros mostram como a própria série é produzida em par com IA: o agente planejador escreve o roteiro a partir da especificação do curso e o instrutor revisa e grava.</p><h2>O que cada roteiro traz</h2><ul><li>Os objetivos pedagógicos do episódio.</li><li>Os blocos de gravação com timestamps.</li><li>As falas, as telas e as chamadas para ação.</li><li>O checklist final antes de publicar.</li></ul><p>Use os roteiros como modelo para planejar os seus próprios vídeos ou aulas com agentes.</p>"
+            }
+        ]
+    },
+    {
+        "page_id": "diagramas-de-arquitetura",
+        "publisher_id": "materiais",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Diagramas de Arquitetura (Agente Duplo/Triplo, Ciclo MDD e MCP)"
+            },
+            {
+                "id": "selo",
+                "value": "Diagrama"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Materiais"
+            },
+            {
+                "id": "colecao_url",
+                "value": "materiais/"
+            },
+            {
+                "id": "categoria",
+                "value": "Agente Duplo/Triplo · MDD · MCP"
+            },
+            {
+                "id": "relacionado",
+                "value": "Episódios 03 e 04"
+            },
+            {
+                "id": "resumo",
+                "value": "Fluxos do Agente Duplo/Triplo, ciclo de memória e integração MCP em imagens prontas para estudo e apresentação."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Baixar no GitHub"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Ver nos episódios"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>Modelo de Agente Duplo e Triplo</li><li>Ciclo de memória: pedido, lote, validação e revisão</li><li>Antigravity, SDD e Blender conectados via MCP</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>Os diagramas resumem em uma imagem o que os episódios explicam em minutos: <strong>quem planeja, quem executa e quem revisa</strong>, e como a memória do projeto passa de um agente para o outro.</p><h2>Diagramas incluídos</h2><ul><li>O modelo de Agente Duplo/Triplo: Arquiteto, Executor e Revisor.</li><li>O ciclo de memória do pedido ao lote validado.</li><li>O fluxo agêntico completo do comando de voz à edição automática no Blender.</li></ul>"
+            }
+        ]
+    },
+    {
+        "page_id": "templates-mdd-e-skills",
+        "publisher_id": "materiais",
+        "fields_values": [
+            {
+                "id": "titulo",
+                "value": "Templates MDD & Skills Multi-Agente (conn2flow-ai-workspace)"
+            },
+            {
+                "id": "selo",
+                "value": "Template"
+            },
+            {
+                "id": "status",
+                "value": "Disponível"
+            },
+            {
+                "id": "status_chave",
+                "value": "on"
+            },
+            {
+                "id": "colecao",
+                "value": "Materiais"
+            },
+            {
+                "id": "colecao_url",
+                "value": "materiais/"
+            },
+            {
+                "id": "categoria",
+                "value": "Skills · Agent Kits · memory/"
+            },
+            {
+                "id": "relacionado",
+                "value": "conn2flow-ai-workspace"
+            },
+            {
+                "id": "resumo",
+                "value": "Estrutura de memória em memory/, skills reutilizáveis e kits multi-agente prontos para clonar e adaptar ao seu projeto."
+            },
+            {
+                "id": "link_principal",
+                "value": "https://github.com/otavioserra/conn2flow-ai-workspace"
+            },
+            {
+                "id": "link_principal_rotulo",
+                "value": "Clonar no GitHub"
+            },
+            {
+                "id": "link_secundario",
+                "value": "https://www.youtube.com/playlist?list=PLBjofG88X62Y"
+            },
+            {
+                "id": "link_secundario_rotulo",
+                "value": "Ver o setup no Episódio 03"
+            },
+            {
+                "id": "topicos",
+                "value": "<li>Pasta memory/ com especificação, decisões e lotes</li><li>Modelos de pedido e de relatório de lote</li><li>Skills reutilizáveis entre agentes</li><li>Kits para Antigravity, Claude Code, Codex e Cursor</li>"
+            },
+            {
+                "id": "conteudo",
+                "value": "<p>Este é o ponto de partida para levar a governança da série para o seu projeto. A pasta <code>memory/</code> guarda a especificação, as decisões, os pedidos e os lotes, e as skills ensinam cada agente a trabalhar do mesmo jeito.</p><h2>Como adaptar</h2><ol><li>Clone o <code>conn2flow-ai-workspace</code>.</li><li>Renomeie o projeto e ajuste a especificação.</li><li>Mantenha as regras de memória e de revisão.</li></ol><p>Em poucos minutos você tem uma central agêntica funcionando para qualquer profissão.</p>"
+            }
+        ]
+    }
+]

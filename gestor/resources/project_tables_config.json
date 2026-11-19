@@ -1,0 +1,117 @@
+{
+    "_comment": "Tabelas do Portal dos Seriados sincronizadas como recursos (sync_resources, REQ-003 / BATCH-003). Metadados em resources/pt-br/<arquivo>.json e HTML em resources/pt-br/<tabela>/<id>/<id>.html. As publicações (paginas) vivem em pages.json com publisher_id.",
+    "tabelas": {
+        "publisher": {
+            "nome": "publisher",
+            "id": "id",
+            "id_numerico": "id_publisher",
+            "config": {
+                "strategy": "natural_key",
+                "natural_key_columns": [
+                    "language",
+                    "id"
+                ],
+                "sync_resources": true,
+                "scope": "global",
+                "metadata_file": "publisher.json",
+                "field_types": {
+                    "fields_schema": "json"
+                },
+                "preserve_on_user_modified": [],
+                "insert_only": false
+            },
+            "deletar": []
+        },
+        "publisher_pages": {
+            "nome": "publisher_pages",
+            "id": "page_id",
+            "id_numerico": "id_publisher_pages",
+            "config": {
+                "strategy": "natural_key",
+                "natural_key_columns": [
+                    "language",
+                    "page_id"
+                ],
+                "sync_resources": true,
+                "scope": "global",
+                "metadata_file": "publisher-pages.json",
+                "field_types": {
+                    "fields_values": "json",
+                    "html_template": "file:html"
+                },
+                "preserve_on_user_modified": [],
+                "insert_only": false
+            },
+            "deletar": []
+        },
+        "publisher_highlights": {
+            "nome": "publisher_highlights",
+            "id": "id",
+            "id_numerico": "id_publisher_highlights",
+            "config": {
+                "strategy": "natural_key",
+                "natural_key_columns": [
+                    "language",
+                    "id"
+                ],
+                "sync_resources": true,
+                "scope": "global",
+                "metadata_file": "publisher-highlights.json",
+                "field_types": {
+                    "html": "file:html",
+                    "css": "file:css",
+                    "fields_schema": "json"
+                },
+                "preserve_on_user_modified": [],
+                "insert_only": false
+            },
+            "deletar": []
+        },
+        "publisher_index": {
+            "nome": "publisher_index",
+            "id": "id",
+            "id_numerico": "id_publisher_index",
+            "config": {
+                "strategy": "natural_key",
+                "natural_key_columns": [
+                    "language",
+                    "id"
+                ],
+                "sync_resources": true,
+                "scope": "global",
+                "metadata_file": "publisher-index.json",
+                "field_types": {
+                    "html": "file:html",
+                    "css": "file:css",
+                    "fields_schema": "json"
+                },
+                "preserve_on_user_modified": [],
+                "insert_only": false
+            },
+            "deletar": []
+        },
+        "menus": {
+            "nome": "menus",
+            "id": "id",
+            "id_numerico": "id_menus",
+            "config": {
+                "strategy": "natural_key",
+                "natural_key_columns": [
+                    "language",
+                    "id"
+                ],
+                "sync_resources": true,
+                "scope": "global",
+                "metadata_file": "menus.json",
+                "field_types": {
+                    "html": "file:html",
+                    "css": "file:css",
+                    "fields_schema": "json"
+                },
+                "preserve_on_user_modified": [],
+                "insert_only": false
+            },
+            "deletar": []
+        }
+    }
+}

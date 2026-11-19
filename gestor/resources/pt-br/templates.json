@@ -1,0 +1,255 @@
+[
+    {
+        "name": "Cabeçalho Cyber Emerald — Navbar (Base)",
+        "id": "c2f-menu-cabecalho-navbar",
+        "target": "menus",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "650db2f5bd5402745b8925bbf4b8dc6a",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "650db2f5bd5402745b8925bbf4b8dc6a"
+        }
+    },
+    {
+        "name": "Cabeçalho Floating Glass Dock (Criativo A)",
+        "id": "c2f-menu-cabecalho-dock",
+        "target": "menus",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "08dc1ad78bdc1864189dff6df25196f1",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "08dc1ad78bdc1864189dff6df25196f1"
+        }
+    },
+    {
+        "name": "Cabeçalho Command Bar \/ Portal Tech (Criativo B)",
+        "id": "c2f-menu-cabecalho-command",
+        "target": "menus",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "a88960417c64ae49512b47c23d5bd839",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "a88960417c64ae49512b47c23d5bd839"
+        }
+    },
+    {
+        "name": "Rodapé Cyber Emerald em Colunas (Base)",
+        "id": "c2f-menu-rodape-colunas",
+        "target": "menus",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "1920cdd2109b54eeae5205c1b157890d",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "1920cdd2109b54eeae5205c1b157890d"
+        }
+    },
+    {
+        "name": "Publicação Cyber Emerald Editorial (Base)",
+        "id": "c2f-publicacao-editorial",
+        "target": "publisher",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "tailwind_dependencies_reason": "A publicação herda o css_precompiled do template e é servida depois do CSS do layout; compilar o layout e os cabeçalhos junto mantém a ordem das responsivas (hidden x lg:flex).",
+        "tailwind_dependencies": [
+            {
+                "type": "layouts",
+                "id": "layout-principal",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "checksum": {
+            "html": "0cb69476b15c941df6dba26810de4291",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "0cb69476b15c941df6dba26810de4291"
+        }
+    },
+    {
+        "name": "Publicação Cinema \/ Spotlight Focus (Criativo A)",
+        "id": "c2f-publicacao-cinema",
+        "target": "publisher",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "tailwind_dependencies_reason": "A publicação herda o css_precompiled do template e é servida depois do CSS do layout; compilar o layout e os cabeçalhos junto mantém a ordem das responsivas (hidden x lg:flex).",
+        "tailwind_dependencies": [
+            {
+                "type": "layouts",
+                "id": "layout-principal",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "checksum": {
+            "html": "61c0e392c85e52484e376b3efbf26cff",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "61c0e392c85e52484e376b3efbf26cff"
+        }
+    },
+    {
+        "name": "Publicação Technical Guide \/ Docs (Criativo B)",
+        "id": "c2f-publicacao-docs",
+        "target": "publisher",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "tailwind_dependencies_reason": "A publicação herda o css_precompiled do template e é servida depois do CSS do layout; compilar o layout e os cabeçalhos junto mantém a ordem das responsivas (hidden x lg:flex).",
+        "tailwind_dependencies": [
+            {
+                "type": "layouts",
+                "id": "layout-principal",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            }
+        ],
+        "checksum": {
+            "html": "e5e5b7ecd9903ff5933762e0e9a4fcae",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "e5e5b7ecd9903ff5933762e0e9a4fcae"
+        }
+    },
+    {
+        "name": "Destaques Cyber Emerald Cards (Base)",
+        "id": "c2f-destaques-cards",
+        "target": "publisher-highlights",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "31d66432abf724feabefad707450b6aa",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "31d66432abf724feabefad707450b6aa"
+        }
+    },
+    {
+        "name": "Destaques Bento \/ Spotlight Grid (Criativo A)",
+        "id": "c2f-destaques-bento",
+        "target": "publisher-highlights",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "b4bb9e8d440967de876bf6eed4f6bae7",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "b4bb9e8d440967de876bf6eed4f6bae7"
+        }
+    },
+    {
+        "name": "Destaques Timeline \/ Editorial Compacto (Criativo B)",
+        "id": "c2f-destaques-timeline",
+        "target": "publisher-highlights",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "da3edeb6b95dd3dabae97034b58c890e",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "da3edeb6b95dd3dabae97034b58c890e"
+        }
+    },
+    {
+        "name": "Índice Cyber Emerald Cards (Base)",
+        "id": "c2f-indice-cards",
+        "target": "publisher-index",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "acb67d983aebb3b8f14d9e888c920af3",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "acb67d983aebb3b8f14d9e888c920af3"
+        }
+    },
+    {
+        "name": "Índice Bento \/ Spotlight Grid (Criativo A)",
+        "id": "c2f-indice-bento",
+        "target": "publisher-index",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "5b4888dea840907db099018f5dd70a1a",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "5b4888dea840907db099018f5dd70a1a"
+        }
+    },
+    {
+        "name": "Índice Timeline \/ Editorial Compacto (Criativo B)",
+        "id": "c2f-indice-timeline",
+        "target": "publisher-index",
+        "framework_css": "tailwindcss",
+        "version": "1.1",
+        "checksum": {
+            "html": "956ca9cd93eeadeabe5bdf280e714b8b",
+            "css": "",
+            "css_precompiled": "",
+            "combined": "956ca9cd93eeadeabe5bdf280e714b8b"
+        }
+    }
+]

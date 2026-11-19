@@ -59,3 +59,15 @@ summary_medium: "Histórico de sessões e aprendizados técnicos da implementaç
 - No Windows com Tailwind instalado apenas no Core, use `NODE_PATH` apontando para o `node_modules` dele ao compilar um projeto novo. O CLI foi encontrado sem a variável, mas falhou ao resolver `tailwindcss/utilities.css` a partir do diretório de inputs do projeto.
 - No MDD, `mdd index --path RAIZ` regenera os índices existentes. Para pastas novas, inicialize explicitamente com `mdd index memory/caminho --path RAIZ` antes da regeneração em lote.
 - Confirme o alvo em `devEnvironment.projectTarget`. O deploy oficial em `ia-parceria` sincronizou os seis recursos. O Chromium confirmou os dois estilos pré-compilados no HTML e a navegação em três tamanhos. Consulte [BATCH-002](implementation/batch-002.md).
+
+## 2026-11-19 · BATCH-003
+
+- **Registros de módulo vêm do Sistema de Recursos, não de seeder.** `gestor/resources/project_tables_config.json` com `sync_resources: true` transforma `menus`, `publisher`, `publisher_pages`, `publisher_highlights` e `publisher_index` em recursos (`<tabela>.json` + `<tabela>/<id>/<id>.html`, `field_types` `json`/`file:html`). Publicações vão em `pages.json` com `publisher_id`. Modelo de referência: `GIT/conn2flow-site/gestor/resources/`. Um seeder PHP próprio foi descartado por indicação humana; seus arquivos no servidor geraram choques `retirado` (DEC-136).
+- O `ia-parceria` roda no WSL `Conn2Flow-Lab` (PHP-FPM nativo, MariaDB, sem Docker acessível): gestor em `/home/iaparc53/web/ia-parceria.local/conn2flow-gestor`. Leitura de diagnóstico: `wsl.exe -d Conn2Flow-Lab -u iaparc53 -e php -d open_basedir= <script> <gestor>` com `$_SERVER['SERVER_NAME']='ia-parceria.local'` antes de `config.php`. A conexão é `utf8mb3`: nada de emojis no conteúdo.
+- `publisher-highlights` só substitui `[[item#x]]` sem arrobas; `menus` e `publisher-index` aceitam os dois formatos.
+- O widget `menus` repete um único bloco `item` (e `item-parent` para filhos). Não há como repetir a lista em dois lugares; use uma lista que vira drawer no mobile.
+- Widgets são renderizados antes das variáveis globais: `@[[pagina#url-raiz]]@` funciona dentro dos templates e dos itens do menu.
+- Folha carregada depois do layout pode inverter `hidden lg:flex` do cabeçalho. Responsivas estruturais do layout ficam em CSS de autoria; publicações com `tailwind_bundle: true` compilam o layout junto.
+- Publicações em `pages.json` recebem a data do deploy: ordene destaques e índices por `rule: manual` + `selected_items`, não por data.
+- `data_modificacao` tem `ON UPDATE CURRENT_TIMESTAMP`: um UPDATE que não fixa a coluna troca a data para "agora".
+- Evidências e relatório em [BATCH-003](implementation/batch-003.md).

@@ -1,0 +1,426 @@
+[
+    {
+        "id_usuarios": 1,
+        "name": "Cabeçalho Principal — Portal dos Seriados",
+        "id": "menu-cabecalho-principal",
+        "fields_schema": {
+            "template_id": "c2f-menu-cabecalho-navbar",
+            "availability": "todos",
+            "conditions": [],
+            "menus": {
+                "visible_to_all": [
+                    {
+                        "id": "menu-cabecalho-principal-01",
+                        "type": "link-custom",
+                        "label": "Início",
+                        "url": "@[[pagina#url-raiz]]@",
+                        "css_classes": "",
+                        "target": "_self",
+                        "children": []
+                    },
+                    {
+                        "id": "menu-cabecalho-principal-02",
+                        "type": "pagina",
+                        "label": "Episódios",
+                        "url": "",
+                        "css_classes": "",
+                        "target": "_self",
+                        "page_id": "episodios",
+                        "children": []
+                    },
+                    {
+                        "id": "menu-cabecalho-principal-03",
+                        "type": "pagina",
+                        "label": "Materiais",
+                        "url": "",
+                        "css_classes": "",
+                        "target": "_self",
+                        "page_id": "materiais",
+                        "children": []
+                    },
+                    {
+                        "id": "menu-cabecalho-principal-04",
+                        "type": "link-custom",
+                        "label": "Metodologia",
+                        "url": "@[[pagina#url-raiz]]@#metodologia",
+                        "css_classes": "",
+                        "target": "_self",
+                        "children": []
+                    },
+                    {
+                        "id": "menu-cabecalho-principal-05",
+                        "type": "link-custom",
+                        "label": "Stack",
+                        "url": "@[[pagina#url-raiz]]@#stack",
+                        "css_classes": "",
+                        "target": "_self",
+                        "children": []
+                    }
+                ]
+            },
+            "selected_items": [
+                {
+                    "id": "menu-cabecalho-principal-01",
+                    "type": "link-custom",
+                    "label": "Início",
+                    "url": "@[[pagina#url-raiz]]@",
+                    "css_classes": "",
+                    "target": "_self",
+                    "children": []
+                },
+                {
+                    "id": "menu-cabecalho-principal-02",
+                    "type": "pagina",
+                    "label": "Episódios",
+                    "url": "",
+                    "css_classes": "",
+                    "target": "_self",
+                    "page_id": "episodios",
+                    "children": []
+                },
+                {
+                    "id": "menu-cabecalho-principal-03",
+                    "type": "pagina",
+                    "label": "Materiais",
+                    "url": "",
+                    "css_classes": "",
+                    "target": "_self",
+                    "page_id": "materiais",
+                    "children": []
+                },
+                {
+                    "id": "menu-cabecalho-principal-04",
+                    "type": "link-custom",
+                    "label": "Metodologia",
+                    "url": "@[[pagina#url-raiz]]@#metodologia",
+                    "css_classes": "",
+                    "target": "_self",
+                    "children": []
+                },
+                {
+                    "id": "menu-cabecalho-principal-05",
+                    "type": "link-custom",
+                    "label": "Stack",
+                    "url": "@[[pagina#url-raiz]]@#stack",
+                    "css_classes": "",
+                    "target": "_self",
+                    "children": []
+                }
+            ]
+        }
+    },
+    {
+        "id_usuarios": 1,
+        "name": "Rodapé Principal — Portal dos Seriados",
+        "id": "menu-rodape-principal",
+        "fields_schema": {
+            "template_id": "c2f-menu-rodape-colunas",
+            "availability": "todos",
+            "conditions": [],
+            "menus": {
+                "visible_to_all": [
+                    {
+                        "id": "menu-rodape-principal-01",
+                        "type": "cabecalho",
+                        "label": "Curso",
+                        "url": "",
+                        "css_classes": "",
+                        "target": "_self",
+                        "children": [
+                            {
+                                "id": "menu-rodape-principal-01-01",
+                                "type": "pagina",
+                                "label": "Episódios",
+                                "url": "",
+                                "css_classes": "",
+                                "target": "_self",
+                                "page_id": "episodios",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-01-02",
+                                "type": "pagina",
+                                "label": "Materiais",
+                                "url": "",
+                                "css_classes": "",
+                                "target": "_self",
+                                "page_id": "materiais",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-01-03",
+                                "type": "link-custom",
+                                "label": "Metodologia",
+                                "url": "@[[pagina#url-raiz]]@#metodologia",
+                                "css_classes": "",
+                                "target": "_self",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-01-04",
+                                "type": "link-custom",
+                                "label": "Stack",
+                                "url": "@[[pagina#url-raiz]]@#stack",
+                                "css_classes": "",
+                                "target": "_self",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-01-05",
+                                "type": "link-custom",
+                                "label": "FAQ",
+                                "url": "@[[pagina#url-raiz]]@#faq",
+                                "css_classes": "",
+                                "target": "_self",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "menu-rodape-principal-02",
+                        "type": "cabecalho",
+                        "label": "Recursos",
+                        "url": "",
+                        "css_classes": "",
+                        "target": "_self",
+                        "children": [
+                            {
+                                "id": "menu-rodape-principal-02-01",
+                                "type": "link-custom",
+                                "label": "Playlist Oficial",
+                                "url": "https://www.youtube.com/playlist?list=PLBjofG88X62Y",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-02-02",
+                                "type": "link-custom",
+                                "label": "Repositório GitHub",
+                                "url": "https://github.com/otavioserra/conn2flow-ai-workspace",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-02-03",
+                                "type": "link-custom",
+                                "label": "Conn2Flow Open Source",
+                                "url": "https://github.com/otavioserra/conn2flow",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-02-04",
+                                "type": "link-custom",
+                                "label": "Changelog",
+                                "url": "https://conn2flow.com/changelog/",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "menu-rodape-principal-03",
+                        "type": "cabecalho",
+                        "label": "Conn2Flow",
+                        "url": "",
+                        "css_classes": "",
+                        "target": "_self",
+                        "children": [
+                            {
+                                "id": "menu-rodape-principal-03-01",
+                                "type": "link-custom",
+                                "label": "Site Oficial",
+                                "url": "https://conn2flow.com/",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-03-02",
+                                "type": "link-custom",
+                                "label": "Conn2Flow Pro",
+                                "url": "https://conn2flow.com/pro/#planos",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-03-03",
+                                "type": "link-custom",
+                                "label": "Filosofia",
+                                "url": "https://conn2flow.com/pro/",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            },
+                            {
+                                "id": "menu-rodape-principal-03-04",
+                                "type": "link-custom",
+                                "label": "Contato",
+                                "url": "https://conn2flow.com/contact/",
+                                "css_classes": "",
+                                "target": "_blank",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "selected_items": [
+                {
+                    "id": "menu-rodape-principal-01",
+                    "type": "cabecalho",
+                    "label": "Curso",
+                    "url": "",
+                    "css_classes": "",
+                    "target": "_self",
+                    "children": [
+                        {
+                            "id": "menu-rodape-principal-01-01",
+                            "type": "pagina",
+                            "label": "Episódios",
+                            "url": "",
+                            "css_classes": "",
+                            "target": "_self",
+                            "page_id": "episodios",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-01-02",
+                            "type": "pagina",
+                            "label": "Materiais",
+                            "url": "",
+                            "css_classes": "",
+                            "target": "_self",
+                            "page_id": "materiais",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-01-03",
+                            "type": "link-custom",
+                            "label": "Metodologia",
+                            "url": "@[[pagina#url-raiz]]@#metodologia",
+                            "css_classes": "",
+                            "target": "_self",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-01-04",
+                            "type": "link-custom",
+                            "label": "Stack",
+                            "url": "@[[pagina#url-raiz]]@#stack",
+                            "css_classes": "",
+                            "target": "_self",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-01-05",
+                            "type": "link-custom",
+                            "label": "FAQ",
+                            "url": "@[[pagina#url-raiz]]@#faq",
+                            "css_classes": "",
+                            "target": "_self",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "menu-rodape-principal-02",
+                    "type": "cabecalho",
+                    "label": "Recursos",
+                    "url": "",
+                    "css_classes": "",
+                    "target": "_self",
+                    "children": [
+                        {
+                            "id": "menu-rodape-principal-02-01",
+                            "type": "link-custom",
+                            "label": "Playlist Oficial",
+                            "url": "https://www.youtube.com/playlist?list=PLBjofG88X62Y",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-02-02",
+                            "type": "link-custom",
+                            "label": "Repositório GitHub",
+                            "url": "https://github.com/otavioserra/conn2flow-ai-workspace",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-02-03",
+                            "type": "link-custom",
+                            "label": "Conn2Flow Open Source",
+                            "url": "https://github.com/otavioserra/conn2flow",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-02-04",
+                            "type": "link-custom",
+                            "label": "Changelog",
+                            "url": "https://conn2flow.com/changelog/",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "menu-rodape-principal-03",
+                    "type": "cabecalho",
+                    "label": "Conn2Flow",
+                    "url": "",
+                    "css_classes": "",
+                    "target": "_self",
+                    "children": [
+                        {
+                            "id": "menu-rodape-principal-03-01",
+                            "type": "link-custom",
+                            "label": "Site Oficial",
+                            "url": "https://conn2flow.com/",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-03-02",
+                            "type": "link-custom",
+                            "label": "Conn2Flow Pro",
+                            "url": "https://conn2flow.com/pro/#planos",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-03-03",
+                            "type": "link-custom",
+                            "label": "Filosofia",
+                            "url": "https://conn2flow.com/pro/",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        },
+                        {
+                            "id": "menu-rodape-principal-03-04",
+                            "type": "link-custom",
+                            "label": "Contato",
+                            "url": "https://conn2flow.com/contact/",
+                            "css_classes": "",
+                            "target": "_blank",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

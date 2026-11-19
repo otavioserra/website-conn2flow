@@ -40,15 +40,19 @@
 
 ## BATCH-003 (REQ-003)
 
-### Checklist de aceite
+### Rodada 1 · 19/11/2026
 
-- [ ] **Módulo `menus`**: 3 templates de cabeçalho (1 base Cyber Emerald + 2 criativos) e 1 template de rodapé criados em `gestor/resources/pt-br/templates/` (`target: menus`) e integrados ao `layout-principal`.
-- [ ] **Módulo `publisher`**: 2 definições de publicador (`episodios` e `materiais`) e 3 templates de detalhe (`target: publisher`, 1 base + 2 criativos) criados e sincronizados.
-- [ ] **Widgets Dinâmicos (`publisher-highlights` & `publisher-index`)**: 3 templates para `publisher-highlights` e 3 templates para `publisher-index` (1 base + 2 criativos cada) criados e sincronizados.
-- [ ] **Home Dinâmica (`/`)**: Blocos estáticos de Episódios e Materiais substituídos por widgets `publisher-highlights` renderizando dados reais do banco SQL.
-- [ ] **Páginas de Listagem**: Páginas `/episodios/` e `/materiais/` criadas com `tailwind_bundle: true` e widget `publisher-index`.
-- [ ] **Seeding Idempotente & Conteúdo Real**: Menus, definições, blocos de destaque/índice e posts iniciais (5 episódios + 4 materiais) populados no banco de `ia-parceria` sem duplicidade em re-execuções.
-- [ ] **Pipeline v3.0 & Deploy**: Compilador oficial executado sem `css_precompiled: null`; `./c2f project:deploy ia-parceria` executado com sucesso.
-- [ ] **Validação Visual Playwright (390 / 820 / 1440)**: `/`, `/episodios/`, `/materiais/`, 1 página individual de Episódio e 1 de Material validados com HTTP 200, fonte `Nunito`, identidade Cyber Emerald, zero erros JS e zero overflow horizontal.
-- [ ] **Troca de Templates**: Confirmado que todos os templates alternativos constam na tabela `templates` do banco e são intercambiáveis sem quebra.
-- [ ] **Governança MDD & Revisão**: `SPEC.md`, `batch-003.md`, `BATCH-INDEX.md`, `04-memory-engineering-execution.md` e `index.md` atualizados; lote pronto para auditoria do `c2f-reviewer-agent`.
+- [x] **Módulo `menus`**: cabeçalhos `c2f-menu-cabecalho-navbar` (base), `-dock` e `-command` e rodapé `c2f-menu-rodape-colunas` (`target: menus`), integrados ao `layout-principal` por widgets com mockup defensivo.
+- [x] **Módulo `publisher`**: definições `episodios` e `materiais` (15 campos compartilhados) e templates `c2f-publicacao-editorial` (base), `-cinema` e `-docs`.
+- [x] **Widgets dinâmicos**: `c2f-destaques-cards/bento/timeline` (`publisher-highlights`) e `c2f-indice-cards/bento/timeline` (`publisher-index`).
+- [x] **Home dinâmica (`/`)**: episódios e materiais renderizados por `publisher-highlights` a partir do banco, com CTAs para `/episodios/` e `/materiais/`.
+- [x] **Páginas de listagem**: `/episodios/` e `/materiais/` com `tailwind_bundle: true`, `publisher-index`, busca AJAX e métricas.
+- [x] **Provisionamento e conteúdo real**: menus, definições, destaques, índices, 5 episódios e 4 materiais sincronizados pelo Sistema de Recursos (`project_tables_config.json` + `sync_resources`). O deploy atualizou os registros existentes sem duplicar (`~26`, `+0`).
+- [x] **Pipeline v3.0 e deploy**: compilador oficial sem `css_precompiled` nulo; quatro `./c2f project:deploy ia-parceria` com HTTP 200, health check aprovado e zero órfãos.
+- [x] **Playwright (390/820/1440)**: `/`, `/episodios/`, `/materiais/`, 1 episódio e 1 material com HTTP 200, Nunito, fundo Cyber Emerald, zero erros, zero overflow e menu responsivo (15/15).
+- [x] **Troca de templates**: os 13 templates estão na tabela `templates`; as rodadas A e B com os modelos alternativos passaram 15/15 cada.
+- [x] **Governança MDD**: SPEC, lote, índice de lotes, checklist, memória de execução e índices atualizados; lote pronto para o `c2f-reviewer-agent`.
+
+Pendente: confirmação humana para retirar do servidor os dois arquivos do seeder descartado (choques `retirado`, DEC-136).
+
+[Relatório do lote](../implementation/batch-003.md) · [Playwright](evidence/batch-003/report-padrao.json) · [Banco](evidence/batch-003/banco-recursos-sincronizados.json) · [Home](evidence/batch-003/padrao-home-desktop.png)

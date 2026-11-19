@@ -51,8 +51,8 @@
             "built_at": "2026-11-18T19:49:42+00:00"
         },
         "global||pt-br|layouts|layout-principal": {
-            "fingerprint": "4ce1f9cd62d4a509308519f327f9dedcd8e9423d12a3f1ef990663a6eeaf7d4c",
-            "output_hash": "f214070f5094428be52cc28e82a2c845c9483dce3c38cc5668819c65b9f98db0",
+            "fingerprint": "e11fd7b544766d12c7a5ef955565eaf9c93d0704e7dcfcd93dd305c3aba1e760",
+            "output_hash": "afce9a6434b6b249a44a73d0aeb88a708ae1e9df920660f47d7fd33476238676",
             "output": "resources//pt-br/layouts/layout-principal/layout-principal.precompiled.css",
             "tailwind_version": "4.3.3",
             "sources": [
@@ -60,14 +60,204 @@
                 "resources/pt-br/components/badge-luminoso/badge-luminoso.html",
                 "resources/pt-br/components/botao-cta/botao-cta.html",
                 "resources/pt-br/components/card-episodio/card-episodio.html",
-                "resources/pt-br/components/pilar-metodologico/pilar-metodologico.html"
+                "resources/pt-br/components/pilar-metodologico/pilar-metodologico.html",
+                "resources/pt-br/templates/c2f-destaques-bento/c2f-destaques-bento.html",
+                "resources/pt-br/templates/c2f-destaques-cards/c2f-destaques-cards.html",
+                "resources/pt-br/templates/c2f-destaques-timeline/c2f-destaques-timeline.html",
+                "resources/pt-br/templates/c2f-indice-bento/c2f-indice-bento.html",
+                "resources/pt-br/templates/c2f-indice-cards/c2f-indice-cards.html",
+                "resources/pt-br/templates/c2f-indice-timeline/c2f-indice-timeline.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html",
+                "resources/pt-br/templates/c2f-publicacao-cinema/c2f-publicacao-cinema.html",
+                "resources/pt-br/templates/c2f-publicacao-docs/c2f-publicacao-docs.html",
+                "resources/pt-br/templates/c2f-publicacao-editorial/c2f-publicacao-editorial.html"
             ],
             "safelist": [],
-            "built_at": "2026-11-18T19:49:42+00:00"
+            "built_at": "2026-11-19T18:49:32+00:00"
+        },
+        "global||pt-br|pages|diagramas-de-arquitetura": {
+            "fingerprint": "0a6d1686c2242045f1e70921fa2152aa22b9e5385b5bedecd379e2147b250696",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/diagramas-de-arquitetura/diagramas-de-arquitetura.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/diagramas-de-arquitetura/diagramas-de-arquitetura.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:54+00:00"
+        },
+        "global||pt-br|pages|ep-01-conceitos-e-historia-da-ia": {
+            "fingerprint": "e76b04287ffa60f91a35addef831e915346b15ca4718cc54a1193607c4d06470",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/ep-01-conceitos-e-historia-da-ia/ep-01-conceitos-e-historia-da-ia.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/ep-01-conceitos-e-historia-da-ia/ep-01-conceitos-e-historia-da-ia.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:54+00:00"
+        },
+        "global||pt-br|pages|ep-02-qual-chat-de-ia-usar": {
+            "fingerprint": "8d2a2cdbcb147f577d1dab3b4e46be20ac7577b4e9bc3517513aa4b5a126f68e",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/ep-02-qual-chat-de-ia-usar/ep-02-qual-chat-de-ia-usar.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/ep-02-qual-chat-de-ia-usar/ep-02-qual-chat-de-ia-usar.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:54+00:00"
+        },
+        "global||pt-br|pages|ep-03-como-controlar-a-memoria-da-ia": {
+            "fingerprint": "fb8723b4352ca8cd479858e7fc7b244c9bfb09be9e21ea91cf63c20e5e410c1e",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/ep-03-como-controlar-a-memoria-da-ia/ep-03-como-controlar-a-memoria-da-ia.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/ep-03-como-controlar-a-memoria-da-ia/ep-03-como-controlar-a-memoria-da-ia.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:55+00:00"
+        },
+        "global||pt-br|pages|ep-04-ia-editou-meu-video-no-blender": {
+            "fingerprint": "df0b1259f02d80166bdd122bc31ed5dc54101490936034089249fb150e8d9d59",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/ep-04-ia-editou-meu-video-no-blender/ep-04-ia-editou-meu-video-no-blender.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/ep-04-ia-editou-meu-video-no-blender/ep-04-ia-editou-meu-video-no-blender.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:55+00:00"
+        },
+        "global||pt-br|pages|ep-05-construindo-websites-com-conn2flow-pro": {
+            "fingerprint": "9136251c74dab4ab1cbf2048f4de5ea7471c1b50ca3a65bc44984af9eb9701a8",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/ep-05-construindo-websites-com-conn2flow-pro/ep-05-construindo-websites-com-conn2flow-pro.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/ep-05-construindo-websites-com-conn2flow-pro/ep-05-construindo-websites-com-conn2flow-pro.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:55+00:00"
+        },
+        "global||pt-br|pages|episodios": {
+            "fingerprint": "6f46821ff1d31dd23d4f4ebde4c5c15098489f41ce73362d8557d0d4bdba5818",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/episodios/episodios.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/episodios/episodios.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-indice-bento/c2f-indice-bento.html",
+                "resources/pt-br/templates/c2f-indice-cards/c2f-indice-cards.html",
+                "resources/pt-br/templates/c2f-indice-timeline/c2f-indice-timeline.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:49:32+00:00"
+        },
+        "global||pt-br|pages|guias-setup-agentes": {
+            "fingerprint": "4eaf22f82572cbe85409c0da08979fc9f414f163f1c23d879cc64394bacc4259",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/guias-setup-agentes/guias-setup-agentes.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/guias-setup-agentes/guias-setup-agentes.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:55+00:00"
+        },
+        "global||pt-br|pages|materiais": {
+            "fingerprint": "29775e71b01a098eb87a5a41eb82443189c231dadc1024bf615c7b589d7f3dbf",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/materiais/materiais.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/materiais/materiais.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-indice-bento/c2f-indice-bento.html",
+                "resources/pt-br/templates/c2f-indice-cards/c2f-indice-cards.html",
+                "resources/pt-br/templates/c2f-indice-timeline/c2f-indice-timeline.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:49:33+00:00"
         },
         "global||pt-br|pages|pagina-raiz-do-sistema": {
-            "fingerprint": "4cde26e691c6681676182056ee064d60bb9fc6aa9ea04759d090fe4a95fd7555",
-            "output_hash": "a22367917cbc1488d531491e9f829c30a64c96593c740844c95fb4479ca36598",
+            "fingerprint": "f89ba11596dea6a3f84e8a9a753c76c21a22b17e9779ede1a476d4fa4d65b987",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
             "output": "resources//pt-br/pages/pagina-raiz-do-sistema/pagina-raiz-do-sistema.precompiled.css",
             "tailwind_version": "4.3.3",
             "sources": [
@@ -75,10 +265,213 @@
                 "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
                 "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
                 "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
-                "resources/pt-br/layouts/layout-principal/layout-principal.html"
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-destaques-bento/c2f-destaques-bento.html",
+                "resources/pt-br/templates/c2f-destaques-cards/c2f-destaques-cards.html",
+                "resources/pt-br/templates/c2f-destaques-timeline/c2f-destaques-timeline.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
             ],
             "safelist": [],
-            "built_at": "2026-11-18T19:49:43+00:00"
+            "built_at": "2026-11-19T18:49:33+00:00"
+        },
+        "global||pt-br|pages|roteiros-dos-episodios": {
+            "fingerprint": "4e2cc3c7632aa813aae50b197ea45ce7c328da27a6b8aa1d7d67d420c922a94b",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/roteiros-dos-episodios/roteiros-dos-episodios.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/roteiros-dos-episodios/roteiros-dos-episodios.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:56+00:00"
+        },
+        "global||pt-br|pages|templates-mdd-e-skills": {
+            "fingerprint": "817e4cba515ad9cece1016cc86e730caf8c6328b9efe040cf33a64d86f2b735b",
+            "output_hash": "b5ee20e5a29bc22de2aa7cd018036559069c25f7e86f2bb1c550e9f854afe9ba",
+            "output": "resources//pt-br/pages/templates-mdd-e-skills/templates-mdd-e-skills.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/pages/templates-mdd-e-skills/templates-mdd-e-skills.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-alerta-modal-tailwind/interface-alerta-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-carregando-modal-tailwind/interface-carregando-modal-tailwind.html",
+                "../../conn2flow/gestor/resources/pt-br/components/interface-delecao-modal-tailwind/interface-delecao-modal-tailwind.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:54:56+00:00"
+        },
+        "global||pt-br|templates|c2f-destaques-bento": {
+            "fingerprint": "8687fb7fef462686ca4a98cb56fd72013aa85f63233922530c12eff60900a342",
+            "output_hash": "b12fda47455a560629aabd661d51a095a588fe47db83198548fe993618255ce1",
+            "output": "resources//pt-br/templates/c2f-destaques-bento/c2f-destaques-bento.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-destaques-bento/c2f-destaques-bento.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:13+00:00"
+        },
+        "global||pt-br|templates|c2f-destaques-cards": {
+            "fingerprint": "562fb7b11aa79ffa88829cb4ecf579ffefcc6bc3c6be651446374d68875ec6b4",
+            "output_hash": "24d6523f22fb969c06bab4212cdf22e77ef3be30493f12fc40298f4dc452b888",
+            "output": "resources//pt-br/templates/c2f-destaques-cards/c2f-destaques-cards.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-destaques-cards/c2f-destaques-cards.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:13+00:00"
+        },
+        "global||pt-br|templates|c2f-destaques-timeline": {
+            "fingerprint": "fc147d8225350c0482625ec2db9ac0e09cbc9e0c6bf96ddc9452139e1684e879",
+            "output_hash": "0fad173b391ce18b118287ac94e568f24e61ffdb57029c182ecd47df15adcc5d",
+            "output": "resources//pt-br/templates/c2f-destaques-timeline/c2f-destaques-timeline.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-destaques-timeline/c2f-destaques-timeline.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:13+00:00"
+        },
+        "global||pt-br|templates|c2f-indice-bento": {
+            "fingerprint": "aaedfe4f127756168dfbeb0bb095d792f5672264aa04297a5385e0ecf735cf8b",
+            "output_hash": "870106b4f87e8e82f859ca408d8fb5b19aa3d637fd3be35dc6cd651fa7753740",
+            "output": "resources//pt-br/templates/c2f-indice-bento/c2f-indice-bento.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-indice-bento/c2f-indice-bento.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:13+00:00"
+        },
+        "global||pt-br|templates|c2f-indice-cards": {
+            "fingerprint": "ed52222e8afed4ebca9684ffb7acca8143fb9381d91cf76dcf9b0c8af36da37b",
+            "output_hash": "c893ac2de76de62d161f0e9fc217906f4d26e830ab4c4d64d47204268ba0fe05",
+            "output": "resources//pt-br/templates/c2f-indice-cards/c2f-indice-cards.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-indice-cards/c2f-indice-cards.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:14+00:00"
+        },
+        "global||pt-br|templates|c2f-indice-timeline": {
+            "fingerprint": "283a63abfced5ecbb8230774af854e86db14a36f41eab797137a05f5598a09fe",
+            "output_hash": "bcb0478993716dc3460cf881578450734392b8aa15b0faa7c76cda9810afb28d",
+            "output": "resources//pt-br/templates/c2f-indice-timeline/c2f-indice-timeline.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-indice-timeline/c2f-indice-timeline.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:14+00:00"
+        },
+        "global||pt-br|templates|c2f-menu-cabecalho-command": {
+            "fingerprint": "592181008655fcf07987fbdc577bf4d5e4e8393d890e9e3b5b11f1cd105becf1",
+            "output_hash": "b2eefae27e3838594cd96a979ce39a14496216633830456ba67c0ace246554ec",
+            "output": "resources//pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:14+00:00"
+        },
+        "global||pt-br|templates|c2f-menu-cabecalho-dock": {
+            "fingerprint": "bf9214ac1269c2705bdb51308c44dc7ad816e5fe88a273f6b95a202834618ad0",
+            "output_hash": "8faacb0f87a070ace0725db25bb3841453666d82e8ed95148556bb31d5e19d6b",
+            "output": "resources//pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:14+00:00"
+        },
+        "global||pt-br|templates|c2f-menu-cabecalho-navbar": {
+            "fingerprint": "dcadd1ae7489fd0ad1e6e9930108b051ebf71a89d1e7dfee1f12760d93e7b46b",
+            "output_hash": "4ac929c909b59fa4f616cf80ead1ae9344eef4a94eaa44a7613b9de2c12f7a83",
+            "output": "resources//pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:15+00:00"
+        },
+        "global||pt-br|templates|c2f-menu-rodape-colunas": {
+            "fingerprint": "dc470165eea098e4087ea582f3b63e0d2db039dcc22b2bda9c25a8a13052b89e",
+            "output_hash": "a14161a39af734ddd5a86d21477d576db034140b2b220acea05d1d0c08089c34",
+            "output": "resources//pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:46:15+00:00"
+        },
+        "global||pt-br|templates|c2f-publicacao-cinema": {
+            "fingerprint": "b74872e06043247fb4debe0a1902dc1e5ab3f74f16a44f444e14debd997786ea",
+            "output_hash": "e827341b37ef7eb5b1009577e8b724d0c0891491f55ccd5d6a4b89963763d707",
+            "output": "resources//pt-br/templates/c2f-publicacao-cinema/c2f-publicacao-cinema.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-publicacao-cinema/c2f-publicacao-cinema.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:49:33+00:00"
+        },
+        "global||pt-br|templates|c2f-publicacao-docs": {
+            "fingerprint": "f1f3110a128fbc0ff499f89b55c164f82c888f2af79cbf42bd24a058f70f702c",
+            "output_hash": "a93f0898cb77f6acb203fa2f04e3ae76355196942f29191a55a5dd09e4559819",
+            "output": "resources//pt-br/templates/c2f-publicacao-docs/c2f-publicacao-docs.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-publicacao-docs/c2f-publicacao-docs.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:49:33+00:00"
+        },
+        "global||pt-br|templates|c2f-publicacao-editorial": {
+            "fingerprint": "b0d4be3d382529c0d8d771c50e226367beda90fc224e1eb30491126366e10bac",
+            "output_hash": "b438127d3549fea6274a4e970bd4058364fa1ee36b83731c751ac36b208f27c2",
+            "output": "resources//pt-br/templates/c2f-publicacao-editorial/c2f-publicacao-editorial.precompiled.css",
+            "tailwind_version": "4.3.3",
+            "sources": [
+                "resources//pt-br/templates/c2f-publicacao-editorial/c2f-publicacao-editorial.html",
+                "resources/pt-br/layouts/layout-principal/layout-principal.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-command/c2f-menu-cabecalho-command.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-dock/c2f-menu-cabecalho-dock.html",
+                "resources/pt-br/templates/c2f-menu-cabecalho-navbar/c2f-menu-cabecalho-navbar.html",
+                "resources/pt-br/templates/c2f-menu-rodape-colunas/c2f-menu-rodape-colunas.html"
+            ],
+            "safelist": [],
+            "built_at": "2026-11-19T18:49:34+00:00"
         }
     }
 }

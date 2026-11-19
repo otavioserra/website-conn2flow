@@ -3,7 +3,7 @@
         "name": "Layout Principal — Curso de IA",
         "id": "layout-principal",
         "framework_css": "tailwindcss",
-        "tailwind_dependencies_reason": "Inclui os componentes globais do design system Cyber Emerald usados no layout e nas páginas que o utilizam.",
+        "tailwind_dependencies_reason": "Inclui os componentes globais do design system Cyber Emerald e todos os templates do portal (menus, publicações, destaques e índices), escolhidos em runtime pelo painel.",
         "tailwind_dependencies": [
             {
                 "type": "components",
@@ -24,14 +24,79 @@
                 "type": "components",
                 "id": "botao-cta",
                 "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-navbar",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-dock",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-cabecalho-command",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-menu-rodape-colunas",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-publicacao-editorial",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-publicacao-cinema",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-publicacao-docs",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-destaques-cards",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-destaques-bento",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-destaques-timeline",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-cards",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-bento",
+                "scope": "global"
+            },
+            {
+                "type": "templates",
+                "id": "c2f-indice-timeline",
+                "scope": "global"
             }
         ],
-        "version": "1.3",
+        "version": "1.6",
         "checksum": {
-            "html": "5f2697e802e3ce9b9b21f511fe56d880",
-            "css": "23354b2736cd6a63d5727da3c5b3a34a",
+            "html": "a6c2e650306b09cd113e4f75d180cc7c",
+            "css": "d611d48e6b708510fc60f7d588b33473",
             "css_precompiled": "",
-            "combined": "a8a65d234b6a2e6ad68aea6544442cd0"
+            "combined": "d8c1d464529a0c89827c26471f6e391c"
         }
     }
 ]

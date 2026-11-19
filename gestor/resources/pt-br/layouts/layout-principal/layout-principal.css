@@ -32,15 +32,6 @@ body {
     -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%);
 }
 
-/* Cabeçalho com vidro ao rolar */
-#c2f-header.c2f-header-scrolled {
-    background: rgba(6, 14, 10, 0.82);
-    border-bottom-color: rgba(16, 185, 129, 0.15);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 10px 40px -20px rgba(16, 185, 129, 0.35);
-}
-
 /* Links de navegação */
 .c2f-navlink {
     position: relative;
@@ -191,5 +182,626 @@ body {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+}
+
+/* ==========================================================================
+   Design system compartilhado (movido da Home no BATCH-003): usado pela Home,
+   pelas listagens e pelos templates de menus, destaques, índices e publicações.
+   ========================================================================== */
+
+/* Tipografia de seção */
+.c2f-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #6ee7b7;
+}
+
+.c2f-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+}
+
+.c2f-h2 {
+    font-size: clamp(1.875rem, 1.2rem + 2.4vw, 3rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+/* Texto com gradiente esmeralda animado */
+.c2f-gradient-text {
+    background: linear-gradient(90deg, #34d399, #a7f3d0, #10b981, #34d399);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: c2f-gradient 8s ease infinite;
+}
+
+@keyframes c2f-gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Cards genéricos: brilho seguindo o mouse via variáveis */
+.c2f-card {
+    will-change: transform;
+}
+
+/* Status dos episódios */
+.c2f-status-on,
+.c2f-status-soon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.c2f-status-on {
+    color: #6ee7b7;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    box-shadow: 0 0 14px -4px rgba(52, 211, 153, 0.6);
+}
+
+.c2f-status-on::before {
+    content: '';
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 9999px;
+    background: #34d399;
+    box-shadow: 0 0 8px #34d399;
+    animation: c2f-blink 2s ease-in-out infinite;
+}
+
+.c2f-status-soon {
+    color: #fcd34d;
+    background: rgba(251, 191, 36, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+@keyframes c2f-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}
+
+/* Tags do repositório */
+.c2f-tag {
+    display: inline-flex;
+    padding: 0.25rem 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    background: rgba(16, 185, 129, 0.08);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #6ee7b7;
+}
+
+/* Lista de materiais */
+.c2f-material {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.025);
+    transition: all 0.3s ease;
+}
+
+.c2f-material:hover {
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.06);
+    transform: translateX(6px);
+}
+
+.c2f-material-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    background: rgba(16, 185, 129, 0.12);
+    color: #6ee7b7;
+    transition: all 0.3s ease;
+}
+
+.c2f-material:hover .c2f-material-icon {
+    background: #34d399;
+    color: #060e0a;
+    box-shadow: 0 0 20px rgba(52, 211, 153, 0.6);
+}
+
+.c2f-material-arrow {
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #475569;
+    transition: all 0.3s ease;
+}
+
+.c2f-material:hover .c2f-material-arrow {
+    color: #34d399;
+    transform: translateY(3px);
+}
+
+/* ==========================================================================
+   Portal dos Seriados (BATCH-003): contrato visual dos templates dinâmicos.
+   A troca entre mobile e desktop dos menus usa classes de autoria, e não pares
+   de utilities como `hidden lg:flex`. Assim o CSS de uma página ou publicação
+   carregado depois do layout não inverte as responsivas do cabeçalho.
+   ========================================================================== */
+
+/* Cabeçalho: vidro ao rolar (navbar e command bar) */
+[data-c2f-header="navbar"].c2f-header-scrolled,
+[data-c2f-header="command"].c2f-header-scrolled {
+    background: rgba(6, 14, 10, 0.82);
+    border-bottom-color: rgba(16, 185, 129, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 40px -20px rgba(16, 185, 129, 0.35);
+}
+
+/* Painel do menu: drawer no mobile, linha no desktop */
+.c2f-menu-panel {
+    display: none;
+}
+
+.c2f-menu-panel.c2f-menu-open {
+    display: block;
+    animation: c2f-menu-in 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.c2f-menu-toggle {
+    display: inline-flex;
+}
+
+.c2f-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.c2f-menu-ctas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.c2f-only-desktop {
+    display: none;
+}
+
+@keyframes c2f-menu-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 1024px) {
+    .c2f-menu-panel,
+    .c2f-menu-panel.c2f-menu-open {
+        display: flex;
+        align-items: center;
+        animation: none;
+    }
+
+    .c2f-menu-toggle {
+        display: none;
+    }
+
+    .c2f-menu-list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .c2f-menu-ctas {
+        display: flex;
+        align-items: center;
+    }
+
+    .c2f-only-desktop {
+        display: flex;
+    }
+
+    .c2f-only-mobile {
+        display: none;
+    }
+}
+
+/* Item ativo (marcado pelo script do layout com aria-current) */
+.c2f-navlink[aria-current="page"] {
+    color: #fff;
+}
+
+.c2f-navlink[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+
+.c2f-navlink-mobile[aria-current="page"] {
+    color: #a7f3d0;
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Links do navbar dentro do drawer mobile */
+@media (max-width: 1023.98px) {
+    .c2f-menu-panel .c2f-navlink {
+        display: block;
+        padding: 0.875rem 1rem;
+        font-size: 1rem;
+        color: #e2e8f0;
+        border: 1px solid transparent;
+    }
+
+    .c2f-menu-panel .c2f-navlink::after {
+        display: none;
+    }
+
+    .c2f-menu-panel .c2f-navlink:hover,
+    .c2f-menu-panel .c2f-navlink[aria-current="page"] {
+        color: #a7f3d0;
+        background: rgba(16, 185, 129, 0.08);
+        border-color: rgba(16, 185, 129, 0.25);
+    }
+}
+
+/* Submenu (item com filhos) */
+.c2f-submenu {
+    display: none;
+}
+
+.c2f-has-sub:hover > .c2f-submenu,
+.c2f-has-sub:focus-within > .c2f-submenu {
+    display: block;
+}
+
+@media (max-width: 1023.98px) {
+    .c2f-submenu {
+        display: block;
+        position: static;
+        box-shadow: none;
+        margin: 0.25rem 0 0.5rem 1rem;
+    }
+}
+
+/* Modelo 2 — Floating Glass Dock */
+.c2f-dock {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.c2f-header-scrolled .c2f-dock {
+    background: rgba(6, 14, 10, 0.88);
+    border-color: rgba(52, 211, 153, 0.35);
+    box-shadow: 0 18px 50px -22px rgba(16, 185, 129, 0.65);
+}
+
+.c2f-dock-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    transition: color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.c2f-dock-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.c2f-dock-link[aria-current="page"] {
+    color: #060e0a;
+    background: linear-gradient(135deg, #34d399, #10b981);
+    box-shadow: 0 0 22px rgba(52, 211, 153, 0.55);
+}
+
+@media (max-width: 1023.98px) {
+    .c2f-dock-link {
+        display: flex;
+        border-radius: 0.9rem;
+        padding: 0.85rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Modelo 3 — Command Bar / Portal Tech */
+.c2f-cmd-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.c2f-cmd-link::before {
+    content: '/';
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: rgba(52, 211, 153, 0.55);
+}
+
+.c2f-cmd-link:hover,
+.c2f-cmd-link[aria-current="page"] {
+    color: #ecfdf5;
+    border-color: rgba(16, 185, 129, 0.35);
+    background: rgba(16, 185, 129, 0.08);
+}
+
+@media (max-width: 1023.98px) {
+    .c2f-cmd-link {
+        display: flex;
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+        border-color: rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.02);
+    }
+}
+
+.c2f-kbd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom-width: 2px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #94a3b8;
+}
+
+/* Cards de publicação: estado "Em breve" */
+[data-c2f-status="soon"] {
+    border-style: dashed;
+    border-color: rgba(251, 191, 36, 0.32);
+}
+
+[data-c2f-status="soon"]:hover {
+    border-color: rgba(251, 191, 36, 0.6);
+}
+
+[data-c2f-status="soon"] .c2f-num {
+    color: rgba(251, 191, 36, 0.4);
+}
+
+[data-c2f-status="soon"] .c2f-accent {
+    color: #fcd34d;
+}
+
+/* Bento: primeiro item em destaque */
+.c2f-bento > :first-child .c2f-bento-title {
+    font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem);
+}
+
+.c2f-bento > :first-child .c2f-bento-extra {
+    display: block;
+}
+
+.c2f-bento-extra {
+    display: none;
+}
+
+/* Campos de busca e ordenação dos índices */
+.c2f-field {
+    width: 100%;
+    border-radius: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(10, 21, 16, 0.85);
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.c2f-field::placeholder {
+    color: #64748b;
+}
+
+.c2f-field:focus {
+    border-color: rgba(52, 211, 153, 0.6);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
+}
+
+select.c2f-field option {
+    background: #0a1510;
+    color: #e2e8f0;
+}
+
+/* Corpo editorial das publicações */
+.c2f-prose {
+    color: #cbd5e1;
+    font-size: 1.0625rem;
+    line-height: 1.85;
+}
+
+.c2f-prose > * + * {
+    margin-top: 1.25rem;
+}
+
+.c2f-prose h2 {
+    margin-top: 2.5rem;
+    font-size: clamp(1.45rem, 1.1rem + 1vw, 1.9rem);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+}
+
+.c2f-prose h3 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #ecfdf5;
+}
+
+.c2f-prose strong {
+    color: #fff;
+    font-weight: 800;
+}
+
+.c2f-prose a {
+    color: #6ee7b7;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgba(52, 211, 153, 0.4);
+    text-underline-offset: 3px;
+}
+
+.c2f-prose a:hover {
+    color: #a7f3d0;
+}
+
+.c2f-prose ul,
+.c2f-prose ol {
+    padding-left: 1.4rem;
+}
+
+.c2f-prose ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.c2f-prose ul > li {
+    position: relative;
+    padding-left: 1.6rem;
+}
+
+.c2f-prose ul > li + li {
+    margin-top: 0.6rem;
+}
+
+.c2f-prose ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0.2rem;
+    top: 0.72em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: #34d399;
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.7);
+}
+
+.c2f-prose ol {
+    list-style: decimal;
+}
+
+.c2f-prose ol > li::marker {
+    color: #34d399;
+    font-weight: 800;
+}
+
+.c2f-prose blockquote {
+    border-left: 3px solid #34d399;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #e2e8f0;
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.08), transparent);
+    border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.c2f-prose code {
+    padding: 0.12rem 0.4rem;
+    border-radius: 0.4rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.88em;
+    color: #a7f3d0;
+    overflow-wrap: anywhere;
+}
+
+/* Lista de tópicos das publicações */
+.c2f-topicos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: c2f-topico;
+}
+
+.c2f-topicos > li {
+    position: relative;
+    counter-increment: c2f-topico;
+    padding: 0.7rem 0 0.7rem 2.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.c2f-topicos > li:last-child {
+    border-bottom: 0;
+}
+
+.c2f-topicos > li::before {
+    content: counter(c2f-topico, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #34d399;
+}
+
+/* Rodapé em colunas (template de menus): grade de autoria */
+.c2f-footer-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .c2f-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .c2f-footer-grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .c2f-footer-brand {
+        grid-column: span 4 / span 4;
+    }
+
+    .c2f-footer-col {
+        grid-column: span 2 / span 2;
     }
 }
